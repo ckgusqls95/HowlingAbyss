@@ -9,7 +9,7 @@ public class CameraMove : MonoBehaviour
 
     private float dist = 7.0f;
 
-    private float height = 10.0f;
+    private float height = 15.0f;
 
     // Start is called before the first frame update
     void Start()
