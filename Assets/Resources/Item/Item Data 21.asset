@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc11c5572cb5dc41aa6d6c9b4f817e6, type: 3}
+  m_Name: Item Data 21
+  m_EditorClassIdentifier: 
+  id: 10
+  item_name: Stopwatch
+  gold: 600
+  image: {fileID: 21300000, guid: 945151ad98c84d5419b5afbdf5c84241, type: 3}
+  idCraft1: 0
+  idCraft2: 0
+  idCraft3: 0
+  itemforcraft: 0
+  infomation: "UNIQUE \u2013 STASIS: Put yourself in Stasis  stasis for 2.5 seconds,
+    rendering yourself untargetable and  invulnerable for the duration but also unable
+    to move, declare basic attacks, cast abilities, use summoner spells, or activate
+    items."
+  itemTag: 0
+  OverlapCount: 1

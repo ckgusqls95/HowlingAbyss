@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc11c5572cb5dc41aa6d6c9b4f817e6, type: 3}
+  m_Name: Item Data 6
+  m_EditorClassIdentifier: 
+  id: 6
+  item_name: Amplifying Tome
+  gold: 435
+  image: {fileID: 21300000, guid: f879b44e8ea69694a927502ad1bfd354, type: 3}
+  idCraft1: 0
+  idCraft2: 0
+  idCraft3: 0
+  itemforcraft: 0
+  infomation: AbilityPower 25
+  itemTag: 0
+  OverlapCount: 1

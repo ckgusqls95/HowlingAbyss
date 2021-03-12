@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc11c5572cb5dc41aa6d6c9b4f817e6, type: 3}
+  m_Name: Item Data 9
+  m_EditorClassIdentifier: 
+  id: 9
+  item_name: Null-MagicMantle
+  gold: 450
+  image: {fileID: 21300000, guid: d253b5cd235987e4ba58bf1e8b7a200a, type: 3}
+  idCraft1: 0
+  idCraft2: 0
+  idCraft3: 0
+  itemforcraft: 0
+  infomation: MagicResistance 25
+  itemTag: 0
+  OverlapCount: 1

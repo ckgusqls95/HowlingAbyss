@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf580121859d0d43b56bd7cfc141350, type: 3}
+  m_Name: Summoner Spell Data
+  m_EditorClassIdentifier: 
+  summonerSpellIcon:
+  - {fileID: 21300000, guid: 894c56b431dd2d246b9a86fd9d170319, type: 3}
+  - {fileID: 21300000, guid: c6bf9f28e40287643b2dafa7f3d2e5ac, type: 3}
+  - {fileID: 21300000, guid: a31d70a0eab43574c924d3160b059f29, type: 3}
+  - {fileID: 21300000, guid: e08155a2a534def4f8ebc44edd01690e, type: 3}
+  - {fileID: 21300000, guid: e929f3ca092fb3a49b0c60dfb420d1e9, type: 3}
+  - {fileID: 21300000, guid: 1d357d2ceb58d40498585e4d52d24089, type: 3}
+  - {fileID: 21300000, guid: 9c856855122fd884eaf50a9a3ef0227f, type: 3}
+  summonerSpellText:
+  - {fileID: 3463030746321790997, guid: df279ed312783f04ea87bdc541d2c4a1, type: 3}
+  - {fileID: 744675185031900617, guid: e1d09d1bd49805042b014890610e62e6, type: 3}
+  - {fileID: 3070614486680978267, guid: eefde0c5b9ef94d46928e64500e25133, type: 3}
+  - {fileID: 4623710164879585222, guid: 3b5e2f7e7aeec16428a48f34b488448e, type: 3}
+  - {fileID: 7959370590766886151, guid: e2948131baedee8469d74bae4b3a11af, type: 3}
+  - {fileID: 6005468972863697728, guid: 0402b91f02225af42a8f2b8500e17d55, type: 3}
+  - {fileID: 5796919782845275872, guid: 068d721e9d8e2bf4b9b8a97932c6d8cc, type: 3}

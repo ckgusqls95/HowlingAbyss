@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc11c5572cb5dc41aa6d6c9b4f817e6, type: 3}
+  m_Name: Item Data 18
+  m_EditorClassIdentifier: 
+  id: 18
+  item_name: Mercury's Treads
+  gold: 1100
+  image: {fileID: 21300000, guid: 634f8d0652f5ee84eaadde2abc7ad92e, type: 3}
+  idCraft1: 5
+  idCraft2: 9
+  idCraft3: 0
+  itemforcraft: 2
+  infomation: 'Magic Resistance 25
+
+    45 Movement Speed'
+  itemTag: 0
+  OverlapCount: 1

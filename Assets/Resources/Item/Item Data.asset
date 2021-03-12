@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc11c5572cb5dc41aa6d6c9b4f817e6, type: 3}
+  m_Name: Item Data
+  m_EditorClassIdentifier: 
+  id: 0
+  item_name: Doran's Blade
+  gold: 450
+  image: {fileID: 21300000, guid: a6b3596d583c6f44abcbb0e024f75803, type: 3}
+  idCraft1: 0
+  idCraft2: 0
+  idCraft3: 0
+  itemforcraft: 0
+  infomation: 'AttackDamage 8
+
+    Health 80'
+  itemTag: 0
+  OverlapCount: 1

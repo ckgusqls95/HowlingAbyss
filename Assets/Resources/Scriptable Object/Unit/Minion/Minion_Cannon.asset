@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47bc80393f9c74446addaac15bbdc537, type: 3}
+  m_Name: Minion_Cannon
+  m_EditorClassIdentifier: Assembly-CSharp::UnitData
+  growthStatus:
+    health: 75
+    healthRegen: 0
+    cost: 0
+    costRegen: 0
+    attackSpeed: 0
+    movementSpeed: 0
+    attackDamage: 1.5
+    armor: 0
+    magicResist: 0
+    killGold: 0
+  initStatus:
+    health: 900
+    healthRegen: 0
+    cost: 0
+    costRegen: 0
+    attackSpeed: 0.667
+    movementSpeed: 325
+    attackDamage: 41
+    armor: 0
+    magicResist: 0
+    killGold: 60
+  unitSight:
+    sightRange: 14
+    attackRange: 6
+    aggroRange: 8

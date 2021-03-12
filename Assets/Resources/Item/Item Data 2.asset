@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc11c5572cb5dc41aa6d6c9b4f817e6, type: 3}
+  m_Name: Item Data 2
+  m_EditorClassIdentifier: 
+  id: 2
+  item_name: Doran's Shield
+  gold: 450
+  image: {fileID: 21300000, guid: 350d6f253b7c63c4e8017cb88b85a9f9, type: 3}
+  idCraft1: 0
+  idCraft2: 0
+  idCraft3: 0
+  itemforcraft: 0
+  infomation: "Heath 80\nUNIQUE \u2013 FOCUS: Basic attacks deal 5 bonus physical
+    damage on-hit against minions.\r\nUNIQUE \u2013 RECOVERY: Restores 6 health every
+    5 seconds.\r\nUNIQUE \u2013 ENDURE: After taking damage from a champion, large
+    monster or epic monster, gain health regeneration equal to 0 \u2212 40 (based
+    on current missing health) health over 8 seconds. Reduced to 66% effectiveness
+    on Ranged role.png ranged champions or when triggered by AoE, DoT or proc effects."
+  itemTag: 0
+  OverlapCount: 1
