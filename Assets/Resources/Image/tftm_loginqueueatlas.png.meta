@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: ecb10190f4f71bc49a77970821e794eb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4644092111472068853
+    second: tftm_loginqueueatlas_0
+  - first:
+      213: 8781936948680239007
+    second: tftm_loginqueueatlas_1
+  - first:
+      213: 8369353745356509041
+    second: tftm_loginqueueatlas_2
+  - first:
+      213: 617533645241717584
+    second: tftm_loginqueueatlas_3
+  - first:
+      213: -4292619682331049626
+    second: tftm_loginqueueatlas_4
+  - first:
+      213: -8733246605140968136
+    second: tftm_loginqueueatlas_5
+  - first:
+      213: 8300338498747436850
+    second: tftm_loginqueueatlas_6
+  - first:
+      213: 3321283248568541463
+    second: tftm_loginqueueatlas_7
+  - first:
+      213: -2197954314169373934
+    second: tftm_loginqueueatlas_8
+  - first:
+      213: 2070680964863337558
+    second: tftm_loginqueueatlas_9
+  - first:
+      213: -3045324816347471352
+    second: tftm_loginqueueatlas_10
+  - first:
+      213: -3961392631221220847
+    second: tftm_loginqueueatlas_11
+  - first:
+      213: -8468727941309399597
+    second: tftm_loginqueueatlas_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 428
+        width: 522
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f88c708b21237040800000000000000
+      internalID: 4644092111472068853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_1
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 427
+        width: 232
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97a6f94025bfd970800000000000000
+      internalID: 8781936948680239007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 463
+        width: 107
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f4f8f73eae52470800000000000000
+      internalID: 8369353745356509041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_3
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 463
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0531c79149be19800800000000000000
+      internalID: 617533645241717584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 344
+        width: 522
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661cec6642d8d64c0800000000000000
+      internalID: -4292619682331049626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_5
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 360
+        width: 107
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dbfacbb764dc680800000000000000
+      internalID: -8733246605140968136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 312
+        width: 512
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f075533e9b03370800000000000000
+      internalID: 8300338498747436850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_7
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 271
+        width: 202
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71122658481971e20800000000000000
+      internalID: 3321283248568541463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_8
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 258
+        width: 99
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ba56f423c4f71e0800000000000000
+      internalID: -2197954314169373934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_9
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 258
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654a7d9dd598cbc10800000000000000
+      internalID: 2070680964863337558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 287
+        width: 512
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8026defd635dcb5d0800000000000000
+      internalID: -3045324816347471352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_11
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 155
+        width: 99
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a8538e36e4609c0800000000000000
+      internalID: -3961392631221220847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_loginqueueatlas_12
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 24
+        width: 108
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddf3de7ec8097a80800000000000000
+      internalID: -8468727941309399597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

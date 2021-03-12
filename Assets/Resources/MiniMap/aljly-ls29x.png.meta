@@ -1,0 +1,4460 @@
+fileFormatVersion: 2
+guid: a96addf1ed4f26f4aaa657d14d4f6880
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7825995847201150327
+    second: aljly-ls29x_0
+  - first:
+      213: -7768574501037665947
+    second: aljly-ls29x_1
+  - first:
+      213: 8352349934593100363
+    second: aljly-ls29x_2
+  - first:
+      213: -4865856778769534670
+    second: aljly-ls29x_3
+  - first:
+      213: 2141876417082337787
+    second: aljly-ls29x_4
+  - first:
+      213: 6720014051071176346
+    second: aljly-ls29x_5
+  - first:
+      213: -8316815366879422575
+    second: aljly-ls29x_6
+  - first:
+      213: 5920542172832163168
+    second: aljly-ls29x_7
+  - first:
+      213: -7200029219522787733
+    second: aljly-ls29x_8
+  - first:
+      213: 2802182847962032005
+    second: aljly-ls29x_9
+  - first:
+      213: 8183570516835732256
+    second: aljly-ls29x_10
+  - first:
+      213: -8621605991257941221
+    second: aljly-ls29x_11
+  - first:
+      213: 154952472280209776
+    second: aljly-ls29x_12
+  - first:
+      213: -1150383974815631673
+    second: aljly-ls29x_13
+  - first:
+      213: -7810865699187933998
+    second: aljly-ls29x_14
+  - first:
+      213: 1389020449919914806
+    second: aljly-ls29x_15
+  - first:
+      213: 6986616384083047721
+    second: aljly-ls29x_16
+  - first:
+      213: -4812349265923308575
+    second: aljly-ls29x_17
+  - first:
+      213: -1209453167092607393
+    second: aljly-ls29x_18
+  - first:
+      213: -4675238635253247957
+    second: aljly-ls29x_19
+  - first:
+      213: 2315372430121562341
+    second: aljly-ls29x_20
+  - first:
+      213: -5916710969939082125
+    second: aljly-ls29x_21
+  - first:
+      213: -1512589858428060184
+    second: aljly-ls29x_22
+  - first:
+      213: 4135417457391556022
+    second: aljly-ls29x_23
+  - first:
+      213: -9092723711553488275
+    second: aljly-ls29x_24
+  - first:
+      213: -7582971365038249878
+    second: aljly-ls29x_25
+  - first:
+      213: -1602846477559136720
+    second: aljly-ls29x_26
+  - first:
+      213: 6968919782249018516
+    second: aljly-ls29x_27
+  - first:
+      213: -6289175855909928385
+    second: aljly-ls29x_28
+  - first:
+      213: 7213397439604131947
+    second: aljly-ls29x_29
+  - first:
+      213: -3815036358519725286
+    second: aljly-ls29x_30
+  - first:
+      213: 2897265572644024419
+    second: aljly-ls29x_31
+  - first:
+      213: 6158576767110177422
+    second: aljly-ls29x_32
+  - first:
+      213: -2683668828285736144
+    second: aljly-ls29x_33
+  - first:
+      213: 1347324578344730219
+    second: aljly-ls29x_34
+  - first:
+      213: 4680268129008988670
+    second: aljly-ls29x_35
+  - first:
+      213: -4358532394529176570
+    second: aljly-ls29x_36
+  - first:
+      213: -6257096779703486526
+    second: aljly-ls29x_37
+  - first:
+      213: -295631892111378746
+    second: aljly-ls29x_38
+  - first:
+      213: 8856469486210609887
+    second: aljly-ls29x_39
+  - first:
+      213: 4842890844829676267
+    second: aljly-ls29x_40
+  - first:
+      213: -4367845168732023911
+    second: aljly-ls29x_41
+  - first:
+      213: -6381066701546031637
+    second: aljly-ls29x_42
+  - first:
+      213: 5130499073460793566
+    second: aljly-ls29x_43
+  - first:
+      213: -542718676293740162
+    second: aljly-ls29x_44
+  - first:
+      213: 1921712286477701617
+    second: aljly-ls29x_45
+  - first:
+      213: 1851143732955273769
+    second: aljly-ls29x_46
+  - first:
+      213: 7792178958334832798
+    second: aljly-ls29x_47
+  - first:
+      213: -2232466956943590500
+    second: aljly-ls29x_48
+  - first:
+      213: -30452555710247420
+    second: aljly-ls29x_49
+  - first:
+      213: 983450680863670049
+    second: aljly-ls29x_50
+  - first:
+      213: 2798909564768565318
+    second: aljly-ls29x_51
+  - first:
+      213: -1618553195667614206
+    second: aljly-ls29x_52
+  - first:
+      213: 2341797431243691901
+    second: aljly-ls29x_53
+  - first:
+      213: 3056994262760201193
+    second: aljly-ls29x_54
+  - first:
+      213: 1898945919411386081
+    second: aljly-ls29x_55
+  - first:
+      213: -6694456586976130281
+    second: aljly-ls29x_56
+  - first:
+      213: 6278119395707310712
+    second: aljly-ls29x_57
+  - first:
+      213: 2527286447231884507
+    second: aljly-ls29x_58
+  - first:
+      213: -5870214909646499273
+    second: aljly-ls29x_59
+  - first:
+      213: -1760084472965315119
+    second: aljly-ls29x_60
+  - first:
+      213: 1608029912034594355
+    second: aljly-ls29x_61
+  - first:
+      213: -6114983247001999062
+    second: aljly-ls29x_62
+  - first:
+      213: 6285616031741751387
+    second: aljly-ls29x_63
+  - first:
+      213: 9027397628436068257
+    second: aljly-ls29x_64
+  - first:
+      213: 2947719029214661685
+    second: aljly-ls29x_65
+  - first:
+      213: -2369964358068140333
+    second: aljly-ls29x_66
+  - first:
+      213: 8209019128153842412
+    second: aljly-ls29x_67
+  - first:
+      213: -2424089867185903958
+    second: aljly-ls29x_68
+  - first:
+      213: 7829718577507777123
+    second: aljly-ls29x_69
+  - first:
+      213: -4910264759128022329
+    second: aljly-ls29x_70
+  - first:
+      213: -1971773884124713381
+    second: aljly-ls29x_71
+  - first:
+      213: 6793326918433834407
+    second: aljly-ls29x_72
+  - first:
+      213: 6757099050149955465
+    second: aljly-ls29x_73
+  - first:
+      213: -8626642675442048326
+    second: aljly-ls29x_74
+  - first:
+      213: 2400019776909425413
+    second: aljly-ls29x_75
+  - first:
+      213: 2851972409549706914
+    second: aljly-ls29x_76
+  - first:
+      213: -7556990139112260514
+    second: aljly-ls29x_77
+  - first:
+      213: 5440497036073471497
+    second: aljly-ls29x_78
+  - first:
+      213: 5219245150406035162
+    second: aljly-ls29x_79
+  - first:
+      213: -4143612781844083222
+    second: aljly-ls29x_80
+  - first:
+      213: 3455082022518330286
+    second: aljly-ls29x_81
+  - first:
+      213: 2298938091809815956
+    second: aljly-ls29x_82
+  - first:
+      213: -644344622911897681
+    second: aljly-ls29x_83
+  - first:
+      213: -8361173430931946538
+    second: aljly-ls29x_84
+  - first:
+      213: 6184753613309510652
+    second: aljly-ls29x_85
+  - first:
+      213: 8923156880580362607
+    second: aljly-ls29x_86
+  - first:
+      213: 1169055171036342664
+    second: aljly-ls29x_87
+  - first:
+      213: -1255703927229928295
+    second: aljly-ls29x_88
+  - first:
+      213: -2237115781180798154
+    second: aljly-ls29x_89
+  - first:
+      213: 1340881385709212388
+    second: aljly-ls29x_90
+  - first:
+      213: 8556911291894502881
+    second: aljly-ls29x_91
+  - first:
+      213: -6097644810535814452
+    second: aljly-ls29x_92
+  - first:
+      213: -5112083547879421537
+    second: aljly-ls29x_93
+  - first:
+      213: 1305704082124579366
+    second: aljly-ls29x_94
+  - first:
+      213: 2754107480524503405
+    second: aljly-ls29x_95
+  - first:
+      213: -8968834881663573354
+    second: aljly-ls29x_96
+  - first:
+      213: -8950590062767299022
+    second: aljly-ls29x_97
+  - first:
+      213: -4148894094903605293
+    second: aljly-ls29x_98
+  - first:
+      213: 8096704563346910662
+    second: aljly-ls29x_99
+  - first:
+      213: 8535852776245872159
+    second: aljly-ls29x_100
+  - first:
+      213: 789798613511281606
+    second: aljly-ls29x_101
+  - first:
+      213: 2237890418641877780
+    second: aljly-ls29x_102
+  - first:
+      213: 3730947491364607213
+    second: aljly-ls29x_103
+  - first:
+      213: 7271646628056778623
+    second: aljly-ls29x_104
+  - first:
+      213: 4382245638895683403
+    second: aljly-ls29x_105
+  - first:
+      213: -9166489702737818857
+    second: aljly-ls29x_106
+  - first:
+      213: -3791485462713698189
+    second: aljly-ls29x_107
+  - first:
+      213: -5820081979547359416
+    second: aljly-ls29x_108
+  - first:
+      213: -7003097869941352477
+    second: aljly-ls29x_109
+  - first:
+      213: 5558353847417595917
+    second: aljly-ls29x_110
+  - first:
+      213: -6119582627942500718
+    second: aljly-ls29x_111
+  - first:
+      213: -176218481210878374
+    second: aljly-ls29x_112
+  - first:
+      213: 7566930242793464264
+    second: aljly-ls29x_113
+  - first:
+      213: -6624884221458494455
+    second: aljly-ls29x_114
+  - first:
+      213: 4886716920563487634
+    second: aljly-ls29x_115
+  - first:
+      213: 9102288032877490936
+    second: aljly-ls29x_116
+  - first:
+      213: 4564760787762406868
+    second: aljly-ls29x_117
+  - first:
+      213: 8448285687247394635
+    second: aljly-ls29x_118
+  - first:
+      213: -2601262186141867145
+    second: aljly-ls29x_119
+  - first:
+      213: 8816907191684303858
+    second: aljly-ls29x_120
+  - first:
+      213: -5255142610357737024
+    second: aljly-ls29x_121
+  - first:
+      213: -6227977912312349316
+    second: aljly-ls29x_122
+  - first:
+      213: -4544907699764806865
+    second: aljly-ls29x_123
+  - first:
+      213: -7346767859862595550
+    second: aljly-ls29x_124
+  - first:
+      213: -8744806789745723265
+    second: aljly-ls29x_125
+  - first:
+      213: -2124964112236608844
+    second: aljly-ls29x_126
+  - first:
+      213: 3618865597055217192
+    second: aljly-ls29x_127
+  - first:
+      213: 5936384606837438112
+    second: aljly-ls29x_128
+  - first:
+      213: -552080434187398860
+    second: aljly-ls29x_129
+  - first:
+      213: -3677139372129948829
+    second: aljly-ls29x_130
+  - first:
+      213: -8217192878170571656
+    second: aljly-ls29x_131
+  - first:
+      213: -9122350085826002513
+    second: aljly-ls29x_132
+  - first:
+      213: 8761091261518964509
+    second: aljly-ls29x_133
+  - first:
+      213: -1835278272052846051
+    second: aljly-ls29x_134
+  - first:
+      213: -646811900316889347
+    second: aljly-ls29x_135
+  - first:
+      213: 3353517131388357245
+    second: aljly-ls29x_136
+  - first:
+      213: 8782687219017260227
+    second: aljly-ls29x_137
+  - first:
+      213: -1202651054412278723
+    second: aljly-ls29x_138
+  - first:
+      213: -7329434947444071270
+    second: aljly-ls29x_139
+  - first:
+      213: 3891508546719406888
+    second: aljly-ls29x_140
+  - first:
+      213: 2785855008391728483
+    second: aljly-ls29x_141
+  - first:
+      213: 5054161287759702378
+    second: aljly-ls29x_142
+  - first:
+      213: -5729336123353804142
+    second: aljly-ls29x_143
+  - first:
+      213: -6307950025560354999
+    second: aljly-ls29x_144
+  - first:
+      213: -9194826187522889383
+    second: aljly-ls29x_145
+  - first:
+      213: -8361394461510274081
+    second: aljly-ls29x_146
+  - first:
+      213: 6225691798534069078
+    second: aljly-ls29x_147
+  - first:
+      213: -9060379954857159686
+    second: aljly-ls29x_148
+  - first:
+      213: 6047527331875694632
+    second: aljly-ls29x_149
+  - first:
+      213: -6566205122934042414
+    second: aljly-ls29x_150
+  - first:
+      213: 5314766920243225123
+    second: aljly-ls29x_151
+  - first:
+      213: -4307767091902499330
+    second: aljly-ls29x_152
+  - first:
+      213: 2063412537780359052
+    second: aljly-ls29x_153
+  - first:
+      213: 7570438601982078443
+    second: aljly-ls29x_154
+  - first:
+      213: 8280077818622775207
+    second: aljly-ls29x_155
+  - first:
+      213: -318102371930579508
+    second: aljly-ls29x_156
+  - first:
+      213: 1958817524969204203
+    second: aljly-ls29x_157
+  - first:
+      213: 3617016888994106169
+    second: aljly-ls29x_158
+  - first:
+      213: -1034336661650498947
+    second: aljly-ls29x_159
+  - first:
+      213: 4270437712348384205
+    second: aljly-ls29x_160
+  - first:
+      213: -4182660004162313256
+    second: aljly-ls29x_161
+  - first:
+      213: 5956157851054392341
+    second: aljly-ls29x_162
+  - first:
+      213: -7417060961232497737
+    second: aljly-ls29x_163
+  - first:
+      213: -1233129603036731342
+    second: aljly-ls29x_164
+  - first:
+      213: 5969562430359270290
+    second: aljly-ls29x_165
+  - first:
+      213: -1514734444764071738
+    second: aljly-ls29x_166
+  - first:
+      213: 4606996023447910479
+    second: aljly-ls29x_167
+  - first:
+      213: 8841019781780599201
+    second: aljly-ls29x_168
+  - first:
+      213: -6698889164160012775
+    second: aljly-ls29x_169
+  - first:
+      213: 6952619374681702330
+    second: aljly-ls29x_170
+  - first:
+      213: -181654128505672227
+    second: aljly-ls29x_171
+  - first:
+      213: 2101630809507818318
+    second: aljly-ls29x_172
+  - first:
+      213: -2247115790375776225
+    second: aljly-ls29x_173
+  - first:
+      213: -6316742248438084710
+    second: aljly-ls29x_174
+  - first:
+      213: 2456301345604641638
+    second: aljly-ls29x_175
+  - first:
+      213: 8172632727505784980
+    second: aljly-ls29x_176
+  - first:
+      213: -6766073837054016642
+    second: aljly-ls29x_177
+  - first:
+      213: -3613377522628661363
+    second: aljly-ls29x_178
+  - first:
+      213: -6389085786772056327
+    second: aljly-ls29x_179
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: aljly-ls29x_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1006
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98aa4e9ad3a746390800000000000000
+      internalID: -7825995847201150327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1006
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5611e76a6aa703490800000000000000
+      internalID: -7768574501037665947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 940
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4acd2b430289e370800000000000000
+      internalID: 8352349934593100363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_3
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1000
+        width: 464
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231f3854a01097cb0800000000000000
+      internalID: -4865856778769534670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_4
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 933
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9aaf0d04979bd10800000000000000
+      internalID: 2141876417082337787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 985
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e2bbfdc29424d50800000000000000
+      internalID: 6720014051071176346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 985
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19754aafc7cb49c80800000000000000
+      internalID: -8316815366879422575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 988
+        width: 71
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0656161ecbdf92250800000000000000
+      internalID: 5920542172832163168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 982
+        width: 460
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6649ed729b541c90800000000000000
+      internalID: -7200029219522787733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_9
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 973
+        width: 69
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5872870247a53e620800000000000000
+      internalID: 2802182847962032005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_10
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 965
+        width: 461
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b8a52d602e19170800000000000000
+      internalID: 8183570516835732256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_11
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 953
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1bd0b9b707e95880800000000000000
+      internalID: -8621605991257941221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 936
+        width: 198
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079945bd370862200800000000000000
+      internalID: 154952472280209776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_13
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 623
+        width: 321
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6ffc1bed30900f0800000000000000
+      internalID: -1150383974815631673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_14
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 951
+        width: 461
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcbe93c70b3a9390800000000000000
+      internalID: -7810865699187933998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_15
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 930
+        width: 485
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633da376dbac64310800000000000000
+      internalID: 1389020449919914806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_16
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 907
+        width: 485
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925b13ba59275f060800000000000000
+      internalID: 6986616384083047721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_17
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 861
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3878de6d9173db0800000000000000
+      internalID: -4812349265923308575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_18
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 884
+        width: 485
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5659f2a0c8273fe0800000000000000
+      internalID: -1209453167092607393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_19
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 858
+        width: 210
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b205c815b373e1fb0800000000000000
+      internalID: -4675238635253247957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_20
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 858
+        width: 210
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0f02435fad12020800000000000000
+      internalID: 2315372430121562341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_21
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 835
+        width: 12
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374cf1e88be93eda0800000000000000
+      internalID: -5916710969939082125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_22
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 844
+        width: 13
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed798da983320be0800000000000000
+      internalID: -1512589858428060184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_23
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 862
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5d5c16444f36930800000000000000
+      internalID: 4135417457391556022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_24
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 861
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a351ca5f720d180800000000000000
+      internalID: -9092723711553488275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_25
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 841
+        width: 152
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68afe448bfd3c690800000000000000
+      internalID: -7582971365038249878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_26
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 841
+        width: 152
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ef993fe9b81c9e0800000000000000
+      internalID: -1602846477559136720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_27
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 833
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49435297e9396b060800000000000000
+      internalID: 6968919782249018516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_28
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 832
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32868a61eb58b8a0800000000000000
+      internalID: -6289175855909928385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_29
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 831
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68015bc0c22b1460800000000000000
+      internalID: 7213397439604131947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_30
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 831
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a136b3515a44e0bc0800000000000000
+      internalID: -3815036358519725286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_31
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 833
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3607a6d10b7253820800000000000000
+      internalID: 2897265572644024419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_32
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 832
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82639da0f8a77550800000000000000
+      internalID: 6158576767110177422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_33
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 740
+        width: 85
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b6d3b5b61b1cad0800000000000000
+      internalID: -2683668828285736144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_34
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 782
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ef369c098a2b210800000000000000
+      internalID: 1347324578344730219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_35
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 771
+        width: 234
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1b923f017a3f040800000000000000
+      internalID: 4680268129008988670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_36
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 769
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6044e0231e16383c0800000000000000
+      internalID: -4358532394529176570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_37
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 804
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7788061a35a29a0800000000000000
+      internalID: -6257096779703486526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_38
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 804
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6bc664c54b5ebf0800000000000000
+      internalID: -295631892111378746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_39
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 769
+        width: 38
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd27ba9f21088ea70800000000000000
+      internalID: 8856469486210609887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_40
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 805
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2701c8097653340800000000000000
+      internalID: 4842890844829676267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_41
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 806
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99352dbf5fb4263c0800000000000000
+      internalID: -4367845168732023911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_42
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 804
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5764ea4a5e177a0800000000000000
+      internalID: -6381066701546031637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_43
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 804
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0f91a89b1333740800000000000000
+      internalID: 5130499073460793566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_44
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 806
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e799a864d30e778f0800000000000000
+      internalID: -542718676293740162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_45
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 805
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1d104942b4baa10800000000000000
+      internalID: 1921712286477701617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_46
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 777
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a5df6da6590b910800000000000000
+      internalID: 1851143732955273769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_47
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 777
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9032d55a71632c60800000000000000
+      internalID: 7792178958334832798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_48
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 776
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b749a712fa401e0800000000000000
+      internalID: -2232466956943590500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_49
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 777
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e436adf8fc39ff0800000000000000
+      internalID: -30452555710247420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_50
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 777
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fbef60f2be5ad00800000000000000
+      internalID: 983450680863670049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_51
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 790
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648397e7b69b7d620800000000000000
+      internalID: 2798909564768565318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_52
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 776
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206982aa17eb989e0800000000000000
+      internalID: -1618553195667614206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_53
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 778
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77d3393b5cbf7020800000000000000
+      internalID: 2341797431243691901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_54
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 771
+        width: 35
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb9a38d510ac6a20800000000000000
+      internalID: 3056994262760201193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_55
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 763
+        width: 35
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6713ea0496a5a10800000000000000
+      internalID: 1898945919411386081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_56
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 756
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b8301f3338813a0800000000000000
+      internalID: -6694456586976130281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_57
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 757
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872df96d35c502750800000000000000
+      internalID: 6278119395707310712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_58
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 755
+        width: 35
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc5ae432a9b21320800000000000000
+      internalID: 2527286447231884507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_59
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 706
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732915334aec88ea0800000000000000
+      internalID: -5870214909646499273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_60
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 688
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5c8364f7ce297e0800000000000000
+      internalID: -1760084472965315119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_61
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 747
+        width: 35
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e460f6faed05610800000000000000
+      internalID: 1608029912034594355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_62
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 723
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a292bfaa227332ba0800000000000000
+      internalID: -6114983247001999062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_63
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 723
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50b77e6a7efa3750800000000000000
+      internalID: 6285616031741751387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_64
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 723
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7b2295052c74d70800000000000000
+      internalID: 9027397628436068257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_65
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 723
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ccff1e6d668e820800000000000000
+      internalID: 2947719029214661685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_66
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 723
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6030319f13c1fd0800000000000000
+      internalID: -2369964358068140333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_67
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 723
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce22fff576b4ce170800000000000000
+      internalID: 8209019128153842412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_68
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 723
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6a2c2fb17eb5ed0800000000000000
+      internalID: -2424089867185903958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_69
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 731
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ab0a7009fb8ac60800000000000000
+      internalID: 7829718577507777123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_70
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c22e0f973c3bdbb0800000000000000
+      internalID: -4910264759128022329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_71
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5eaa5b691ad2a4e0800000000000000
+      internalID: -1971773884124713381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_72
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 744
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a50958f6deb64e50800000000000000
+      internalID: 6793326918433834407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_73
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 724
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987415419c906cd50800000000000000
+      internalID: 6757099050149955465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_74
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 739
+        width: 35
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab22d0e4132084880800000000000000
+      internalID: -8626642675442048326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_75
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 732
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b399075459e4120800000000000000
+      internalID: 2400019776909425413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_76
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 676
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6dc6ccbcd349720800000000000000
+      internalID: 2851972409549706914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_77
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 720
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c7513d18d202790800000000000000
+      internalID: -7556990139112260514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_78
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 729
+        width: 31
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e89b4ba37808b40800000000000000
+      internalID: 5440497036073471497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_79
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 721
+        width: 35
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6c1a1cfcb7e6840800000000000000
+      internalID: 5219245150406035162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_80
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 697
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed4a63f02eee76c0800000000000000
+      internalID: -4143612781844083222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_81
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 703
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea31b0e2bcae2ff20800000000000000
+      internalID: 3455082022518330286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_82
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 702
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d30f2a30877ef10800000000000000
+      internalID: 2298938091809815956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_83
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 686
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf3766baf3de07f0800000000000000
+      internalID: -644344622911897681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_84
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 686
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d30edf501527fb80800000000000000
+      internalID: -8361173430931946538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_85
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 686
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf380a0a4a8a4d550800000000000000
+      internalID: 6184753613309510652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_86
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 686
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61431ee7eb65db70800000000000000
+      internalID: 8923156880580362607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_87
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 686
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8896470fb71593010800000000000000
+      internalID: 1169055171036342664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_88
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 686
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ca5626ee7d29ee0800000000000000
+      internalID: -1255703927229928295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_89
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 686
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b4c4dbc0b24f0e0800000000000000
+      internalID: -2237115781180798154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_90
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 689
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e291291484cb9210800000000000000
+      internalID: 1340881385709212388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_91
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 700
+        width: 44
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e596e7cb7140c670800000000000000
+      internalID: 8556911291894502881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_92
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 675
+        width: 64
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca328df950d06ba0800000000000000
+      internalID: -6097644810535814452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_93
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 666
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f994782291b3e09b0800000000000000
+      internalID: -5112083547879421537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_94
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 666
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62220dcd1face1210800000000000000
+      internalID: 1305704082124579366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_95
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 664
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69b8e1692e883620800000000000000
+      internalID: 2754107480524503405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_96
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 671
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6926f4da13c488380800000000000000
+      internalID: -8968834881663573354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_97
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 592
+        width: 135
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2362d9a92cd19c380800000000000000
+      internalID: -8950590062767299022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_98
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 623
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d70e8e6dca2c66c0800000000000000
+      internalID: -4148894094903605293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_99
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 605
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cda395f6e54d5070800000000000000
+      internalID: 8096704563346910662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_100
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 604
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16ca2700e0757670800000000000000
+      internalID: 8535852776245872159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_101
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 634
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb9f6a87ade5fa00800000000000000
+      internalID: 789798613511281606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_102
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 594
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b36699a759e0f10800000000000000
+      internalID: 2237890418641877780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_103
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 639
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de41c6ad9fcf6c330800000000000000
+      internalID: 3730947491364607213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_104
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 639
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77cd75d4141ae460800000000000000
+      internalID: 7271646628056778623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_105
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 599
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47c1e0c03dd0dc30800000000000000
+      internalID: 4382245638895683403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_106
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 599
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b49077e261ac080800000000000000
+      internalID: -9166489702737818857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_107
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 438
+        width: 254
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37874ef4f00f16bc0800000000000000
+      internalID: -3791485462713698189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_108
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 604
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8476d65964aea3fa0800000000000000
+      internalID: -5820081979547359416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_109
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 608
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7d9de579fffce90800000000000000
+      internalID: -7003097869941352477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_110
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 592
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d086043ff5d332d40800000000000000
+      internalID: 5558353847417595917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_111
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 592
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296f5d7d500e21ba0800000000000000
+      internalID: -6119582627942500718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_112
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 435
+        width: 420
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5611989932fd8df0800000000000000
+      internalID: -176218481210878374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_113
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 548
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c16dd9e6f2230960800000000000000
+      internalID: 7566930242793464264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_114
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 548
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c40e596eeaf04a0800000000000000
+      internalID: -6624884221458494455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_115
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 548
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293d318f52b11d340800000000000000
+      internalID: 4886716920563487634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_116
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 548
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2b3fa6db2d15e70800000000000000
+      internalID: 9102288032877490936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_117
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 548
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5e53750c9495f30800000000000000
+      internalID: 4564760787762406868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_118
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 558
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47d56552175e3570800000000000000
+      internalID: 8448285687247394635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_119
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 548
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773ab53e2d576ebd0800000000000000
+      internalID: -2601262186141867145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_120
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 543
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb0ee97062fb5a70800000000000000
+      internalID: 8816907191684303858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_121
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 493
+        width: 299
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9ab9983abf117b0800000000000000
+      internalID: -5255142610357737024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_122
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 455
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7db4a30617c199a0800000000000000
+      internalID: -6227977912312349316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_123
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 455
+        width: 271
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bb49ae68e3de0c0800000000000000
+      internalID: -4544907699764806865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_124
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 455
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22812a96e890b0a90800000000000000
+      internalID: -7346767859862595550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_125
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 455
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7838c38e8434a680800000000000000
+      internalID: -8744806789745723265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_126
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 455
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b20fa1066c9282e0800000000000000
+      internalID: -2124964112236608844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_127
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 455
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82eab52461bc83230800000000000000
+      internalID: 3618865597055217192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_128
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 455
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a674acf856426250800000000000000
+      internalID: 5936384606837438112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_129
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 455
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43111d825cd9658f0800000000000000
+      internalID: -552080434187398860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_130
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 455
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b679e293d28fcc0800000000000000
+      internalID: -3677139372129948829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_131
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 388
+        width: 198
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87cf5c52d9aa6fd80800000000000000
+      internalID: -8217192878170571656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_132
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 388
+        width: 198
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa14691ede6e66180800000000000000
+      internalID: -9122350085826002513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_133
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 388
+        width: 198
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17ed978516a59970800000000000000
+      internalID: 8761091261518964509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_134
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 418
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d122c42a228c786e0800000000000000
+      internalID: -1835278272052846051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_135
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 418
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfecd1de0001607f0800000000000000
+      internalID: -646811900316889347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_136
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 418
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a079430161a8e20800000000000000
+      internalID: 3353517131388357245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_137
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 372
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc13e63e7f52e970800000000000000
+      internalID: 8782687219017260227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_138
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 372
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34d109ec335f4fe0800000000000000
+      internalID: -1202651054412278723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_139
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 418
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9423419fbd984a90800000000000000
+      internalID: -7329434947444071270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_140
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b5b97b76a610630800000000000000
+      internalID: 3891508546719406888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_141
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d8eeabe5859a620800000000000000
+      internalID: 2785855008391728483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_142
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69a272c9ecf32640800000000000000
+      internalID: 5054161287759702378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_143
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 381
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292dea0b62f4d70b0800000000000000
+      internalID: -5729336123353804142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_144
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 204
+        width: 162
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f0f896fd8a578a0800000000000000
+      internalID: -6307950025560354999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_145
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 195
+        width: 581
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9592d397c4a656080800000000000000
+      internalID: -9194826187522889383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_146
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 344
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3f2cea90c56fb80800000000000000
+      internalID: -8361394461510274081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_147
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 243
+        width: 112
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b9fa4a4b9166650800000000000000
+      internalID: 6225691798534069078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_148
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 344
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af35bac5f60134280800000000000000
+      internalID: -9060379954857159686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_149
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 307
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828aae131122de350800000000000000
+      internalID: 6047527331875694632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_150
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 307
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d09a2dda3720e4a0800000000000000
+      internalID: -6566205122934042414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_151
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 270
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3222819ea58d1c940800000000000000
+      internalID: 5314766920243225123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_152
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 270
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5b80847acb734c0800000000000000
+      internalID: -4307767091902499330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_153
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 233
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f4c7b45c6b2ac10800000000000000
+      internalID: 2063412537780359052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_154
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 233
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bedeb017cc99f0960800000000000000
+      internalID: 7570438601982078443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_155
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 151
+        width: 459
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af0a9308eeb8e270800000000000000
+      internalID: 8280077818622775207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_156
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 152
+        width: 4
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd5edef39fd59bf0800000000000000
+      internalID: -318102371930579508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_157
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 152
+        width: 4
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be96993292e1f2b10800000000000000
+      internalID: 1958817524969204203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_158
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 154
+        width: 125
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b051f52b9323230800000000000000
+      internalID: 3617016888994106169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_159
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 160
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a9820594c45a1f0800000000000000
+      internalID: -1034336661650498947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_160
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 161
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb05ff3974a34b30800000000000000
+      internalID: 4270437712348384205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_161
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 160
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3ebab03e434f5c0800000000000000
+      internalID: -4182660004162313256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_162
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 96
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514404a220688a250800000000000000
+      internalID: 5956157851054392341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_163
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 130
+        width: 459
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3d1506a5e411990800000000000000
+      internalID: -7417060961232497737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_164
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 130
+        width: 156
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2382af0d82b03eee0800000000000000
+      internalID: -1233129603036731342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_165
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 35
+        width: 49
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293f41ef66528d250800000000000000
+      internalID: 5969562430359270290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_166
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 34
+        width: 47
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8f9c24c059afae0800000000000000
+      internalID: -1514734444764071738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_167
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 35
+        width: 47
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48ff3379765fef30800000000000000
+      internalID: 4606996023447910479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_168
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 108
+        width: 459
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1fb3956ac91ba70800000000000000
+      internalID: 8841019781780599201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_169
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 107
+        width: 156
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e67842cc3c803a0800000000000000
+      internalID: -6698889164160012775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_170
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 7
+        width: 64
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfb6661c7aac7060800000000000000
+      internalID: 6952619374681702330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_171
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 86
+        width: 459
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddaf665882aa7df0800000000000000
+      internalID: -181654128505672227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_172
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 86
+        width: 156
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4beab9161e7a2d10800000000000000
+      internalID: 2101630809507818318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_173
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 63
+        width: 459
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f101b792814a0d0e0800000000000000
+      internalID: -2247115790375776225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_174
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 63
+        width: 156
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b4520846c6658a0800000000000000
+      internalID: -6316742248438084710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_175
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 5
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663241e4f09861220800000000000000
+      internalID: 2456301345604641638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_176
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 42
+        width: 459
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490d6ba4a260b6170800000000000000
+      internalID: 8172632727505784980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_177
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 41
+        width: 156
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73c45281b31a12a0800000000000000
+      internalID: -6766073837054016642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_178
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 459
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f6654a944baddc0800000000000000
+      internalID: -3613377522628661363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aljly-ls29x_179
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1
+        width: 156
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f654f7e3586557a0800000000000000
+      internalID: -6389085786772056327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

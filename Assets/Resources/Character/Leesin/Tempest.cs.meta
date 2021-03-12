@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: addbaec06b4453348a13f6d7789aefa8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - skillImgae: {fileID: 21300000, guid: 8bc3a0347cc21364fb02e4afd183d86e, type: 3}
+  - particleObj: {fileID: 504125043495850620, guid: ad4d78aec9d07654787dc0bf5c3cdb9a,
+      type: 3}
+  - particleSystemPrefab: {instanceID: 0}
+  - skillButton: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

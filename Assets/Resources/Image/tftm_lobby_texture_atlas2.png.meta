@@ -1,0 +1,1034 @@
+fileFormatVersion: 2
+guid: 09b6dce2e2c41e948b11cdd5960fd89f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 477501393419528181
+    second: tftm_lobby_texture_atlas2_0
+  - first:
+      213: 3976253460596737774
+    second: tftm_lobby_texture_atlas2_1
+  - first:
+      213: -423239809845281311
+    second: tftm_lobby_texture_atlas2_2
+  - first:
+      213: -2528748543202026580
+    second: tftm_lobby_texture_atlas2_3
+  - first:
+      213: 2370450065809980378
+    second: tftm_lobby_texture_atlas2_4
+  - first:
+      213: 5866588810107757830
+    second: tftm_lobby_texture_atlas2_5
+  - first:
+      213: 5618494100453528351
+    second: tftm_lobby_texture_atlas2_6
+  - first:
+      213: 1298216854596826406
+    second: tftm_lobby_texture_atlas2_7
+  - first:
+      213: 1128350046404493377
+    second: tftm_lobby_texture_atlas2_8
+  - first:
+      213: -4482006374995628485
+    second: tftm_lobby_texture_atlas2_9
+  - first:
+      213: 1993703282741150699
+    second: tftm_lobby_texture_atlas2_10
+  - first:
+      213: -2706180304517583289
+    second: tftm_lobby_texture_atlas2_11
+  - first:
+      213: 8977487976593714917
+    second: tftm_lobby_texture_atlas2_12
+  - first:
+      213: 674495412586674548
+    second: tftm_lobby_texture_atlas2_13
+  - first:
+      213: 7278057672826475220
+    second: tftm_lobby_texture_atlas2_14
+  - first:
+      213: -2462647185256626123
+    second: tftm_lobby_texture_atlas2_15
+  - first:
+      213: -992647738980810092
+    second: tftm_lobby_texture_atlas2_16
+  - first:
+      213: 8021020188488721102
+    second: tftm_lobby_texture_atlas2_17
+  - first:
+      213: -9007525571371651525
+    second: tftm_lobby_texture_atlas2_18
+  - first:
+      213: 5534679196260104583
+    second: tftm_lobby_texture_atlas2_19
+  - first:
+      213: -2356051726185272817
+    second: tftm_lobby_texture_atlas2_20
+  - first:
+      213: 1193285786015346103
+    second: tftm_lobby_texture_atlas2_21
+  - first:
+      213: 5847841877312460286
+    second: tftm_lobby_texture_atlas2_22
+  - first:
+      213: -1883550905499790385
+    second: tftm_lobby_texture_atlas2_23
+  - first:
+      213: -1886055089944733677
+    second: tftm_lobby_texture_atlas2_24
+  - first:
+      213: -1874818774044313005
+    second: tftm_lobby_texture_atlas2_25
+  - first:
+      213: -4106293078830183359
+    second: tftm_lobby_texture_atlas2_26
+  - first:
+      213: 3918844752371368358
+    second: tftm_lobby_texture_atlas2_27
+  - first:
+      213: -3406589699093791337
+    second: tftm_lobby_texture_atlas2_28
+  - first:
+      213: -5947971313059858941
+    second: tftm_lobby_texture_atlas2_29
+  - first:
+      213: 6212650378460711246
+    second: tftm_lobby_texture_atlas2_30
+  - first:
+      213: 6178886602145289316
+    second: tftm_lobby_texture_atlas2_31
+  - first:
+      213: 8252745754104900609
+    second: tftm_lobby_texture_atlas2_32
+  - first:
+      213: -8853940433610988218
+    second: tftm_lobby_texture_atlas2_33
+  - first:
+      213: -3609721340264759843
+    second: tftm_lobby_texture_atlas2_34
+  - first:
+      213: 8152953289332573177
+    second: tftm_lobby_texture_atlas2_35
+  - first:
+      213: -2454194366123983627
+    second: tftm_lobby_texture_atlas2_36
+  - first:
+      213: -7547479570791119233
+    second: tftm_lobby_texture_atlas2_37
+  - first:
+      213: 454205581202867910
+    second: tftm_lobby_texture_atlas2_38
+  - first:
+      213: 5162023549024267692
+    second: tftm_lobby_texture_atlas2_39
+  - first:
+      213: -4656963883715583023
+    second: tftm_lobby_texture_atlas2_40
+  - first:
+      213: 8379464855167756194
+    second: tftm_lobby_texture_atlas2_41
+  - first:
+      213: -6282194664904040222
+    second: tftm_lobby_texture_atlas2_42
+  - first:
+      213: -6979857848436153922
+    second: tftm_lobby_texture_atlas2_43
+  - first:
+      213: -7369905298455258784
+    second: tftm_lobby_texture_atlas2_44
+  - first:
+      213: 4788539646127219481
+    second: tftm_lobby_texture_atlas2_45
+  - first:
+      213: -3659476333355487097
+    second: tftm_lobby_texture_atlas2_46
+  - first:
+      213: -6231615088142980421
+    second: tftm_lobby_texture_atlas2_47
+  - first:
+      213: -3722981490340072166
+    second: tftm_lobby_texture_atlas2_48
+  - first:
+      213: 3882437118991602250
+    second: tftm_lobby_texture_atlas2_49
+  - first:
+      213: -6467795924681658175
+    second: tftm_lobby_texture_atlas2_50
+  - first:
+      213: 2348979334383405238
+    second: tftm_lobby_texture_atlas2_51
+  - first:
+      213: -6030514917217828489
+    second: tftm_lobby_texture_atlas2_52
+  - first:
+      213: 1299251127843534181
+    second: tftm_lobby_texture_atlas2_53
+  - first:
+      213: 7990388335330657367
+    second: tftm_lobby_texture_atlas2_54
+  - first:
+      213: -7788166123264119847
+    second: tftm_lobby_texture_atlas2_55
+  - first:
+      213: 3251997829304745804
+    second: tftm_lobby_texture_atlas2_56
+  - first:
+      213: 2065535538446940296
+    second: tftm_lobby_texture_atlas2_57
+  - first:
+      213: 3285270964707721284
+    second: tftm_lobby_texture_atlas2_58
+  - first:
+      213: 6050822525417708325
+    second: tftm_lobby_texture_atlas2_59
+  - first:
+      213: 4056988223039001993
+    second: tftm_lobby_texture_atlas2_60
+  - first:
+      213: 2602768786482542969
+    second: tftm_lobby_texture_atlas2_61
+  - first:
+      213: 8549133030721412576
+    second: tftm_lobby_texture_atlas2_62
+  - first:
+      213: -8566018826891436157
+    second: tftm_lobby_texture_atlas2_63
+  - first:
+      213: -8879893584536996171
+    second: tftm_lobby_texture_atlas2_64
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 969
+        width: 68
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f76686ccfc60a600800000000000000
+      internalID: 477501393419528181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 973
+        width: 68
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee649cf847d7e2730800000000000000
+      internalID: 3976253460596737774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 973
+        width: 62
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed3e57a2a9502af0800000000000000
+      internalID: -423239809845281311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_21
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 895
+        width: 386
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bda7fe99176f8010800000000000000
+      internalID: 1193285786015346103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_34
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 983
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd3f5fe091b7edc0800000000000000
+      internalID: -3609721340264759843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 780
+        width: 106
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3450902db152170800000000000000
+      internalID: 8152953289332573177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_36
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 658
+        width: 386
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc3a651a33f0fdd0800000000000000
+      internalID: -2454194366123983627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_37
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 855
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f764a719157f14790800000000000000
+      internalID: -7547479570791119233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_38
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 781
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6c892d199ad4600800000000000000
+      internalID: 454205581202867910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_39
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 781
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadeac9711133a740800000000000000
+      internalID: 5162023549024267692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 751
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d32f4b75042f5fb0800000000000000
+      internalID: -4656963883715583023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_41
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 737
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7e424b3e6d94470800000000000000
+      internalID: 8379464855167756194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_42
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 667
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e06a8c9c3921d8a0800000000000000
+      internalID: -6282194664904040222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_43
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 667
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1ad398440922f90800000000000000
+      internalID: -6979857848436153922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_44
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 730
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0691e41bd26d8b990800000000000000
+      internalID: -7369905298455258784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_45
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 703
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913a948ff6f447240800000000000000
+      internalID: 4788539646127219481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_46
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 707
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780b56ed9ade63dc0800000000000000
+      internalID: -3659476333355487097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 677
+        width: 64
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbae546081bd489a0800000000000000
+      internalID: -6231615088142980421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_48
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 666
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15fcea4f00555cc0800000000000000
+      internalID: -3722981490340072166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 656
+        width: 58
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42194c5dff21e530800000000000000
+      internalID: 3882437118991602250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_50
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 662
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c071a5dfd5cd36a0800000000000000
+      internalID: -6467795924681658175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_51
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 528
+        width: 386
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b808aa5240499020800000000000000
+      internalID: 2348979334383405238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_52
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 462
+        width: 242
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771898242ae4f4ca0800000000000000
+      internalID: -6030514917217828489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_53
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 462
+        width: 242
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565b32d540ed70210800000000000000
+      internalID: 1299251127843534181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_54
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 399
+        width: 386
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7540fc82bdf83ee60800000000000000
+      internalID: 7990388335330657367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_55
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 334
+        width: 242
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db6c13ac20eae390800000000000000
+      internalID: -7788166123264119847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_56
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 334
+        width: 242
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ffc02cbca612d20800000000000000
+      internalID: 3251997829304745804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_57
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 270
+        width: 386
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8883318e0a14aac10800000000000000
+      internalID: 2065535538446940296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_58
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 246
+        width: 475
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4400f4a4980a79d20800000000000000
+      internalID: 3285270964707721284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_59
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 120
+        width: 344
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b547a3707d8f350800000000000000
+      internalID: 6050822525417708325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_60
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 120
+        width: 344
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985de244b415d4830800000000000000
+      internalID: 4056988223039001993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_61
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 344
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97934c6db64ee1420800000000000000
+      internalID: 2602768786482542969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_62
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2
+        width: 344
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed55b9323f94a670800000000000000
+      internalID: 8549133030721412576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_63
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 4
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fd3dbf2436f1980800000000000000
+      internalID: -8566018826891436157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tftm_lobby_texture_atlas2_64
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 4
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6f66225d744c480800000000000000
+      internalID: -8879893584536996171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1295 @@
+fileFormatVersion: 2
+guid: a498cdc5a342d8e488bcbe62131e7c8f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3928807824190187594
+    second: voicepanelatlas_0
+  - first:
+      213: -1800990517383836604
+    second: voicepanelatlas_1
+  - first:
+      213: -7888406058858586676
+    second: voicepanelatlas_2
+  - first:
+      213: -7125146845377760235
+    second: voicepanelatlas_3
+  - first:
+      213: 5560510347333426043
+    second: voicepanelatlas_4
+  - first:
+      213: -6908289865543550533
+    second: voicepanelatlas_5
+  - first:
+      213: 3658335707432240193
+    second: voicepanelatlas_6
+  - first:
+      213: -6939515769830892050
+    second: voicepanelatlas_7
+  - first:
+      213: 1451355249452324896
+    second: voicepanelatlas_8
+  - first:
+      213: -6821321257997212773
+    second: voicepanelatlas_9
+  - first:
+      213: 6016757729623766983
+    second: voicepanelatlas_10
+  - first:
+      213: -6803326528240414423
+    second: voicepanelatlas_11
+  - first:
+      213: -1688529869914570955
+    second: voicepanelatlas_12
+  - first:
+      213: -2093468656145409127
+    second: voicepanelatlas_13
+  - first:
+      213: -3915577603032537888
+    second: voicepanelatlas_14
+  - first:
+      213: 4238418188801148842
+    second: voicepanelatlas_15
+  - first:
+      213: 4266582555307714256
+    second: voicepanelatlas_16
+  - first:
+      213: -6893536898270044684
+    second: voicepanelatlas_17
+  - first:
+      213: -9109120475438287061
+    second: voicepanelatlas_18
+  - first:
+      213: -6361627915334769091
+    second: voicepanelatlas_19
+  - first:
+      213: -7363668063503798160
+    second: voicepanelatlas_20
+  - first:
+      213: 9203418672150219580
+    second: voicepanelatlas_21
+  - first:
+      213: 5411825028417279389
+    second: voicepanelatlas_22
+  - first:
+      213: -1037892762772977119
+    second: voicepanelatlas_23
+  - first:
+      213: -2776500995073424569
+    second: voicepanelatlas_24
+  - first:
+      213: 1311680753023319104
+    second: voicepanelatlas_25
+  - first:
+      213: 6125369054548133314
+    second: voicepanelatlas_26
+  - first:
+      213: 2350232351087529633
+    second: voicepanelatlas_27
+  - first:
+      213: -8612226763508607360
+    second: voicepanelatlas_28
+  - first:
+      213: 962138707305312518
+    second: voicepanelatlas_29
+  - first:
+      213: 1305360125667741194
+    second: voicepanelatlas_30
+  - first:
+      213: 779542016763080268
+    second: voicepanelatlas_31
+  - first:
+      213: 3674606468806911160
+    second: voicepanelatlas_32
+  - first:
+      213: 3778380153185717346
+    second: voicepanelatlas_33
+  - first:
+      213: 1878229416246901839
+    second: voicepanelatlas_34
+  - first:
+      213: -6435744620555107154
+    second: voicepanelatlas_35
+  - first:
+      213: 928407299767758850
+    second: voicepanelatlas_36
+  - first:
+      213: -2929842137263597455
+    second: voicepanelatlas_37
+  - first:
+      213: -4818817485348984497
+    second: voicepanelatlas_38
+  - first:
+      213: 2385166188254341490
+    second: voicepanelatlas_39
+  - first:
+      213: -5358883611643782838
+    second: voicepanelatlas_40
+  - first:
+      213: -710183341706265537
+    second: voicepanelatlas_41
+  - first:
+      213: -5525181105946165342
+    second: voicepanelatlas_42
+  - first:
+      213: 1561215035845009519
+    second: voicepanelatlas_43
+  - first:
+      213: 327607244091657930
+    second: voicepanelatlas_44
+  - first:
+      213: -2123925641394663860
+    second: voicepanelatlas_45
+  - first:
+      213: 426447978622839249
+    second: voicepanelatlas_46
+  - first:
+      213: -979918841342297606
+    second: voicepanelatlas_47
+  - first:
+      213: 4183536623087560458
+    second: voicepanelatlas_48
+  - first:
+      213: -3538545789852761947
+    second: voicepanelatlas_49
+  - first:
+      213: -9079778667070904969
+    second: voicepanelatlas_17
+  - first:
+      213: 7919115108498480888
+    second: voicepanelatlas_29
+  - first:
+      213: 5465066273257932473
+    second: voicepanelatlas_0
+  - first:
+      213: -8881840811342595638
+    second: voicepanelatlas_45
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: voicepanelatlas_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 245
+        width: 158
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b75e5089121a79c0800000000000000
+      internalID: -3928807824190187594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 246
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c4d7f9aa89107e0800000000000000
+      internalID: -1800990517383836604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 238
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdd1b9eb70c68290800000000000000
+      internalID: -7888406058858586676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_3
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 235
+        width: 158
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51473ccd1b46e1d90800000000000000
+      internalID: -7125146845377760235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 207
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b51b633b6ea2d40800000000000000
+      internalID: 5560510347333426043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 210
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb978de08f2d020a0800000000000000
+      internalID: -6908289865543550533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_6
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 212
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14440a671f405c230800000000000000
+      internalID: 3658335707432240193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_7
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 210
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed120aac23e1bf90800000000000000
+      internalID: -6939515769830892050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_8
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 210
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0281186e8ef342410800000000000000
+      internalID: 1451355249452324896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_9
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 210
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93614ee47cc551a0800000000000000
+      internalID: -6821321257997212773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_10
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 211
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c77fc5e641df7350800000000000000
+      internalID: 6016757729623766983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_11
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 226
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9211d31719ab591a0800000000000000
+      internalID: -6803326528240414423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 214
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ffa1f87032198e0800000000000000
+      internalID: -1688529869914570955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_13
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 210
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99bd902595182f2e0800000000000000
+      internalID: -2093468656145409127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_14
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 220
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e425c86ae219a9c0800000000000000
+      internalID: -3915577603032537888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_15
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 208
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa70c09f2e2e1da30800000000000000
+      internalID: 4238418188801148842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_16
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 211
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6aefd8a32f53b30800000000000000
+      internalID: 4266582555307714256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_17
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 180
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdd09ce6bc3550a0800000000000000
+      internalID: -6893536898270044684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_18
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 183
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2773459037e59180800000000000000
+      internalID: -9109120475438287061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 187
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d362349cd15f6b7a0800000000000000
+      internalID: -6361627915334769091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_20
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 183
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070b7fe19eefec990800000000000000
+      internalID: -7363668063503798160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_21
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 185
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b06b0458c19bf70800000000000000
+      internalID: 9203418672150219580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_22
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 183
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d955165b03aaa1b40800000000000000
+      internalID: 5411825028417279389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_23
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 183
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ac7fff70aa891f0800000000000000
+      internalID: -1037892762772977119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_24
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 188
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74341263e03e779d0800000000000000
+      internalID: -2776500995073424569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_25
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 183
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cfbaef1b6043210800000000000000
+      internalID: 1311680753023319104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_26
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 193
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5038693bea10550800000000000000
+      internalID: 6125369054548133314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_27
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 183
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae043a0fd3bd9020800000000000000
+      internalID: 2350232351087529633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_28
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 184
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08615fb53693b7880800000000000000
+      internalID: -8612226763508607360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_29
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 154
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60136918e043a5d00800000000000000
+      internalID: 962138707305312518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_30
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 156
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e82624e129d1210800000000000000
+      internalID: 1305360125667741194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ea7a4855d71da00800000000000000
+      internalID: 779542016763080268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_32
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 156
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4a69e4d13def230800000000000000
+      internalID: 3674606468806911160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_33
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 158
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c45090bb08f6430800000000000000
+      internalID: 3778380153185717346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_34
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 156
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cf51ae3bfc01a10800000000000000
+      internalID: 1878229416246901839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_35
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 156
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea48eaa9d54afa6a0800000000000000
+      internalID: -6435744620555107154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_36
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 156
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200798d258d52ec00800000000000000
+      internalID: 928407299767758850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_37
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 166
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1789e60691c1757d0800000000000000
+      internalID: -2929842137263597455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_38
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 156
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49255c370f102db0800000000000000
+      internalID: -4818817485348984497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_39
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 157
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2792c25d200d91120800000000000000
+      internalID: 2385166188254341490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_40
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 108
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a495f4f6fbb61a5b0800000000000000
+      internalID: -5358883611643782838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_41
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cb230730ce426f0800000000000000
+      internalID: -710183341706265537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_42
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aff06cce0d9253b0800000000000000
+      internalID: -5525181105946165342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_43
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f606a8dadcc8aa510800000000000000
+      internalID: 1561215035845009519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_44
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace8de18d05eb8400800000000000000
+      internalID: 327607244091657930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_45
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 5
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 20, y: 20, z: 20, w: 20}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac97b5017dc5db480800000000000000
+      internalID: -8881840811342595638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_46
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 45
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d96ff85d2c0be500800000000000000
+      internalID: 426447978622839249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_47
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 44
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af974117101a662f0800000000000000
+      internalID: -979918841342297606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voicepanelatlas_48
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 5
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07a8f3b468ee0a30800000000000000
+      internalID: 4183536623087560458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
