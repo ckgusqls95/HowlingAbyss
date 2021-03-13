@@ -9,7 +9,6 @@ public abstract class Champion : Units
 {
     #region ChampionCommonData
     
-    [SerializeField]
     protected Skill[] championSkill;
     public Skill[] ChampionSkill { get { return championSkill; } }
     

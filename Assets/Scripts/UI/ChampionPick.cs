@@ -3,24 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Photon.Pun;
 
-public class ChampionPick : MonoBehaviour
+public class ChampionPick : MonoBehaviourPunCallbacks, IPunObservable
 {
+    public enum ChampionName { Ahri, LeeSin, Lucian  }
     public enum SummonerSpell { EXHAUST, IGNITE, FLASH, CLEANSE, HEAL, BARRIER }
-    public enum Champion { Ahri, LeeSin, Lucian }
 
     [SerializeField]
     private ChampionData[] championData;
 
-    [SerializeField]
+    [SerializeField]  
     private SummonerSpellData summonerSpell;
 
     [SerializeField]
     private Image myChampionCircleImage;
+
     private Button[] ChampionChoiceButton;
 
     [SerializeField]
     private Button[] ChampionUseSpellButton;
+
     private Button[] ChampionSpellButton;
 
     private Button LastSellectedButton;
@@ -38,9 +41,10 @@ public class ChampionPick : MonoBehaviour
 
     private Image LastSpellChoiceImage;
 
-    private float LimitTime = 80.0f;
-
     private Button ExitPickRoomButton;
+
+    private float LimitTime = 80.0f;
+    private int allReadyCount = 0;
 
     private void Awake()
     {
@@ -52,14 +56,12 @@ public class ChampionPick : MonoBehaviour
     void Start()
     {
         MatchingChampionButton();
-        ButtonListener();
     }
 
     // Update is called once per frame
     void Update()
     {
-        LimitTime -= Time.deltaTime;
-        pickTime.text = System.Math.Truncate(LimitTime).ToString();
+        StartCoroutine("StartLimitTime");
     }
 
     public void MatchingChampionCircleImage(ChampionData championCircleData)
@@ -79,11 +81,11 @@ public class ChampionPick : MonoBehaviour
 
         if (LastSellectedButton.name == "Spell Left Button")
         {
-            GameManager.Instance.player.SpellIndex[0] = index;
+            GameManager.Instance.SpellIndex[0] = index;
         }
         else
         {
-            GameManager.Instance.player.SpellIndex[1] = index;
+            GameManager.Instance.SpellIndex[1] = index;
         }
     }
 
@@ -122,13 +124,6 @@ public class ChampionPick : MonoBehaviour
         }
     }
 
-    private void ButtonListener()
-    {
-        ChampionChoiceButton[0].onClick.AddListener(delegate { MatchingChampionCircleImage(championData[(int)Champion.Ahri]); });
-        ChampionChoiceButton[1].onClick.AddListener(delegate { MatchingChampionCircleImage(championData[(int)Champion.LeeSin]); });
-        ChampionChoiceButton[2].onClick.AddListener(delegate { MatchingChampionCircleImage(championData[(int)Champion.Lucian]); });
-    }
-
     public void SearchChampion(TMP_InputField searchText)
     {
         for (int index = 0; index < championData.Length; ++index)
@@ -146,17 +141,67 @@ public class ChampionPick : MonoBehaviour
         }
     }
 
-    public void OnClickExitPickRoom()
-    {
-        FindObjectOfType<Canvas>().GetComponent<LobbySceneUI>().ExitPickRoom();
-    }
-
     public void SelectChampion(string _championName)
     {
-        GameManager.Instance.player.ChampionName = _championName;
+        GameManager.Instance.ChampionName = _championName;
     }
+
     //public void SelectSummonerSpell(int index)
     //{
     //    GameManager.Instance.player.SpellIndex = index;
     //}
+
+    public void OnLeaveButton()
+    {
+        FindObjectOfType<Canvas>().GetComponent<LobbySceneUI>().LeaveRoom();
+    }
+
+    public void ReadyAllPlayer()
+    {
+        allReadyCount++;
+        if (allReadyCount == PhotonNetwork.CurrentRoom.PlayerCount)
+        {
+            NetworkManager.Instance.StartGame();
+        }
+    }
+
+    public void LimitTimeExcess()
+    {
+        if( LimitTime < 0.1f)
+        {
+            if (GameManager.Instance.ChampionName == null)
+            {
+                FindObjectOfType<Canvas>().GetComponent<LobbySceneUI>().LeaveRoom();
+            }
+            else
+            {
+                NetworkManager.Instance.StartGame();
+            }
+        }
+    }
+
+    IEnumerator StartLimitTime()
+    {
+        LimitTime -= Time.deltaTime;
+        pickTime.text = System.Math.Truncate(LimitTime).ToString();
+
+        if (LimitTime < 0.1f)
+        {
+            LimitTimeExcess();
+            yield break;
+        }
+        yield return null;
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if(stream.IsWriting)
+        {
+            stream.SendNext(allReadyCount);
+        }
+        else
+        {
+            allReadyCount = (int)stream.ReceiveNext();
+        }
+    }
 }

@@ -13,12 +13,6 @@ public class PlayerController : MonoBehaviour
     public NavMeshAgent naviAgent;
     public GameObject target = null;
     private RaycastHit[] hits;
-    private string championName;
-    public string ChampionName { get { return championName; } set { championName = value; } }
-    private int[] spellIndex;
-    public int[] SpellIndex { get { return spellIndex; } set { spellIndex = value; } }
-    private int masteryIndex;
-    public int MasteryIndex { get { return masteryIndex; } set { masteryIndex = value; } }
     private Champion champion;
     private InventorySystem inventory;
     private PhotonView PV;
@@ -90,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // if(PV.IsMine)
+        if (PV.IsMine)
         {
             Targeting();
             if (Input.anyKeyDown)
@@ -104,7 +98,6 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-
 
     }
 

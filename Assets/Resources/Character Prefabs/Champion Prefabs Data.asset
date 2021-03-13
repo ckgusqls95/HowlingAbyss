@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56041e6a7e635fe4b87c7dea854446d1, type: 3}
+  m_Name: Champion Prefabs Data
+  m_EditorClassIdentifier: 
+  ahriPrefab: {fileID: 4643379022913931557, guid: 5718f108392af7549b4851d3e5829b6d,
+    type: 3}
+  leeSinPrefab: {fileID: 1374611952236735304, guid: cc9486cc23c15214991b68a4635f2bf1,
+    type: 3}
+  lucianPrefab: {fileID: 0}

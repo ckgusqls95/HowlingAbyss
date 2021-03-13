@@ -6,8 +6,14 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public PlayerController player;
     private static GameManager instance = null;
+
+    private string championName;
+    public string ChampionName { get { return championName; } set { championName = value; } }
+    private int[] spellIndex;
+    public int[] SpellIndex { get { return spellIndex; } set { spellIndex = value; } }
+    private int masteryIndex;
+    public int MasteryIndex { get { return masteryIndex; } set { masteryIndex = value; } }
 
     private void Awake()
     {

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    [SerializeField]
     private Transform target;
+    public Transform Target { get { return target; } set { target = value; } }
 
     private float dist = 7.0f;
 

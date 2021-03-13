@@ -8,6 +8,7 @@ namespace Unit
 {
 
     #region Properties
+    [System.Serializable]
     public struct Status
     {
         public int level;
@@ -79,12 +80,6 @@ namespace Unit
         }
     }
 
-    public struct Sight
-    {
-        public float sightRange;
-        public float attackRange;
-        public float aggroRange;
-    }
     #endregion
 
     #region Override
@@ -122,13 +117,13 @@ namespace Unit
         [HideInInspector]
         protected Status unitStatus; // 
 
-        protected Sight unitSight;
+        protected UnitData.Sight unitSight;
         public UnitsTag unitTag;
 
         protected PhotonView PV;
 
         public Status UnitStatus { get { return unitStatus; } set { unitStatus = value; } }
-        public Sight UnitSight { get { return UnitSight; } set { unitSight = value; } }
+        public UnitData.Sight UnitSight { get { return UnitSight; } set { unitSight = value; } }
         public UnitsTag UnitTag { get { return unitTag; } set { unitTag = value; } }
 
         //[HideInInspector]
@@ -145,14 +140,14 @@ namespace Unit
 
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
-            if (stream.IsWriting)
-            {
-                stream.SendNext(unitStatus);
-            }
-            else
-            {
-                this.unitStatus = (Status)stream.ReceiveNext();
-            }
+            //if (stream.IsWriting)
+            //{
+            //    stream.SendNext(unitStatus);
+            //}
+            //else
+            //{
+            //    this.unitStatus = (Status)stream.ReceiveNext();
+            //}
         }
 
         public float hit(AttackType type, float damage, float Penetration = 0.0f)

@@ -16,7 +16,6 @@ public class UI : MonoBehaviour
 
     private Button joinServerButton;
     private Button createRoomButton;
-    private Button createInGame;
 
     public string UserID { get { return userID; } set { userID = value; } }
     public string UserPassword { get { return userPassword; } set { userPassword = value; } }
@@ -25,9 +24,6 @@ public class UI : MonoBehaviour
 
     public Button JoinServerButton { get { return joinServerButton; } set { joinServerButton = value; } }
     public Button CreateRoomButton { get { return createRoomButton; } set { createRoomButton = value; } }
-
-    public Button CreateInGame { get { return createInGame; } set { createInGame = value; } }
-
 
     public static string nextScene;
 
@@ -78,12 +74,6 @@ public class UI : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "LogIn")
         {
             ButtonInteractable();
-
-        }
-        if (SceneManager.GetActiveScene().name == "Lobby")
-        {
-            createInGame = FindObjectOfType<Canvas>().transform.Find("UserCustumGame Pick").Find("Button").Find("GameStart").GetComponent<Button>();
-            createInGame.onClick.AddListener(OnButtonCreateInGame);
         }
     }
 
@@ -180,11 +170,5 @@ public class UI : MonoBehaviour
     //public void SaveLoginState()
     //{
     //}
-    public void OnButtonCreateInGame()
-    {
-        LoadScene("Howling Abyss");
-    }
-
-
-
+   
 }

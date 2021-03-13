@@ -49,17 +49,6 @@ public class LobbySceneUI : MonoBehaviourPun
         NetworkManager.Instance.startGameButton = this.transform.Find("UserCustumGame Lobby").Find("Start Game").gameObject;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void UserCustumGameCreate()
     {
         lastCanvas.SetActive(false);
@@ -117,7 +106,6 @@ public class LobbySceneUI : MonoBehaviourPun
     public void EnteredNewPlayer(string newPlayerName)
     {
         Vector3 ghestPosition = userNameTextPrefab.transform.position + new Vector3(-150, 0, 0);
-        //playerList[1] = PhotonNetwork.Instantiate(userNameTextPrefab, ghestPosition, userNameTextPrefab.transform.rotation);
     }
 
     public void LeftNewPlayer()
@@ -130,6 +118,16 @@ public class LobbySceneUI : MonoBehaviourPun
         photonView.RPC("UserCustumGamePick", RpcTarget.All);
     }
 
+    public void LeaveRoom()
+    {
+        photonView.RPC("OnLeaveRoom", RpcTarget.All);
+    }
+
+    public void QuitApplication()
+    {
+        Application.Quit();
+    }
+
     [PunRPC]
     public void UserCustumGamePick()
     {
@@ -138,5 +136,12 @@ public class LobbySceneUI : MonoBehaviourPun
         transform.Find("Common UI").gameObject.SetActive(false);
         lastCanvas.SetActive(false);
         transform.Find("UserCustumGame Pick").gameObject.SetActive(true);
+    }
+
+    [PunRPC]
+    public void OnLeaveRoom()
+    {
+        ExitPickRoom();
+        PhotonNetwork.LeaveRoom();
     }
 }

@@ -6,37 +6,49 @@ using Photon.Pun;
 public class PlayerSpawn : MonoBehaviour
 {
     [SerializeField]
-    private GameObject Leesin;
-    [SerializeField]
-    private GameObject Ahri;
+    private ChampionPrefabData ChampionPrefab;
+    GameObject championObj;
+
+    private void Awake()
+    {
+        MatchChampion();
+        //pV = GetComponent<PhotonView>();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        //if(GameManager.Instance.player.ChampionName == "Ahri")
-        //{
-        //    Instantiate(Ahri);
-        //}
-        //else if (GameManager.Instance.player.ChampionName == "LeeSin")
-        //{
-        //    Instantiate(Leesin);
-        //}
 
-        if(PhotonNetwork.IsMasterClient)
-        {
-            this.transform.position = new Vector3(114, 0, 113);
-            Instantiate(Ahri, this.transform.position, this.transform.rotation,this.transform);
-        }
-        else 
-        {
-            this.transform.position = new Vector3(12, 0, 14);
-            Instantiate(Leesin, this.transform.position, this.transform.rotation,this.transform);
-        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void MatchChampion()
     {
+        if (GameManager.Instance.ChampionName == "Ahri")
+        {
+            championObj = PhotonNetwork.Instantiate("Ahri Prefab", Vector3.zero, Quaternion.identity);
+        }
+        else if (GameManager.Instance.ChampionName == "LeeSin")
+        {
+            championObj = PhotonNetwork.Instantiate("Leesin Prefab", Vector3.zero, Quaternion.identity);
+        }
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            championObj.transform.position = new Vector3(114, 0, 113);
+            championObj.GetComponent<PlayerController>().tag = "Red";
+        }
+        else
+        {
+            championObj.transform.position = new Vector3(12, 0, 14);
+            championObj.GetComponent<PlayerController>().tag = "Blue";
+        }
         
+        Camera.main.GetComponent<CameraMove>().Target = championObj.transform;
+        
+        //else if (GameManager.Instance.ChampionName == "Lucian")
+        //{
+        //    PhotonNetwork.Instantiate("Lucian Prefab", Vector3.zero, Quaternion.identity);
+        //}
     }
+
 }

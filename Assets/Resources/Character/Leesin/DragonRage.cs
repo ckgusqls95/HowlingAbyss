@@ -12,7 +12,7 @@ public class DragonRage : Skill
     public GameObject Particle2;
     protected override void Awake()
     {
-        coolTime = 1.0f;
+        coolTime = 18.0f;
         animator = GetComponent<Animator>();
 
         Transform[] childrens = GetComponentsInChildren<Transform>();
