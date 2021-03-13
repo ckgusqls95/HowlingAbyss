@@ -20,8 +20,8 @@ public class SonicWave : Skill
 
         Resources.Load("Character/Leesin/SonicWave");
         animator = GetComponent<Animator>();
-        pc = this.transform.parent.GetComponent<PlayerController>();
-        agent = transform.parent.GetComponent<NavMeshAgent>();
+        pc = this.transform.GetComponent<PlayerController>();
+        agent = transform.GetComponent<NavMeshAgent>();
         Transform[] childrens = GetComponentsInChildren<Transform>();
         foreach(Transform child in childrens)
         {

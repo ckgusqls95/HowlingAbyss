@@ -20,7 +20,10 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = target.position - (1 * Vector3.forward * dist) + (Vector3.up * height);
-        transform.LookAt(target);
+        if(target)
+        {
+            transform.position = target.position - (1 * Vector3.forward * dist) + (Vector3.up * height);
+            transform.LookAt(target);
+        }
     }
 }

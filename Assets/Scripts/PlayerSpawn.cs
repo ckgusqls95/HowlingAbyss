@@ -23,6 +23,8 @@ public class PlayerSpawn : MonoBehaviour
 
     public void MatchChampion()
     {
+        if (GameManager.Instance == null) return;
+
         if (GameManager.Instance.ChampionName == "Ahri")
         {
             championObj = PhotonNetwork.Instantiate("Ahri Prefab", Vector3.zero, Quaternion.identity);
