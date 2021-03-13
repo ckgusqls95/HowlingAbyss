@@ -55,6 +55,7 @@ public class CharmParticle : MonoBehaviour
         {
             Vector3 pos = new Vector3(0, 0, 0);
             GameObject Effecter = Instantiate(Effect,pos, Quaternion.identity, other.transform);
+            SoundManager.instance.PlaySE("SFX_charmHit", Effecter);
             Effecter.GetComponent<CharmEffect>().initialize(parent);
             Object.Destroy(this.gameObject);            
         }

@@ -47,13 +47,13 @@ public class Minion_Siege : Units
 
         agent.SetDestination(goal.transform.position);
         unitTag = UnitsTag.Minion;
-        unitStatus = Status.Initialize(minionSiegeData.initStatus);
+        UnitStatus = Status.Initialize(minionSiegeData.initStatus);
         HUD = GetComponentInChildren<HUD__HP>();
     }
 
     private void FixedUpdate()
     {
-        if (unitStatus.health < 0.0f && !isDeath)
+        if (UnitStatus.health < 0.0f && !isDeath)
         {
 
             animator.SetTrigger("Death");

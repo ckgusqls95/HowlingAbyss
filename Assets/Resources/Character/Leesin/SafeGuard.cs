@@ -57,7 +57,8 @@ public class SafeGuard : Skill
         StartCoroutine(CalculationCooltime());
         instanceParticle = Instantiate(particleObj, chest.transform.position, Quaternion.identity, this.transform);
         currentCoolTime = coolTime;
-        
+        Leesin player = gameObject.GetComponent<Leesin>();
+        player.playsound("SFX_Safeguard");
     }
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)

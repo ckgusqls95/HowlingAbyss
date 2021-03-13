@@ -6,7 +6,6 @@ using Photon.Realtime;
 
 namespace Unit
 {
-
     #region Properties
     public struct Status
     {
@@ -78,13 +77,6 @@ namespace Unit
             return temp;
         }
     }
-
-    public struct Sight
-    {
-        public float sightRange;
-        public float attackRange;
-        public float aggroRange;
-    }
     #endregion
 
     #region Override
@@ -118,17 +110,13 @@ namespace Unit
     public class Units : MonoBehaviourPun, IPunObservable
     {
         #region Members
-
-        [HideInInspector]
-        protected Status unitStatus; // 
-
-        protected Sight unitSight;
         public UnitsTag unitTag;
 
         protected PhotonView PV;
 
-        public Status UnitStatus { get { return unitStatus; } set { unitStatus = value; } }
-        public Sight UnitSight { get { return UnitSight; } set { unitSight = value; } }
+        public Status UnitStatus;
+        public UnitData.Sight UnitSight;
+
         public UnitsTag UnitTag { get { return unitTag; } set { unitTag = value; } }
 
         //[HideInInspector]
@@ -147,11 +135,11 @@ namespace Unit
         {
             if (stream.IsWriting)
             {
-                stream.SendNext(unitStatus);
+                stream.SendNext(UnitStatus);
             }
             else
             {
-                this.unitStatus = (Status)stream.ReceiveNext();
+                this.UnitStatus = (Status)stream.ReceiveNext();
             }
         }
 
@@ -165,7 +153,7 @@ namespace Unit
             {
                 case AttackType.MEELEE:
                 case AttackType.AD_SKILL:
-                    Resist = unitStatus.armor;
+                    Resist = UnitStatus.armor;
                     break;
                 case AttackType.AP_SKILL:
                     Resist = UnitStatus.magicResist;
@@ -180,7 +168,7 @@ namespace Unit
 
             SufferDamege = (percent / (percent + Resist - Penetration)) * damage;
 
-            unitStatus.health -= SufferDamege;
+            UnitStatus.health -= SufferDamege;
 
             return SufferDamege;
         }
@@ -200,12 +188,12 @@ namespace Unit
                 case AttackType.MEELEE:
                 case AttackType.AD_SKILL:
                     {
-                        Damege += (unitStatus.attackDamage * factor); 
+                        Damege += (UnitStatus.attackDamage * factor); 
                     }
                     break;
                 case AttackType.AP_SKILL:
                     {
-                       Damege += (unitStatus.abilityPower * factor);
+                       Damege += (UnitStatus.abilityPower * factor);
                     }
                     break;
                 default:

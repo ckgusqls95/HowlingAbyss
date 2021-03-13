@@ -20,11 +20,11 @@ public class Merchant : MonoBehaviour
     {
         if(!string.IsNullOrEmpty(PrevPlaySound))
         {
-            SoundManager.instance.StopSE(PrevPlaySound);
+            SoundManager.instance.StopSE(PrevPlaySound,gameObject);
         }
         
         int index = Random.Range(0, vo.Length);
-        SoundManager.instance.PlaySE(vo[index]);
+        SoundManager.instance.PlaySE(vo[index],gameObject);
         PrevPlaySound = vo[index];
     }
 }

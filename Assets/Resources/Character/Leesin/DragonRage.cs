@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SkillSystem;
+using Unit;
 
 public class DragonRage : Skill
 {
@@ -47,12 +48,26 @@ public class DragonRage : Skill
             return false;
         }
 
+        if(target.TryGetComponent<Units>(out Units script))
+        {
+            if(script.UnitTag != UnitsTag.Champion)
+            {
+                return false;
+            }
+
+        }
+        else
+        {
+            return false;
+        }
+
+
         Vector3 direction = (target.transform.position - this.transform.position);
         direction  = direction.normalized;
         float Rotation = Mathf.Acos(Vector3.Dot(this.transform.forward,direction));
         Rotation *= Mathf.Rad2Deg;
-        Debug.Log(Rotation);
-        const float ViewAngle = 30.0f;
+        
+        const float ViewAngle = 60.0f;
 
         if(Rotation < ViewAngle)
         {

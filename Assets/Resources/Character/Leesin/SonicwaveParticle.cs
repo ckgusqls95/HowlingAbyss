@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unit;
 using UnityEngine;
 
 public class SonicwaveParticle : MonoBehaviour
@@ -7,7 +8,7 @@ public class SonicwaveParticle : MonoBehaviour
     #region member
     ParticleSystem[] psArray;
     private Vector3 dir;
-    private float speed = 5.0f;
+    private float speed = 10.0f;
     private SonicWave parent;
     private Vector3 startpos;
     private Collider col;
@@ -32,10 +33,10 @@ public class SonicwaveParticle : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if(Vector3.Distance(startpos,this.transform.position) >= 100.0f)
+    {        
+        if(Vector3.Distance(startpos,this.transform.position) >= 10.0f)
         {
-
+            Object.Destroy(gameObject);
         }
         else
         {
@@ -46,21 +47,29 @@ public class SonicwaveParticle : MonoBehaviour
 
     public void init(GameObject parentObject)
     {
-        startpos = this.transform.position;
-        dir = parentObject.transform.forward.normalized;
         parent = parentObject.GetComponent<SonicWave>();
+        startpos = transform.position;
+
+        dir = parentObject.transform.forward;
+        dir.y = 0.0f;
+        dir = dir.normalized; 
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(parent)
+        if (parent)
         {
-            if(!parent.transform.CompareTag(other.transform.tag))
+            if (other.TryGetComponent<Units>(out Units script))
             {
-                parent.HitObject = other.transform.gameObject;
-                Object.Destroy(this.gameObject);
+                if ((script.UnitTag == UnitsTag.Minion ||
+                    script.UnitTag == UnitsTag.Champion) &&
+                    !other.CompareTag(parent.tag))
+                {
+                    parent.HitObject = other.transform.gameObject;
+                }
             }
-
         }
+        Object.Destroy(gameObject);
     }
+
 }

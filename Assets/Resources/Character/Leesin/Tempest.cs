@@ -72,4 +72,9 @@ public class Tempest : Skill
             script.init(this.transform.gameObject);
         }
     }
+
+    void CreateCripple()
+    {
+
+    }
 }

@@ -19,26 +19,26 @@ public abstract class Champion : Units
     {
         
         unitTag = UnitsTag.Champion;
+        
     }
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
         #region InitStatus
-        {
-            unitStatus.abilityPower = 0.0f;
-            unitStatus.abilityHaste = 0.0f;
-            unitStatus.armorPenetration = 0.0f;
-            unitStatus.magicPenetration = 0.0f;
-            unitStatus.experience = 0.0f;
-            unitStatus.killExperience = 0.0f;
-            unitStatus.killGold = 300.0f;
-            unitStatus.level = 1;
-            unitStatus.spellVamp = 0.0f;
-            unitStatus.lifeSteal = 0.0f;
+        
+        UnitStatus.abilityPower = 0.0f;
+        UnitStatus.abilityHaste = 0.0f;
+        UnitStatus.armorPenetration = 0.0f;
+        UnitStatus.magicPenetration = 0.0f;
+        UnitStatus.experience = 0.0f;
+        UnitStatus.killExperience = 0.0f;
+        UnitStatus.killGold = 300.0f;
+        UnitStatus.level = 1;
+        UnitStatus.spellVamp = 0.0f;
+        UnitStatus.lifeSteal = 0.0f;
 
-            unitTag = UnitsTag.Champion;
-        }
+        unitTag = UnitsTag.Champion;
         #endregion
     }
 

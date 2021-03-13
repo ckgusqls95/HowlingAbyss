@@ -1712,9 +1712,14 @@ GameObject:
   - component: {fileID: 3630474701179600692}
   - component: {fileID: 3630474701179600699}
   - component: {fileID: 919132149000206184}
+  - component: {fileID: 705915359}
+  - component: {fileID: 705915360}
+  - component: {fileID: 705915361}
+  - component: {fileID: 963354709}
+  - component: {fileID: 963354711}
   m_Layer: 0
   m_Name: Ahri
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1767,8 +1772,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitTag: 1
+  UnitSight:
+    sightRange: 0
+    attackRange: 0
+    aggroRange: 0
   Target: {fileID: 0}
+  isDeath: 0
   championSkill: []
+  AhriData: {fileID: 11400000, guid: fbeb3d1e2b7cdaf4a9ef0eb926ba5662, type: 2}
 --- !u!114 &3630474701179600693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1824,8 +1835,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters: []
-  m_SynchronizeLayers: []
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 0
+    Name: attack
+  - Type: 3
+    SynchronizeType: 0
+    Name: attackNum
+  - Type: 4
+    SynchronizeType: 0
+    Name: run
+  - Type: 9
+    SynchronizeType: 0
+    Name: Charm
+  - Type: 9
+    SynchronizeType: 0
+    Name: Orb
+  - Type: 9
+    SynchronizeType: 0
+    Name: FoxFire
+  - Type: 9
+    SynchronizeType: 0
+    Name: SpritRush
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
 --- !u!114 &919132149000206184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1842,7 +1876,102 @@ MonoBehaviour:
   particleObj: {fileID: 1011056256076072, guid: 0bcacf20f1c4bb64a9a14ae2d630c398,
     type: 3}
   particleSystemPrefab: {fileID: 0}
+  skillType: 1
+  skillFactor: 0
+  skillButton: {fileID: 0}
+--- !u!114 &705915359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513557152063853620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62aeb5df0abc2a643a4e13f29b7ae091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillImgae: {fileID: 0}
+  particleObj: {fileID: 1762241516880736062, guid: 8d7ae3bfd68fa9e4686a0616b1f1088f,
+    type: 3}
+  particleSystemPrefab: {fileID: 0}
   skillType: 0
+  skillFactor: 0
+  skillButton: {fileID: 0}
+--- !u!114 &705915360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513557152063853620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c017662e5448e39438d545ae5bbcb1ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillImgae: {fileID: 0}
+  particleObj: {fileID: 662101548354500672, guid: f65519bf3485b054081e22cc4822e373,
+    type: 3}
+  particleSystemPrefab: {fileID: 0}
+  skillType: 0
+  skillFactor: 0
+  skillButton: {fileID: 0}
+--- !u!114 &705915361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513557152063853620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4899d7e593d3004fa81f2ac24481e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillImgae: {fileID: 0}
+  particleObj: {fileID: 6929691377159792921, guid: 6866114b48f5add4bb2224e2e3bb9b02,
+    type: 3}
+  particleSystemPrefab: {fileID: 0}
+  skillType: 0
+  skillFactor: 0
+  skillButton: {fileID: 0}
+--- !u!114 &963354709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513557152063853620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62aeb5df0abc2a643a4e13f29b7ae091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillImgae: {fileID: 0}
+  particleObj: {fileID: 1762241516880736062, guid: 8d7ae3bfd68fa9e4686a0616b1f1088f,
+    type: 3}
+  particleSystemPrefab: {fileID: 0}
+  skillType: 1
+  skillFactor: 0
+  skillButton: {fileID: 0}
+--- !u!114 &963354711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513557152063853620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c017662e5448e39438d545ae5bbcb1ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillImgae: {fileID: 0}
+  particleObj: {fileID: 662101548354500672, guid: f65519bf3485b054081e22cc4822e373,
+    type: 3}
+  particleSystemPrefab: {fileID: 0}
+  skillType: 1
   skillFactor: 0
   skillButton: {fileID: 0}
 --- !u!1 &4550290433174157454

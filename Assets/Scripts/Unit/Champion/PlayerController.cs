@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 {
     #region member
     public NavMeshAgent naviAgent;
-    public GameObject target = null;
+    
     private RaycastHit[] hits;
     private string championName;
     public string ChampionName { get { return championName; } set { championName = value; } }
@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
     private InventorySystem inventory;
     private PhotonView PV;
     public int gold = 0;
-
     [HideInInspector]
     public float speed = 10.0f;
 
@@ -105,7 +104,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-
     }
 
     private void Targeting()
@@ -118,16 +116,15 @@ public class PlayerController : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Map"))
                 {
-                    targetpos = hit.point;
-                    
+                    targetpos = hit.point;                    
                 }
                 else
                 {
-                    if (hit.collider.transform == this.transform) return;
+                    if (hit.collider.transform == champion.transform) return;
                     if (hit.collider.CompareTag("particle")) return;
+
                     TargetOutline(hit.transform);
-                    // minion champion etc
-                    //
+
                     if (hit.collider.CompareTag("Shop") && hit.transform.parent.CompareTag(this.transform.tag))
                     {
                         if (GameObject.FindWithTag("Canvas").TryGetComponent<IngameUIController>(out IngameUIController UI))
@@ -140,22 +137,31 @@ public class PlayerController : MonoBehaviour
                         }
                     }
 
-                    Champion script = GetComponentInChildren<Champion>();
+                    #region attack
 
-                    if (script)
+                    float distance = Vector3.Distance(gameObject.transform.position, hit.transform.position);
+                    if (distance <= champion.UnitSight.attackRange && !hit.transform.CompareTag(gameObject.tag))
                     {
-                        script.Targeting(hit.transform.gameObject);
+
+                        Debug.Log("attack");
+                        animator.SetBool("run", false);
+                        animator.SetBool("attack", true);
+                        StartCoroutine(attack(hit.transform.position));
                     }
 
+                    #endregion
 
+                    champion.Targeting(hit.transform.gameObject);
                 }
             }
+            
         }
 
         if (MovePlayer(targetpos))
         {
             turn(targetpos);
         }
+
     }
 
     private bool MovePlayer(Vector3 target)
@@ -176,19 +182,13 @@ public class PlayerController : MonoBehaviour
 
         if (dis >= 0.5f)
         {
-            //if (agent.CalculatePath(target,agent.path))
-            {
-                naviAgent.SetDestination(target);
-                animator.SetBool("run", true);
-                // ani
-            }
+            naviAgent.SetDestination(target);
+            animator.SetBool("run", true);
+            animator.SetBool("attack", false);
             return true;
         }
-        else
-        {
-            animator.SetBool("run", false);
-        }
 
+        animator.SetBool("run", false);
         return false;
     }
     private void turn(Vector3 target)
@@ -232,6 +232,18 @@ public class PlayerController : MonoBehaviour
         }
 
         Target = newTarget;
+    }
+
+
+    IEnumerator attack(Vector3 pos)
+    {
+        while(animator.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1.0f)
+        {
+            turn(pos);
+            yield return new WaitForFixedUpdate();
+        }
+
+        animator.SetBool("attack", false);
     }
 
 }

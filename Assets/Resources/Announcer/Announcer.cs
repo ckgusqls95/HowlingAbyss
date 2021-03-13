@@ -17,7 +17,7 @@ public class Announcer : MonoBehaviour
     }
     
     private Dictionary<RequestMenu, string> soundMenu = new Dictionary<RequestMenu, string>();
-    const string Path = "Announcer";
+    const string Path = "Announcer/SE/";
 
     private void Awake()
     {

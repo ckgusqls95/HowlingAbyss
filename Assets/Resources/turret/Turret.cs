@@ -47,16 +47,14 @@ public class Turret : Units
         linerender.startWidth = linerender.endWidth = 0.1f;
         linerender.enabled = false;
 
-        unitStatus = Status.Initialize(turretData.initStatus);
-        unitTag = UnitsTag.Turret;
+        UnitStatus = Status.Initialize(turretData.initStatus);
+        UnitTag = UnitsTag.Turret;
 
-        //Test
-        unitStatus.health = 1.0f;
     }
 
     private void Update()
     {
-        if(unitStatus.health <= 0.0f)
+        if(UnitStatus.health <= 0.0f)
         {
             isDeath = true;
             GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(gameObject);

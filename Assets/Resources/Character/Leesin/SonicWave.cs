@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SkillSystem;
+using UnityEngine.AI;
 public class SonicWave : Skill
 {
     private bool sonicWave;
@@ -9,7 +10,8 @@ public class SonicWave : Skill
     public GameObject HitObject;
     private GameObject hand;
     const float flyspeed = 15.0f;
-
+    public PlayerController pc;
+    public NavMeshAgent agent;
     protected override void Awake()
     {
         base.Awake();
@@ -18,7 +20,8 @@ public class SonicWave : Skill
 
         Resources.Load("Character/Leesin/SonicWave");
         animator = GetComponent<Animator>();
-
+        pc = this.transform.parent.GetComponent<PlayerController>();
+        agent = transform.parent.GetComponent<NavMeshAgent>();
         Transform[] childrens = GetComponentsInChildren<Transform>();
         foreach(Transform child in childrens)
         {
@@ -85,31 +88,28 @@ public class SonicWave : Skill
 
     IEnumerator FlyingAnimation()
     {
-        this.transform.parent.GetComponent<PlayerController>().isStopMove = true;
-
+        pc.isStopMove = true;
+        agent.isStopped = true;
         Vector3 target = HitObject.transform.position;
         target.y = this.transform.position.y;
-
-        while (Vector3.Distance(target, this.transform.parent.position) >= 0.3f)
-        {
-            this.transform.parent.position = Vector3.MoveTowards(this.transform.parent.position, target, flyspeed * Time.deltaTime);
+        float step = flyspeed * Time.deltaTime;
+        while (Vector3.Distance(target, this.transform.parent.position) > 2f)
+        {            
+            this.transform.parent.position = Vector3.MoveTowards(this.transform.parent.position, target, step);
             this.transform.parent.transform.LookAt(target);
-
-            target = HitObject.transform.position;
-            target.y = this.transform.position.y;
-
-            yield return new WaitForFixedUpdate();
+            yield return null;
         }
 
-        this.transform.parent.GetComponent<PlayerController>().targetpos = this.transform.parent.transform.position;
-        this.transform.parent.GetComponent<PlayerController>().isStopMove = false;
+        pc.targetpos = this.transform.parent.transform.position;
+        pc.isStopMove = false;
+        agent.isStopped = false;
 
         animator.SetBool("ResonatingStrike", false);
         HitObject = null;
     }
     void CreateSonicWave()
     {
-        GameObject instance = Instantiate(particleObj, hand.transform.position, Quaternion.identity, null);
+        GameObject instance = Instantiate(particleObj,hand.transform.position,Quaternion.identity, null);
 
         SonicwaveParticle script;
         if (instance.TryGetComponent<SonicwaveParticle>(out script))

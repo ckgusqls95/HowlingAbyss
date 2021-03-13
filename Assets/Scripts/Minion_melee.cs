@@ -41,7 +41,7 @@ public class Minion_melee : Units
 
         unitTag = UnitsTag.Minion;
 
-        unitStatus = Status.Initialize(minionMeleeData.initStatus);
+        UnitStatus = Status.Initialize(minionMeleeData.initStatus);
 
         HUD = GetComponentInChildren<HUD__HP>();
 
@@ -56,7 +56,7 @@ public class Minion_melee : Units
 
     private void FixedUpdate()
     {
-        if(unitStatus.health < 0.0f && !isDeath)
+        if(UnitStatus.health < 0.0f && !isDeath)
         {
             const int DeathAnimaton = 4;
             animator.SetInteger("death", Random.Range(0, DeathAnimaton));

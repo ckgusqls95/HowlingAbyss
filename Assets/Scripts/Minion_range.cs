@@ -48,13 +48,13 @@ public class Minion_range : Units
         agent.SetDestination(goal.transform.position);
 
         unitTag = UnitsTag.Minion;
-        unitStatus = Status.Initialize(minionRangeData.initStatus);
+        UnitStatus = Status.Initialize(minionRangeData.initStatus);
         HUD = GetComponentInChildren<HUD__HP>();
     }
 
     private void FixedUpdate()
     {
-        if (unitStatus.health < 0.0f && !isDeath)
+        if (UnitStatus.health < 0.0f && !isDeath)
         {
             const int DeathAnimaton = 2;
             animator.SetInteger("death", Random.Range(0, DeathAnimaton));

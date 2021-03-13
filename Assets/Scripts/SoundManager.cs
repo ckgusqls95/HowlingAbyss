@@ -14,9 +14,6 @@ public class sound
 public class SoundManager : MonoBehaviour
 {
     #region member
-    public List<AudioSource> AudioEffect;
-    private Dictionary<string, int> playSoundName = new Dictionary<string, int>();
-    //private Dictionary<string, AudioSource> AudioEffect;
     public AudioSource AudioBGM;
 
     public List<sound> Effectsounds;
@@ -48,41 +45,72 @@ public class SoundManager : MonoBehaviour
     }
     #endregion
     
-    public void PlaySE(string name)
+    public void PlaySE(string name, GameObject soundplayer = null)
     {
         for (int i = 0; i < Effectsounds.Count; i++)
         {
             if(Effectsounds[i].name.CompareTo(name) == 0)
             {
-                for (int j = 0; j < AudioEffect.Count; j++)
+                AudioSource[] sources = null;
+                AudioSource source = null;
+                if (soundplayer)
                 {
-                   if(!AudioEffect[j].isPlaying)
+                    sources = soundplayer.GetComponents<AudioSource>();
+                    if(sources == null)
                     {
-                        if (playSoundName.ContainsKey(name))
+                        source= soundplayer.AddComponent<AudioSource>();
+                        source.clip = Effectsounds[i].clip;
+                        source.Play();
+                    }
+                    else
+                    {
+                        for (int k = 0; k < sources.Length; k++)
                         {
-                            playSoundName[name] = j;
+                            if(!sources[k].isPlaying)
+                            {
+                                source = sources[k];
+                                break;
+                            }
                         }
-                        else
+                        if (source == null)
                         {
-                            playSoundName.Add(name,j);                        
+                            source = soundplayer.AddComponent<AudioSource>();
                         }
 
-                        AudioEffect[j].clip = Effectsounds[i].clip;
-                        AudioEffect[j].Play();                        
-                        return;
+                        source.clip = Effectsounds[i].clip;
+                        source.Play();
+
+                    }
+
+                }
+                else
+                {
+                    sources = GetComponents<AudioSource>();
+                    if(sources != null)
+                    {
+                        for (int k = 0; k < sources.Length; k++)
+                        {
+                            if(!sources[k].isPlaying)
+                            {
+                                sources[k].clip = Effectsounds[i].clip;
+                                sources[k].Play();
+                                source = sources[k];
+                                break;
+                            }
+                        }
+                    }
+
+                    if(source == null)
+                    {
+                        source = gameObject.AddComponent<AudioSource>();
+                        source.clip = Effectsounds[i].clip;
+                        source.Play();
                     }
                 }
-
-                playSoundName.Add(name, playSoundName.Count);
-                AudioSource source = gameObject.AddComponent<AudioSource>();
-                source.clip = Effectsounds[i].clip;
-                source.Play();
-                AudioEffect.Add(source);
-                return;
+                //source.volume = 0.5f;
             }            
         }
-
-        Debug.Log("Empty Sound Effect");
+        
 
     }
 
@@ -109,16 +137,50 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void StopSE(string name)
+    public void StopSE(string name,GameObject soundplayer = null)
     {
-        AudioEffect[playSoundName[name]].Stop();
+        AudioSource[] sources = null;
+
+        if(soundplayer)
+        {
+            sources = soundplayer.GetComponents<AudioSource>();
+        }
+        else
+        {
+            sources = gameObject.GetComponents<AudioSource>();
+        }
+
+        if (sources == null) return;
+
+        for (int i = 0; i < sources.Length; i++)
+        {
+            if (sources[i].clip.name.CompareTo(name) == 0)
+            {
+                sources[i].Stop();
+                break;
+            }
+        }
+
     }
 
-    public void stopAllSE()
+    public void stopAllSE(GameObject soundplayer = null)
     {
-        for (int i = 0; i < AudioEffect.Count; i++)
+        AudioSource[] sources = null;
+
+        if (soundplayer)
         {
-            AudioEffect[i].Stop();
+            sources = soundplayer.GetComponents<AudioSource>();
+        }
+        else
+        {
+            sources = gameObject.GetComponents<AudioSource>();
+        }
+
+        if (sources == null) return;
+
+        foreach (AudioSource source in sources)
+        {
+            source.Stop();
         }
     }
 
@@ -177,7 +239,7 @@ public class SoundManager : MonoBehaviour
     public string[] LoadClip(string Path)
     {
         AudioClip[] clips;
-        Object[] objs = Resources.LoadAll(Path, typeof(AudioClip));
+        Object[] objs = Resources.LoadAll(Path);
         clips = new AudioClip[objs.Length];
         string[] names = new string[clips.Length];
 

@@ -7,10 +7,15 @@ using Unit;
 
 public class Leesin : Champion
 {
+    [SerializeField]
+    private UnitData LeesinData;
+
     private Animator animator;
     const int Skillcount = 5;
-    //const string ResourcesPath = "Character/Leesin";
-
+    string SFXResource = "LeesinSFX/SFX/";
+    string voResource = "LeesinSFX/vo/";
+    
+    List<string> idlesounds = new List<string>();
     protected override void Awake()
     {
         base.Awake();
@@ -21,7 +26,20 @@ public class Leesin : Champion
         ChampionSkill[1] = GetComponent<SafeGuard>();
         ChampionSkill[2] = GetComponent<Tempest>();
         ChampionSkill[3] = GetComponent<DragonRage>();
+
+        SoundManager.instance.LoadClip(SFXResource);
+        string[] vo = SoundManager.instance.LoadClip(voResource);
         
+        for (int i = 0; i < vo.Length; i++)
+        {
+            if(vo[i].Contains("idle"))
+            {
+                idlesounds.Add(vo[i]);
+            }
+        }
+
+        UnitStatus = Status.Initialize(LeesinData.initStatus);
+        UnitSight = LeesinData.UnitSight;
     }
 
     public override void UseSkillQ()
@@ -67,5 +85,37 @@ public class Leesin : Champion
             championSkill[index].Play(Target);
         }
 
+    }
+
+    public void playsound(string soundname)
+    {
+        AudioSource[] sources = GetComponents<AudioSource>();
+        if (sources != null)
+        {
+            for (int i = 0; i < sources.Length; i++)
+            {
+                sources[i].Stop();
+            }
+        }
+
+        SoundManager.instance.PlaySE(soundname, gameObject);
+    }
+
+    public void IdleSound()
+    {
+        AudioSource[] sources = GetComponents<AudioSource>();
+        if (sources != null)
+        {
+            for (int i = 0; i < sources.Length; i++)
+            {
+                if (sources[i].isPlaying)
+                {
+                    return;
+                }
+            }
+        }
+
+        int index = Random.Range(0, idlesounds.Count);
+        SoundManager.instance.PlaySE(idlesounds[index], gameObject);
     }
 }

@@ -7,7 +7,7 @@ public class DragonRageParticle : MonoBehaviour
     GameObject createObj;
     Vector3 dir;
     Vector3 startpos;
-    const float range = 30.0f;
+    const float range = 10.0f;
     const float speed = 5.0f;
     // Start is called before the first frame update
     void Start()

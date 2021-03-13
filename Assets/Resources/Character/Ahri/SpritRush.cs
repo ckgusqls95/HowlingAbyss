@@ -34,6 +34,11 @@ public class SpritRush : Skill
             return false;
         }
 
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("SkillLayer.R"))
+        {
+            return false;
+        }
+
         return true;
     }
 
