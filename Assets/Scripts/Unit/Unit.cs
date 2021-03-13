@@ -7,6 +7,7 @@ using Photon.Realtime;
 namespace Unit
 {
     #region Properties
+    [System.Serializable]
     public struct Status
     {
         public int level;
@@ -110,9 +111,11 @@ namespace Unit
     public class Units : MonoBehaviourPun, IPunObservable
     {
         #region Members
+
         public UnitsTag unitTag;
 
         protected PhotonView PV;
+
 
         public Status UnitStatus;
         public UnitData.Sight UnitSight;
@@ -133,14 +136,16 @@ namespace Unit
 
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
-            if (stream.IsWriting)
-            {
-                stream.SendNext(UnitStatus);
-            }
-            else
-            {
-                this.UnitStatus = (Status)stream.ReceiveNext();
-            }
+
+            //if (stream.IsWriting)
+            //{
+            //    stream.SendNext(unitStatus);
+            //}
+            //else
+            //{
+            //    this.unitStatus = (Status)stream.ReceiveNext();
+            //}
+
         }
 
         public float hit(AttackType type, float damage, float Penetration = 0.0f)

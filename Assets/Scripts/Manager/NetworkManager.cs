@@ -10,18 +10,17 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 {
     enum RoomMode { BLIND_PICK, RANDOM_PICK }
 
-    [HideInInspector]
-    public double CreateRoomTime;
-
     private static NetworkManager instance = null;
+
     private List<RoomInfo> myList = new List<RoomInfo>();
     public List<RoomInfo> MyList { get { return myList; } }
-    public void Connect() => PhotonNetwork.ConnectUsingSettings();
-    public override void OnCreatedRoom() => Debug.Log("방 생성 완료");
 
     public Transform playerListContent;
     public LobbySceneUI lobbyUI;
     public GameObject startGameButton;
+
+    public void Connect() => PhotonNetwork.ConnectUsingSettings();
+    public override void OnCreatedRoom() => Debug.Log("방 생성 완료");
 
     // Start is called before the first frame update
     void Awake()
@@ -54,11 +53,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.AutomaticallySyncScene = true;
     }
 
-    void Update()
-    {
-
-    }
-
     public override void OnJoinedRoom()
     {
         Player[] players = PhotonNetwork.PlayerList;
@@ -68,8 +62,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             Destroy(child.gameObject);
         }
 
-        // 안된다면 using.System.Linq;
-        // players.Length -> player.Count() 로 바꿀 것.
         for (int i = 0; i < players.Length; i++)
         {
             Instantiate(lobbyUI.UserNameTextPrefab, playerListContent).GetComponent<PlayerListItem>().Setup(players[i]);
@@ -105,18 +97,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         }
     }
 
-    public void JoinRoom()
-    {
-        if (UI.Instance.RoomPassword != null)
-        {
-            PhotonNetwork.JoinRoom(UI.Instance.RoomName + "_" + UI.Instance.RoomPassword);
-        }
-        else
-        {
-            PhotonNetwork.JoinRoom(UI.Instance.RoomName);
-        }
-    }
-
     // 대기방 보여주기
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
@@ -142,35 +122,32 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             }
         }
     }
-    public void ClickRoom(string roomNameText)
-    {
-        lobbyUI.UserCustumGameLobby();
-        //Vector3 ghestPosition = lobbyUI.UserNameTextPrefab.transform.position + new Vector3(-150, 0, 0);
-        //lobbyUI.PlayerList[0] = Instantiate(lobbyUI.UserNameTextPrefab, ghestPosition, lobbyUI.UserNameTextPrefab.transform.rotation, lobbyUI.transform.Find("UserCustumGame Join").Find("PlayerList"));
-        //lobbyUI.PlayerList[1] = Instantiate(lobbyUI.UserNameTextPrefab, ghestPosition, lobbyUI.UserNameTextPrefab.transform.rotation, lobbyUI.transform.Find("UserCustumGame Join").Find("PlayerList"));
-        //룸 접속 확인 if(룸접속상태체크)
-        PhotonNetwork.JoinRoom(roomNameText);
-    }
 
     public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
     {
         Instantiate(lobbyUI.UserNameTextPrefab, playerListContent).GetComponent<PlayerListItem>().Setup(newPlayer);
-
-    }
-    public override void OnPlayerLeftRoom(Photon.Realtime.Player otherPlayer)
-    {
-
     }
 
-    [PunRPC]
-    private void PunButtonClick(Button button)
+    public void JoinRoom()
     {
-        button.onClick.Invoke();
+        if (UI.Instance.RoomPassword != null)
+        {
+            PhotonNetwork.JoinRoom(UI.Instance.RoomName + "_" + UI.Instance.RoomPassword);
+        }
+        else
+        {
+            PhotonNetwork.JoinRoom(UI.Instance.RoomName);
+        }
+    }
+
+    public void ClickRoom(string roomNameText)
+    {
+        lobbyUI.UserCustumGameLobby();
+        PhotonNetwork.JoinRoom(roomNameText);
     }
 
     public void StartGame()
     {
         PhotonNetwork.LoadLevel("Howling Abyss");
     }
-
 }

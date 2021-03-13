@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    [SerializeField]
     private Transform target;
+    public Transform Target { get { return target; } set { target = value; } }
 
     private float dist = 7.0f;
 
-    private float height = 10.0f;
+    private float height = 15.0f;
 
     // Start is called before the first frame update
     void Start()

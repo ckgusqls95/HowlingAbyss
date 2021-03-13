@@ -544,8 +544,10 @@ GameObject:
   - component: {fileID: 2098379886655401315}
   - component: {fileID: 8710032037521315536}
   - component: {fileID: 8710032037521315537}
+  - component: {fileID: -164070215587438185}
+  - component: {fileID: 8324088900102712243}
   m_Layer: 0
-  m_Name: Leesin
+  m_Name: Leesin Prefab
   m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -558,9 +560,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374611952236735304}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.89, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7271237210761339244}
   - {fileID: 3847663881639163176}
@@ -687,13 +689,6 @@ MonoBehaviour:
   unitTag: 0
   Target: {fileID: 0}
   isDeath: 0
-  championSkill:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &7772817860019518563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,6 +797,46 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!195 &-164070215587438185
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374611952236735304}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &8324088900102712243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374611952236735304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d48aaa97529f304f93d4e074b200baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  naviAgent: {fileID: 0}
+  target: {fileID: 0}
+  gold: 0
+  speed: 10
+  targetpos: {x: 0, y: 0, z: 0}
+  isStopMove: 0
 --- !u!1 &1538577531692314025
 GameObject:
   m_ObjectHideFlags: 0

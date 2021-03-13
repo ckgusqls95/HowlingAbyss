@@ -13,7 +13,7 @@ public class DragonRage : Skill
     public GameObject Particle2;
     protected override void Awake()
     {
-        coolTime = 110.0f;
+        coolTime = 18.0f;
         animator = GetComponent<Animator>();
 
         Transform[] childrens = GetComponentsInChildren<Transform>();
@@ -35,6 +35,7 @@ public class DragonRage : Skill
         // particle target ->
         Target = target;
         animator.SetTrigger("DragonRage");
+        StartCoroutine(CalculationCooltime());
     }
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)
@@ -92,10 +93,7 @@ public class DragonRage : Skill
             yield return new WaitForEndOfFrame();
         }
 
-        if (currentCoolTime < 0)
-        {
-            currentCoolTime = 0.0f;
-        }
+        currentCoolTime = 0.0f;
     }
 
     private void CreateDragonRage()

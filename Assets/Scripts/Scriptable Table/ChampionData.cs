@@ -20,7 +20,7 @@ public class ChampionData : ScriptableObject
     [SerializeField]
     private Sprite championPortrait;
     [SerializeField]
-    private Skill[] championSkill;
+    private Sprite[] championSkillSprite;
 
     public string ChampionName { get { return championName; } }
     public string ChampionTag { get { return championTag; } }
@@ -28,5 +28,5 @@ public class ChampionData : ScriptableObject
     public Sprite ChampionIconBox { get { return championIconBox; } }
     public Sprite ChampionIconCircle { get { return championIconCircle; } }
     public Sprite ChampionPortrait { get { return championPortrait; } }
-    public Skill[] ChampionSkill { get { return championSkill; } }
+    public Sprite[] ChampionSkill { get { return championSkillSprite; } }
 }
