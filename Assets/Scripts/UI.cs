@@ -95,6 +95,7 @@ public class UI : MonoBehaviour
             Debug.Log("비밀번호 틀림");
         }
     }
+
     public static void LoadScene(string sceneName)
     {
         nextScene = sceneName;

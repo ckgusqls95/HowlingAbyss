@@ -71,7 +71,7 @@ public class SpritRush : Skill
             if(animator.GetCurrentAnimatorStateInfo(0).IsName("SkillLayer.R") &&
                 animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.8f)
             {
-                if (this.transform.parent.TryGetComponent<PlayerController>(out PlayerController script))
+                if (this.transform.TryGetComponent<PlayerController>(out PlayerController script))
                 {
                     script.isStopMove = false;
                 }
@@ -87,7 +87,7 @@ public class SpritRush : Skill
 
     private void CreateSpritRush()
     {
-        if (this.transform.parent.TryGetComponent<PlayerController>(out PlayerController script))
+        if (this.transform.TryGetComponent<PlayerController>(out PlayerController script))
         {
             script.isStopMove = true;
         }

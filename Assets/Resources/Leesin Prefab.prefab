@@ -562,7 +562,7 @@ Transform:
   m_GameObject: {fileID: 1374611952236735304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 7271237210761339244}
   - {fileID: 3847663881639163176}
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374611952236735304}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
   m_Name: 
@@ -665,7 +665,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374611952236735304}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
   m_Name: 
@@ -687,8 +687,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitTag: 0
+  UnitStatus:
+    level: 0
+    health: 0
+    healthRegen: 0
+    Maxhealth: 0
+    cost: 0
+    costRegen: 0
+    Maxcost: 0
+    attackSpeed: 0
+    movementSpeed: 0
+    attackDamage: 0
+    abilityPower: 0
+    armor: 0
+    magicResist: 0
+    armorPenetration: 0
+    magicPenetration: 0
+    lifeSteal: 0
+    spellVamp: 0
+    abilityHaste: 0
+    tenacity: 0
+    experience: 0
+    killGold: 0
+    killExperience: 0
+  UnitSight:
+    sightRange: 0
+    attackRange: 0
+    aggroRange: 0
   Target: {fileID: 0}
   isDeath: 0
+  LeesinData: {fileID: 11400000, guid: 38ae7eee84bd5a645805a799cf6189e4, type: 2}
 --- !u!114 &7772817860019518563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -709,6 +737,8 @@ MonoBehaviour:
   skillFactor: 0
   skillButton: {fileID: 0}
   HitObject: {fileID: 0}
+  pc: {fileID: 0}
+  agent: {fileID: 0}
 --- !u!114 &3920106933757633755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -832,7 +862,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   naviAgent: {fileID: 0}
-  target: {fileID: 0}
   gold: 0
   speed: 10
   targetpos: {x: 0, y: 0, z: 0}

@@ -40,7 +40,7 @@ public class OrbofDeception : Skill
 
     public override void Play(GameObject target = null)
     {
-        if(this.transform.parent.TryGetComponent<PlayerController>(out PlayerController script))
+        if(this.transform.TryGetComponent<PlayerController>(out PlayerController script))
         {
             script.isStopMove = true;
         }
@@ -65,7 +65,7 @@ public class OrbofDeception : Skill
 
     void CreateOrb()
     {
-        if (this.transform.parent.TryGetComponent<PlayerController>(out PlayerController player))
+        if (this.transform.TryGetComponent<PlayerController>(out PlayerController player))
         {
             player.isStopMove = false;
         }
