@@ -25,6 +25,18 @@ public class SpritRush : Skill
                 break;
             }
         }
+
+        // factor
+        {
+            CurrentLevel = 0;
+            skillFactor = 0.35f;
+            LevelperValues = new SkillLevel[5];
+            LevelperValues[0] = new SkillLevel(1, 60, 100);
+            LevelperValues[1] = new SkillLevel(2, 90, 100);
+            LevelperValues[2] = new SkillLevel(3, 120, 100);
+
+        }
+        //
     }
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)

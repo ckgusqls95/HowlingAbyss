@@ -16,6 +16,11 @@ public class Ahri : Champion
     string voResource = "AhriSFX/vo/";
     List<string> idlesounds = new List<string>();
 
+    [SerializeField]
+    private GameObject hand;
+    [SerializeField]
+    private GameObject AttackParticle;
+
     protected override void Awake()
     {
         base.Awake();
@@ -107,6 +112,9 @@ public class Ahri : Champion
         }
 
         SoundManager.instance.PlaySE(soundname, gameObject);
+
+        GameObject obj = Instantiate(AttackParticle, hand.transform.position, hand.transform.rotation);
+        obj.GetComponent<basicAttack>().init(this);
     }
 
     public void IdleSound()

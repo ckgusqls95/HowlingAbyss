@@ -265,8 +265,17 @@ public class Minion_melee : Units
         return newPriority;
     }
 
-    private void SetActiveCollider() => StaffCol.enabled = true;
-
+    private void SetActiveCollider()
+    {
+        if(StaffCol.enabled)
+        {
+            StaffCol.enabled = false;
+        }
+        else
+        {
+            StaffCol.enabled = true;
+        }
+    }
     private void DeathMinion()
     {
         GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(gameObject);

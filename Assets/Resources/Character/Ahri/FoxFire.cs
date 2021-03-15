@@ -23,6 +23,19 @@ public class FoxFire : Skill
         }
 
         coolTime = 9.0f;
+
+        // factor
+        {
+            CurrentLevel = 0;
+            skillFactor = 0.3f;
+            LevelperValues = new SkillLevel[5];
+            LevelperValues[0] = new SkillLevel(1, 40, 40);
+            LevelperValues[1] = new SkillLevel(2, 65, 40);
+            LevelperValues[2] = new SkillLevel(3, 90, 40);
+            LevelperValues[3] = new SkillLevel(4, 115, 40);
+            LevelperValues[4] = new SkillLevel(5, 140, 40);
+        }
+        //
     }
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)

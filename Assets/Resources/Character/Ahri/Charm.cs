@@ -22,6 +22,20 @@ public class Charm : Skill
                 break;
             }
         }
+
+
+        // factor
+        {
+            CurrentLevel = 0;
+            skillFactor = 0.4f;
+            LevelperValues = new SkillLevel[5];
+            LevelperValues[0] = new SkillLevel(1, 60, 70);
+            LevelperValues[1] = new SkillLevel(2, 90, 70);
+            LevelperValues[2] = new SkillLevel(3, 120, 70);
+            LevelperValues[3] = new SkillLevel(4, 150, 70);
+            LevelperValues[4] = new SkillLevel(5, 180, 70);
+        }
+        //
     }
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)

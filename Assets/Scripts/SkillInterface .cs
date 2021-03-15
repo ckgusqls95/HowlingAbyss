@@ -23,6 +23,22 @@ namespace SkillSystem
         KILL,
         LEVELUP
     }
+    [System.Serializable]
+    public struct SkillLevel
+    {
+        [Range(1,5)]
+        public int level;
+        public float addDamage;
+        public float consumeCost;
+
+        public SkillLevel(int _Level,float _AddDamage,float _ConsumeCost)
+        {
+            level = _Level;
+            addDamage = _AddDamage;
+            consumeCost = _ConsumeCost;
+        }
+    }
+
     public class Skill : MonoBehaviour
     {
         [SerializeField]
@@ -40,15 +56,15 @@ namespace SkillSystem
         protected skilltype skillType;
 
         [SerializeField]
-        protected float skillFactor = 0.0f;
+        public float skillFactor = 0.0f;
+        public SkillLevel[] LevelperValues;
 
         [SerializeField]
         protected Button skillButton;
 
-        protected int skillLevel;
+        public int CurrentLevel;
         protected float coolTime;
         protected float currentCoolTime;
-        //private bool canUseSkill = true;
 
         public Sprite SkiilImage { get { return skillImgae; } }
         public skilltype SkillType { get { return skillType; } }

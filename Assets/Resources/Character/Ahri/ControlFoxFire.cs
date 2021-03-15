@@ -37,6 +37,10 @@ public class ControlFoxFire : MonoBehaviour
 
     public void init(GameObject Parent)
     {
-        this.transform.tag = Parent.transform.tag;
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).GetComponent<Fire>().Init(Parent);
+        }
+
     }
 }
