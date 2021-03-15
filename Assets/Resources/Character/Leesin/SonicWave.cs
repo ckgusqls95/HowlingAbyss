@@ -93,14 +93,14 @@ public class SonicWave : Skill
         Vector3 target = HitObject.transform.position;
         target.y = this.transform.position.y;
         float step = flyspeed * Time.deltaTime;
-        while (Vector3.Distance(target, this.transform.parent.position) > 2f)
+        while (Vector3.Distance(target, this.transform.position) > 2f)
         {            
-            this.transform.parent.position = Vector3.MoveTowards(this.transform.parent.position, target, step);
-            this.transform.parent.transform.LookAt(target);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, target, step);
+            this.transform.LookAt(target);
             yield return null;
         }
 
-        pc.targetpos = this.transform.parent.transform.position;
+        pc.targetpos = this.transform.position;
         pc.isStopMove = false;
         agent.isStopped = false;
 

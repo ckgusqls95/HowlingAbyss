@@ -1717,6 +1717,9 @@ GameObject:
   - component: {fileID: 705915361}
   - component: {fileID: 963354709}
   - component: {fileID: 963354711}
+  - component: {fileID: 884081386}
+  - component: {fileID: 884081388}
+  - component: {fileID: 1925261712986296299}
   m_Layer: 0
   m_Name: Ahri
   m_TagString: Blue
@@ -1733,7 +1736,7 @@ Transform:
   m_GameObject: {fileID: 4513557152063853620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 5285085963103182352}
   - {fileID: 1789441925826267732}
@@ -1772,14 +1775,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitTag: 1
+  UnitStatus:
+    level: 0
+    health: 0
+    healthRegen: 0
+    Maxhealth: 0
+    cost: 0
+    costRegen: 0
+    Maxcost: 0
+    attackSpeed: 0
+    movementSpeed: 0
+    attackDamage: 0
+    abilityPower: 0
+    armor: 0
+    magicResist: 0
+    armorPenetration: 0
+    magicPenetration: 0
+    lifeSteal: 0
+    spellVamp: 0
+    abilityHaste: 0
+    tenacity: 0
+    experience: 0
+    killGold: 0
+    killExperience: 0
   UnitSight:
     sightRange: 0
     attackRange: 0
     aggroRange: 0
   Target: {fileID: 0}
   isDeath: 0
-  championSkill: []
   AhriData: {fileID: 11400000, guid: fbeb3d1e2b7cdaf4a9ef0eb926ba5662, type: 2}
+  hand: {fileID: 4340330193381649297}
+  AttackParticle: {fileID: 2853273787548984102, guid: da5a4e3e56f61104eb8e401b02b42dcf,
+    type: 3}
 --- !u!114 &3630474701179600693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1878,7 +1906,9 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 1
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
 --- !u!114 &705915359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1897,7 +1927,9 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 0
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
 --- !u!114 &705915360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1916,7 +1948,9 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 0
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
 --- !u!114 &705915361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1935,7 +1969,9 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 0
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
 --- !u!114 &963354709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1954,7 +1990,9 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 1
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
 --- !u!114 &963354711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1973,7 +2011,61 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 1
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
+--- !u!65 &884081386
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513557152063853620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.6117573, z: 1.021771}
+  m_Center: {x: 0, y: 0.7394457, z: -0.13638973}
+--- !u!114 &884081388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513557152063853620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d48aaa97529f304f93d4e074b200baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  naviAgent: {fileID: 0}
+  gold: 0
+  speed: 10
+  targetpos: {x: 0, y: 0, z: 0}
+  isStopMove: 0
+--- !u!195 &1925261712986296299
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513557152063853620}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &4550290433174157454
 GameObject:
   m_ObjectHideFlags: 0

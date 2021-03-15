@@ -545,7 +545,6 @@ GameObject:
   - component: {fileID: 8710032037521315536}
   - component: {fileID: 8710032037521315537}
   - component: {fileID: -164070215587438185}
-  - component: {fileID: 8324088900102712243}
   m_Layer: 0
   m_Name: Leesin Prefab
   m_TagString: Red
@@ -562,7 +561,7 @@ Transform:
   m_GameObject: {fileID: 1374611952236735304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 7271237210761339244}
   - {fileID: 3847663881639163176}
@@ -686,9 +685,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f11879e5157962b44ba86046c9eeec0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitTag: 0
+  unitTag: 1
+  UnitStatus:
+    level: 0
+    health: 0
+    healthRegen: 0
+    Maxhealth: 0
+    cost: 0
+    costRegen: 0
+    Maxcost: 0
+    attackSpeed: 0
+    movementSpeed: 0
+    attackDamage: 0
+    abilityPower: 0
+    armor: 0
+    magicResist: 0
+    armorPenetration: 0
+    magicPenetration: 0
+    lifeSteal: 0
+    spellVamp: 0
+    abilityHaste: 0
+    tenacity: 0
+    experience: 0
+    killGold: 0
+    killExperience: 0
+  UnitSight:
+    sightRange: 0
+    attackRange: 0
+    aggroRange: 0
   Target: {fileID: 0}
   isDeath: 0
+  LeesinData: {fileID: 11400000, guid: 38ae7eee84bd5a645805a799cf6189e4, type: 2}
+  hands:
+  - {fileID: 1199182292}
+  - {fileID: 385422777}
 --- !u!114 &7772817860019518563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,10 +735,12 @@ MonoBehaviour:
   particleObj: {fileID: 549017729567040197, guid: 79fa64692fdf77841a48f2c0f521f18f,
     type: 3}
   particleSystemPrefab: {fileID: 0}
-  skillType: 0
+  skillType: 1
   skillFactor: 0
   skillButton: {fileID: 0}
   HitObject: {fileID: 0}
+  pc: {fileID: 0}
+  agent: {fileID: 0}
 --- !u!114 &3920106933757633755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,24 +851,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &8324088900102712243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374611952236735304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d48aaa97529f304f93d4e074b200baa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  naviAgent: {fileID: 0}
-  target: {fileID: 0}
-  gold: 0
-  speed: 10
-  targetpos: {x: 0, y: 0, z: 0}
-  isStopMove: 0
 --- !u!1 &1538577531692314025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,6 +1763,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1216716291386334545}
+  - component: {fileID: 385422777}
+  - component: {fileID: 385422776}
   m_Layer: 0
   m_Name: r_hand
   m_TagString: Untagged
@@ -1776,6 +1792,31 @@ Transform:
   m_Father: {fileID: 4349702271379678397}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &385422777
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967388165089443127}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.084882386, y: 0.06188022, z: 0.050999556}
+  m_Center: {x: -0.03386736, y: 0.0076119173, z: 0.0031484517}
+--- !u!114 &385422776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967388165089443127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94db48a68f607044e8a1130f8b8e7f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4062431080805498057
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,6 +2593,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2723112938351007046}
+  - component: {fileID: 1199182292}
+  - component: {fileID: 1199182293}
   m_Layer: 0
   m_Name: l_hand
   m_TagString: Untagged
@@ -2579,6 +2622,31 @@ Transform:
   m_Father: {fileID: 1040724972636618374}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1199182292
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6463147045821293618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.058598883, y: 0.048882827, z: 0.062417824}
+  m_Center: {x: 0.02070091, y: -0.025558563, z: 0.004940105}
+--- !u!114 &1199182293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6463147045821293618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94db48a68f607044e8a1130f8b8e7f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6623467053479173699
 GameObject:
   m_ObjectHideFlags: 0

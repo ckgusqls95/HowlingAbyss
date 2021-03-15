@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     Camera mainCamera;
     public Vector3 targetpos;
     public bool isStopMove;
+    private bool isAttack;
     Transform Target;
 
     Dictionary<KeyCode, Action> keyDictionary;
@@ -39,7 +40,7 @@ public class PlayerController : MonoBehaviour
         champion = GetComponentInChildren<Champion>();
         animator = GetComponentInChildren<Animator>();
         isStopMove = false;
-
+        isAttack = false;
         keyDictionary = new Dictionary<KeyCode, Action>
         {
             { KeyCode.A, KeyDown_A },
@@ -83,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (PV.IsMine)
+        //if (PV.IsMine)
         {
             Targeting();
             if (Input.anyKeyDown)
@@ -135,11 +136,9 @@ public class PlayerController : MonoBehaviour
 
                     float distance = Vector3.Distance(gameObject.transform.position, hit.transform.position);
                     if (distance <= champion.UnitSight.attackRange && !hit.transform.CompareTag(gameObject.tag))
-                    {
-
-                        Debug.Log("attack");
+                    {                        
                         animator.SetBool("run", false);
-                        animator.SetBool("attack", true);
+                        animator.SetBool("attack", isAttack = true);
                         StartCoroutine(attack(hit.transform.position));
                     }
 
@@ -178,7 +177,7 @@ public class PlayerController : MonoBehaviour
         {
             naviAgent.SetDestination(target);
             animator.SetBool("run", true);
-            animator.SetBool("attack", false);
+            animator.SetBool("attack", isAttack = false);
             return true;
         }
 
@@ -231,13 +230,17 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator attack(Vector3 pos)
     {
-        while(animator.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1.0f)
+        while((animator.GetCurrentAnimatorStateInfo(0).normalizedTime) <= 0.8f && isAttack == true)
         {
             turn(pos);
             yield return new WaitForFixedUpdate();
         }
 
-        animator.SetBool("attack", false);
+        if(isAttack)
+        {
+            animator.SetBool("attack",isAttack = false);
+        }
+
     }
 
 }

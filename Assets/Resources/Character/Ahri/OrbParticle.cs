@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unit;
 
 public class OrbParticle : MonoBehaviour
 {
     GameObject parent;
     Vector3 direction;
-    const float speed = 3.0f;
+    const float speed = 5.0f;
     const float MaxDistacne = 1.0f;
     Vector3 startpos;
     bool isRetuned;
@@ -51,7 +52,17 @@ public class OrbParticle : MonoBehaviour
     {
         if(other.CompareTag(parent.transform.tag == "Red" ? "Blue" : "Red"))
         {
-            Debug.Log("Enemy orb hit!!");
+            OrbofDeception orb = parent.GetComponent<OrbofDeception>();
+            Units unit = parent.GetComponent<Units>();
+            
+            float Damage = unit.Attack(AttackType.AP_SKILL, orb.skillFactor, orb.LevelperValues[orb.CurrentLevel].addDamage);
+            float Suffer = 0.0f;
+            if (other.TryGetComponent<Units>(out var script))
+            {
+                Suffer = script.hit(AttackType.AP_SKILL, Damage, unit.UnitStatus.magicResist);
+            }
+
+            Debug.Log("Damage = " + Damage +" / " + "Suffer = " + Suffer);
         }
     }
 

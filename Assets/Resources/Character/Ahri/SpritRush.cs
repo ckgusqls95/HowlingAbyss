@@ -25,6 +25,18 @@ public class SpritRush : Skill
                 break;
             }
         }
+
+        // factor
+        {
+            CurrentLevel = 0;
+            skillFactor = 0.35f;
+            LevelperValues = new SkillLevel[5];
+            LevelperValues[0] = new SkillLevel(1, 60, 100);
+            LevelperValues[1] = new SkillLevel(2, 90, 100);
+            LevelperValues[2] = new SkillLevel(3, 120, 100);
+
+        }
+        //
     }
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)
@@ -71,7 +83,7 @@ public class SpritRush : Skill
             if(animator.GetCurrentAnimatorStateInfo(0).IsName("SkillLayer.R") &&
                 animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.8f)
             {
-                if (this.transform.parent.TryGetComponent<PlayerController>(out PlayerController script))
+                if (this.transform.TryGetComponent<PlayerController>(out PlayerController script))
                 {
                     script.isStopMove = false;
                 }
@@ -87,7 +99,7 @@ public class SpritRush : Skill
 
     private void CreateSpritRush()
     {
-        if (this.transform.parent.TryGetComponent<PlayerController>(out PlayerController script))
+        if (this.transform.TryGetComponent<PlayerController>(out PlayerController script))
         {
             script.isStopMove = true;
         }

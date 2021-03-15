@@ -81,7 +81,6 @@ public class SoundManager : MonoBehaviour
                         source.Play();
 
                     }
-
                 }
                 else
                 {
@@ -107,7 +106,9 @@ public class SoundManager : MonoBehaviour
                         source.Play();
                     }
                 }
-                //source.volume = 0.5f;
+
+                source.rolloffMode = AudioRolloffMode.Linear;
+                source.spatialBlend = 1.0f;
             }            
         }
         
@@ -127,13 +128,9 @@ public class SoundManager : MonoBehaviour
 
                 AudioBGM.clip = BGMsound[i].clip;
                 AudioBGM.Play();
+                AudioBGM.loop = true;
                 return;
             }
-            
-            AudioBGM.clip = BGMsound[i].clip;
-            AudioBGM.Play();
-
-            return;
         }
     }
 

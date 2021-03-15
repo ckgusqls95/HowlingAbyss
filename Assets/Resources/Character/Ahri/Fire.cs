@@ -1,12 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unit;
 
 public class Fire : MonoBehaviour
 {
     const float speed = 5.0f;
     const float Range = 3.0f;
     GameObject target;
+    private GameObject parent = null;
+
+    float duration = 1.5f;
+
+    private void Awake()
+    {
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +39,13 @@ public class Fire : MonoBehaviour
 
     private void FixedUpdate()
     {
+        duration -= Time.deltaTime;
+
+        if(duration <= 0.0f)
+        {
+            Object.Destroy(gameObject);
+        }
+
         if (target == null)
         {
             RaycastHit[] hits;
@@ -37,12 +54,17 @@ public class Fire : MonoBehaviour
             {
                 foreach (RaycastHit hit in hits)
 
-                if (hit.transform.CompareTag(transform.parent.tag == "Red" ? "Blue" : "Red"))
-                {
-                    target = hit.transform.gameObject;
-                    this.transform.parent = null;
-                    break;
-                }
+                    if (hit.transform.CompareTag(parent.tag == "Red" ? "Blue" : "Red"))
+                    {
+                        if (hit.transform.TryGetComponent<Units>(out var script) &&
+                                script.UnitTag != UnitsTag.Turret &&
+                                script.UnitTag != UnitsTag.Nexus)
+                        {
+                            target = hit.transform.gameObject;
+                            this.transform.parent = null;
+                            break;
+                        }
+                    }
 
             }
         }
@@ -52,10 +74,28 @@ public class Fire : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject == target)
+        if (other.gameObject == target)
         {
-            Object.Destroy(this.gameObject);
+            FoxFire foxfire = parent.GetComponent<FoxFire>();
+            Units unit = parent.GetComponent<Units>();
+
+            float Damage = unit.Attack(AttackType.AP_SKILL, foxfire.skillFactor, foxfire.LevelperValues[foxfire.CurrentLevel].addDamage);
+            float Suffer = 0.0f;
+            if (other.TryGetComponent<Units>(out var script))
+            {
+                Suffer = script.hit(AttackType.AP_SKILL, Damage, unit.UnitStatus.magicResist);
+            }
+
+            Debug.Log("Damage = " + Damage + " / " + "Suffer = " + Suffer);
+
         }
+
+        Object.Destroy(gameObject);
     }
 
+
+    public void Init(GameObject Parent)
+    {
+        parent = Parent;
+    }
 }

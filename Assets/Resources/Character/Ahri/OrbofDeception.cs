@@ -7,7 +7,7 @@ public class OrbofDeception : Skill
 {
     private Animator animator;
     private GameObject weapon;
-
+    
     protected override void Awake()
     {
         base.Awake();
@@ -24,6 +24,18 @@ public class OrbofDeception : Skill
             }
         }
 
+        // factor
+        {
+            CurrentLevel = 0;
+            skillFactor = 0.35f;
+            LevelperValues = new SkillLevel[5];
+            LevelperValues[0] = new SkillLevel(1, 40, 65);
+            LevelperValues[1] = new SkillLevel(2, 65, 70);
+            LevelperValues[2] = new SkillLevel(3, 90, 75);
+            LevelperValues[3] = new SkillLevel(4, 115, 80);
+            LevelperValues[4] = new SkillLevel(5, 140, 85);
+        }
+        //
 
     }
 
@@ -40,7 +52,7 @@ public class OrbofDeception : Skill
 
     public override void Play(GameObject target = null)
     {
-        if(this.transform.parent.TryGetComponent<PlayerController>(out PlayerController script))
+        if(this.transform.TryGetComponent<PlayerController>(out PlayerController script))
         {
             script.isStopMove = true;
         }
@@ -65,7 +77,7 @@ public class OrbofDeception : Skill
 
     void CreateOrb()
     {
-        if (this.transform.parent.TryGetComponent<PlayerController>(out PlayerController player))
+        if (this.transform.TryGetComponent<PlayerController>(out PlayerController player))
         {
             player.isStopMove = false;
         }

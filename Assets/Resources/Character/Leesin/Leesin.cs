@@ -16,6 +16,9 @@ public class Leesin : Champion
     string voResource = "LeesinSFX/vo/";
     
     List<string> idlesounds = new List<string>();
+
+    [SerializeField]
+    private Collider[] hands;
     protected override void Awake()
     {
         base.Awake();
@@ -40,6 +43,11 @@ public class Leesin : Champion
 
         UnitStatus = Status.Initialize(LeesinData.initStatus);
         UnitSight = LeesinData.UnitSight;
+
+        for (int i = 0; i < hands.Length; i++)
+        {
+            hands[i].GetComponent<Staff>().init(this);
+        }
     }
 
     public override void UseSkillQ()
@@ -99,6 +107,19 @@ public class Leesin : Champion
         }
 
         SoundManager.instance.PlaySE(soundname, gameObject);
+
+        SetCollision();
+    }
+
+    public void SetCollision()
+    {
+        for (int i = 0; i < hands.Length; i++)
+        {
+            if (hands[i].enabled)
+                hands[i].enabled = false;
+            else
+                hands[i].enabled = true;
+        }
     }
 
     public void IdleSound()
