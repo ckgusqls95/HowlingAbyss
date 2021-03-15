@@ -1396,6 +1396,7 @@ GameObject:
   - component: {fileID: 5526463540471193109}
   - component: {fileID: -7023979477485578218}
   - component: {fileID: 5489976976406596291}
+  - component: {fileID: 8972086179759175646}
   m_Layer: 0
   m_Name: Ahri Prefab
   m_TagString: Blue
@@ -1412,7 +1413,7 @@ Transform:
   m_GameObject: {fileID: 4643379022913931557}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4002465732952752897}
   - {fileID: 7351747322690754373}
@@ -1451,8 +1452,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitTag: 1
+  UnitStatus:
+    level: 0
+    health: 0
+    healthRegen: 0
+    Maxhealth: 0
+    cost: 0
+    costRegen: 0
+    Maxcost: 0
+    attackSpeed: 0
+    movementSpeed: 0
+    attackDamage: 0
+    abilityPower: 0
+    armor: 0
+    magicResist: 0
+    armorPenetration: 0
+    magicPenetration: 0
+    lifeSteal: 0
+    spellVamp: 0
+    abilityHaste: 0
+    tenacity: 0
+    experience: 0
+    killGold: 0
+    killExperience: 0
+  UnitSight:
+    sightRange: 0
+    attackRange: 0
+    aggroRange: 0
   Target: {fileID: 0}
   isDeath: 0
+  AhriData: {fileID: 11400000, guid: fbeb3d1e2b7cdaf4a9ef0eb926ba5662, type: 2}
 --- !u!114 &5526463540197827108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,7 +1514,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4643379022913931557}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
   m_Name: 
@@ -1501,7 +1530,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4643379022913931557}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
   m_Name: 
@@ -1644,11 +1673,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   naviAgent: {fileID: 0}
-  target: {fileID: 0}
   gold: 0
   speed: 10
   targetpos: {x: 0, y: 0, z: 0}
   isStopMove: 0
+--- !u!65 &8972086179759175646
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4643379022913931557}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &4653040425158843136
 GameObject:
   m_ObjectHideFlags: 0

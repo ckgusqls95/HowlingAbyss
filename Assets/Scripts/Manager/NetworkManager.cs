@@ -18,7 +18,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public Transform playerListContent;
     public LobbySceneUI lobbyUI;
     public GameObject startGameButton;
-
+    public PhotonView pV;
     public void Connect() => PhotonNetwork.ConnectUsingSettings();
     public override void OnCreatedRoom() => Debug.Log("방 생성 완료");
 
@@ -148,6 +148,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public void StartGame()
     {
+
         PhotonNetwork.LoadLevel("Howling Abyss");
     }
+    
 }
