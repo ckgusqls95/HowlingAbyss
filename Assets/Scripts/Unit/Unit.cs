@@ -17,7 +17,7 @@ namespace Unit
 
         public float cost;
         public float costRegen;
-        public float Maxcost;
+        public float maxCost;
 
         public float attackSpeed;
         public float movementSpeed;
@@ -63,7 +63,7 @@ namespace Unit
             temp.healthRegen = init.healthRegen;
 
             temp.cost = init.cost;
-            temp.Maxcost = init.cost;
+            temp.maxCost = init.cost;
             temp.costRegen = init.costRegen;
 
             temp.attackDamage = init.attackDamage;
@@ -88,8 +88,6 @@ namespace Unit
     //}
     #endregion
 
-
-
     #region Tags
     public enum UnitsTag
     {
@@ -110,16 +108,12 @@ namespace Unit
 
     public class Units : MonoBehaviourPun, IPunObservable
     {
+
         #region Members
-
         public UnitsTag unitTag;
-
         protected PhotonView PV;
-
-
         public Status UnitStatus;
         public UnitData.Sight UnitSight;
-
         public UnitsTag UnitTag { get { return unitTag; } set { unitTag = value; } }
 
         //[HideInInspector]

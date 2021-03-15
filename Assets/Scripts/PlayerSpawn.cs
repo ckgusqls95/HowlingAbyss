@@ -33,7 +33,6 @@ public class PlayerSpawn : MonoBehaviour
         {
             championObj = PhotonNetwork.Instantiate("Leesin Prefab", Vector3.zero, Quaternion.identity);
         }
-
         if (PhotonNetwork.IsMasterClient)
         {
             championObj.transform.position = new Vector3(114, 0, 113);

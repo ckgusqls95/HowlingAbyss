@@ -86,16 +86,38 @@ public class Nexus : MonoBehaviourPun, IPunObservable
 
         foreach (int index in IndexMinion)
         {
+            GameObject minion;
             switch (index)
             {
                 case 0:
-                    Instantiate(melee, spawnerpos, Quaternion.identity, this.transform.parent);
+                    if(this.transform.name == "Nexus_red")
+                    {
+                        minion = PhotonNetwork.Instantiate("ha_melee 1/Red_Melee", spawnerpos, Quaternion.identity);
+                    }
+                    else
+                    {
+                        minion = PhotonNetwork.Instantiate("ha_melee 1/Blue_Melee", spawnerpos, Quaternion.identity);
+                    }
                     break;
                 case 1:
-                    Instantiate(range, spawnerpos, Quaternion.identity, this.transform.parent);
+                    if (this.transform.name == "Nexus_red")
+                    {
+                        minion = PhotonNetwork.Instantiate("ha_range/Red_Range", spawnerpos, Quaternion.identity);
+                    }
+                    else
+                    {
+                        minion = PhotonNetwork.Instantiate("ha_range/Blue_Range", spawnerpos, Quaternion.identity);
+                    }
                     break;
                 case 2:
-                    Instantiate(Siege, spawnerpos, Quaternion.identity, this.transform.parent);
+                    if (this.transform.name == "Nexus_red")
+                    {
+                        minion = PhotonNetwork.Instantiate("chaosminionsiege/chaosSiege", spawnerpos, Quaternion.identity);
+                    }
+                    else
+                    {
+                        minion = PhotonNetwork.Instantiate("orderminion/OrderSiege", spawnerpos, Quaternion.identity);
+                    }
                     break;
                 default:
                     break;
@@ -103,7 +125,6 @@ public class Nexus : MonoBehaviourPun, IPunObservable
 
             yield return new WaitForSeconds(SumonDelayTime);
         }
-
 
         wave++;
     }

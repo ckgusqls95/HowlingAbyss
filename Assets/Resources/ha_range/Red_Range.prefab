@@ -838,6 +838,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitTag: 0
+  UnitStatus:
+    level: 0
+    health: 0
+    healthRegen: 0
+    Maxhealth: 0
+    cost: 0
+    costRegen: 0
+    maxCost: 0
+    attackSpeed: 0
+    movementSpeed: 0
+    attackDamage: 0
+    abilityPower: 0
+    armor: 0
+    magicResist: 0
+    armorPenetration: 0
+    magicPenetration: 0
+    lifeSteal: 0
+    spellVamp: 0
+    abilityHaste: 0
+    tenacity: 0
+    experience: 0
+    killGold: 0
+    killExperience: 0
+  UnitSight:
+    sightRange: 0
+    attackRange: 0
+    aggroRange: 0
   Target: {fileID: 0}
   isDeath: 0
   minionRangeData: {fileID: 11400000, guid: dd3b8448b289f4344b75915deec1e7b6, type: 2}
@@ -927,9 +954,6 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 0
     Name: run
-  - Type: 3
-    SynchronizeType: 0
-    Name: attackNum
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0

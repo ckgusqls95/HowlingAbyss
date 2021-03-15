@@ -716,6 +716,7 @@ MonoBehaviour:
     aggroRange: 0
   Target: {fileID: 0}
   isDeath: 0
+  championData: {fileID: 11400000, guid: 5e6845b4f85f6494bbaedc86142b7725, type: 2}
   LeesinData: {fileID: 11400000, guid: 38ae7eee84bd5a645805a799cf6189e4, type: 2}
 --- !u!114 &7772817860019518563
 MonoBehaviour:

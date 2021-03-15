@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     private int masteryIndex;
     public int MasteryIndex { get { return masteryIndex; } set { masteryIndex = value; } }
 
+    public SummonerSpellData summonerSpell;
     private void Awake()
     {
         if (instance == null)

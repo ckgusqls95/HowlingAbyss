@@ -4,7 +4,7 @@ using UnityEngine;
 using Unit;
 using SkillSystem;
 using UnityEngine.AI;
-
+using Photon.Pun;
 public abstract class Champion : Units
 {
     #region ChampionCommonData
@@ -12,13 +12,13 @@ public abstract class Champion : Units
     protected Skill[] championSkill;
     public Skill[] ChampionSkill { get { return championSkill; } }
     
+    public ChampionData championData;
     #endregion
+    private GameObject championUI;
 
     protected virtual void Awake()
     {
-        
         unitTag = UnitsTag.Champion;
-        
     }
 
     // Start is called before the first frame update
@@ -38,6 +38,16 @@ public abstract class Champion : Units
         UnitStatus.lifeSteal = 0.0f;
 
         unitTag = UnitsTag.Champion;
+        #endregion
+
+        #region MatchingUI
+        if (photonView.IsMine)
+        {
+            championUI = FindObjectOfType<Canvas>().transform.Find("SkillPannel").gameObject;
+            championUI.SetActive(true);
+            championUI.GetComponent<SkillPannelSystem>().playerChampion = this;
+            championUI.GetComponent<SkillPannelSystem>().MatchingChampionSkillPannel(championData);
+        }
         #endregion
     }
 

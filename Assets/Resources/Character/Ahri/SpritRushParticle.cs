@@ -11,7 +11,7 @@ public class SpritRushParticle : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        player = this.transform.parent.parent.GetComponent<PlayerController>();
+        player = this.transform.parent.GetComponent<PlayerController>();
     }
 
     // Update is called once per frame

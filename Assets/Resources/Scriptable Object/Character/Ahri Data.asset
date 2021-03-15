@@ -18,3 +18,9 @@ MonoBehaviour:
   championIconBox: {fileID: 21300000, guid: 3f4ae6c025701814e94334591daa6fe0, type: 3}
   championIconCircle: {fileID: 21300000, guid: 074f0c95af26eeb4a9facea541e511db, type: 3}
   championPortrait: {fileID: 0}
+  championSkillSprite:
+  - {fileID: 21300000, guid: a54d61a9c8256564583d1ddf362d48c3, type: 3}
+  - {fileID: 21300000, guid: cc4e11183b5a05e44be6d3e52d331469, type: 3}
+  - {fileID: 21300000, guid: a26278c320cac8f4f9e29c76aadd052a, type: 3}
+  - {fileID: 21300000, guid: a3a704289c0d6ba4ea25577fa944212c, type: 3}
+  - {fileID: 21300000, guid: 996994fc7ec91584fabc163c14967fc6, type: 3}

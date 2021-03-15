@@ -2007,10 +2007,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bd258a3c7430c3468af331d439e448b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CreateRoomTime: 0
   playerListContent: {fileID: 0}
   lobbyUI: {fileID: 0}
   startGameButton: {fileID: 0}
+  pV: {fileID: 0}
 --- !u!4 &1270538772
 Transform:
   m_ObjectHideFlags: 0
@@ -2491,7 +2491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5272d12ee594d144aaa3060a7acbc9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  summonerSpell: {fileID: 11400000, guid: 4d4ece9135781fb4a8bafc9202fd9544, type: 2}
 --- !u!4 &1643264945
 Transform:
   m_ObjectHideFlags: 0

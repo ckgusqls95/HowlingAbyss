@@ -54,9 +54,6 @@ public class MiniMapSystem : MonoBehaviour
             if (ActualMapsize.yMin > pos.y)
                 ActualMapsize.yMin = pos.y;
         }
-
-
-
     }
 
     private void FixedUpdate()
@@ -83,7 +80,6 @@ public class MiniMapSystem : MonoBehaviour
                 moveCamera(Input.mousePosition, result[0].gameObject.transform.position);
             }
         }
-
     }
 
     GameObject IndicateObject(Vector3 position, Color color, GameObject SelectIcon = null)

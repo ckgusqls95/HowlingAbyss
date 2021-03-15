@@ -107,7 +107,6 @@ public class Minion_melee : Units
 
     }
 
-
     IEnumerator AttackAnim()
     {
         int attackAnimNum = 0;

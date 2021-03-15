@@ -830,7 +830,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 39dbf215ee05f7f459ffad79ea33888d, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1943,7 +1943,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f0dca0bd7d8e4c24bb30d695840bcdd4, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2062,7 +2062,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e23c744e615080e4084ed88c2fb2546b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3571,7 +3571,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8007698c127356d48914ff240a242816, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16279,6 +16279,7 @@ GameObject:
   - component: {fileID: 1485618565}
   - component: {fileID: 1485618567}
   - component: {fileID: 1485618566}
+  - component: {fileID: 1485618568}
   m_Layer: 5
   m_Name: SkillPannel
   m_TagString: Untagged
@@ -16353,6 +16354,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485618564}
   m_CullTransparentMesh: 0
+--- !u!114 &1485618568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485618564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473f4e13941c34e46b0e49fb30412a02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkillButton:
+  - {fileID: 284057507}
+  - {fileID: 471957998}
+  - {fileID: 79955413}
+  - {fileID: 1722149978}
+  - {fileID: 2013666438}
+  summonerSpell:
+  - {fileID: 1949662652}
+  - {fileID: 2025871332}
+  hpBarImage: {fileID: 1342277657}
+  hpBarText: {fileID: 1052549103}
+  costBarImage: {fileID: 902702966}
+  costBarText: {fileID: 1239095489}
+  championPortrait: {fileID: 282140181}
 --- !u!1001 &1508997729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17755,7 +17782,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6b1be5becd2d9b444a6cee3965377fd0, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19495,7 +19522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c856855122fd884eaf50a9a3ef0227f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19897,7 +19924,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7d56b8d2bbe14514c9c0b5df172fa0f8, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20046,7 +20073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e08155a2a534def4f8ebc44edd01690e, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

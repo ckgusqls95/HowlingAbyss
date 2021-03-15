@@ -61,6 +61,18 @@ Transform:
   m_Father: {fileID: 84061909357265364}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9221779263585009309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255682130555435528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ceb8d55bf77e9488e96344aedea724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &522909028635167959
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +497,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4082969490490819472}
   m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.54, y: 2.54, z: 2.54}
   m_Children:
   - {fileID: 1635896626644566156}
@@ -1191,7 +1203,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitTag: 0
+  UnitStatus:
+    level: 0
+    health: 0
+    healthRegen: 0
+    Maxhealth: 0
+    cost: 0
+    costRegen: 0
+    maxCost: 0
+    attackSpeed: 0
+    movementSpeed: 0
+    attackDamage: 0
+    abilityPower: 0
+    armor: 0
+    magicResist: 0
+    armorPenetration: 0
+    magicPenetration: 0
+    lifeSteal: 0
+    spellVamp: 0
+    abilityHaste: 0
+    tenacity: 0
+    experience: 0
+    killGold: 0
+    killExperience: 0
+  UnitSight:
+    sightRange: 0
+    attackRange: 0
+    aggroRange: 0
   Target: {fileID: 0}
+  isDeath: 0
   minionRangeData: {fileID: 11400000, guid: dd3b8448b289f4344b75915deec1e7b6, type: 2}
   fireball: {fileID: 835314960310983231, guid: e96a9e4b7f1d3f64e96c7bd7eebe9139, type: 3}
   priority: 2147483647
@@ -1279,9 +1319,6 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 0
     Name: run
-  - Type: 3
-    SynchronizeType: 0
-    Name: attackNum
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
@@ -1988,18 +2025,6 @@ Transform:
   m_Father: {fileID: 7003706632522671489}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9221779263585009309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255682130555435528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5ceb8d55bf77e9488e96344aedea724, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8747487454240129979
 GameObject:
   m_ObjectHideFlags: 0

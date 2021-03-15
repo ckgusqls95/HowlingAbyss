@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class IngameUIController : MonoBehaviour
 {
+   
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.I))
@@ -21,6 +22,5 @@ public class IngameUIController : MonoBehaviour
             bool button = shop.activeInHierarchy == true ? false : true;
             shop.SetActive(button);
         }
-
     }
 }

@@ -148,8 +148,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public void StartGame()
     {
-
         PhotonNetwork.LoadLevel("Howling Abyss");
-    }
+    }    
     
 }

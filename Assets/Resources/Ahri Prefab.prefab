@@ -1459,7 +1459,7 @@ MonoBehaviour:
     Maxhealth: 0
     cost: 0
     costRegen: 0
-    Maxcost: 0
+    maxCost: 0
     attackSpeed: 0
     movementSpeed: 0
     attackDamage: 0
@@ -1481,6 +1481,7 @@ MonoBehaviour:
     aggroRange: 0
   Target: {fileID: 0}
   isDeath: 0
+  championData: {fileID: 11400000, guid: 0d7586dabd0bb714b9fd6993430e957e, type: 2}
   AhriData: {fileID: 11400000, guid: fbeb3d1e2b7cdaf4a9ef0eb926ba5662, type: 2}
 --- !u!114 &5526463540197827108
 MonoBehaviour:
