@@ -4,9 +4,10 @@ using UnityEngine;
 using Photon.Pun;
 public class Bush : MonoBehaviour
 {
+    List<Transform> insideBush;
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
         {
             PhotonView pv = other.transform.gameObject.GetComponent<PhotonView>();
             if (pv == null) return;
@@ -26,12 +27,13 @@ public class Bush : MonoBehaviour
 
         }
 
+        insideBush.Add(other.transform);
     }
 
 
     private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
+    {     
+        if(insideBush.Contains(other.transform))
         {
             other.transform.GetComponent<MeshRenderer>().enabled = true;
             
@@ -41,5 +43,7 @@ public class Bush : MonoBehaviour
             mtl.color = color;
             other.transform.GetComponent<Renderer>().material = new Material(mtl);
         }
+
+        
     }
 }

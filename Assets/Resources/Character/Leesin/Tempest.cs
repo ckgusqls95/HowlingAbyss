@@ -43,6 +43,8 @@ public class Tempest : Skill
 
     public override void Play(GameObject target = null)
     {
+        transform.GetComponent<Champion>().UnitStatus.cost -= LevelperValues[CurrentLevel].consumeCost;
+
         if (!tempest && currentCoolTime <= 0.0f)
         {
             animator.SetTrigger("Tempest");
@@ -60,6 +62,11 @@ public class Tempest : Skill
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)
     {
+        if(transform.GetComponent<Champion>().UnitStatus.cost < LevelperValues[CurrentLevel].consumeCost)
+        {
+            return false;
+        }
+
         return true;
     }
 

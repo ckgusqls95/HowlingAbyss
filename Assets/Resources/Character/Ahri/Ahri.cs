@@ -19,6 +19,7 @@ public class Ahri : Champion
     private GameObject hand;
     [SerializeField]
     private GameObject AttackParticle;
+
     protected override void Awake()
     {
         base.Awake();
@@ -44,10 +45,18 @@ public class Ahri : Champion
         UnitSight = AhriData.UnitSight;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
+    }
+
+    private void FixedUpdate()
+    {
+        if (!isDeath && UnitStatus.health <= 0.0f)
+        {
+            animator.SetTrigger("Death");
+            isDeath = true;
+        }
     }
 
     public override void UseSkillE()
@@ -131,5 +140,10 @@ public class Ahri : Champion
 
         int index = Random.Range(0, idlesounds.Count);
         SoundManager.instance.PlaySE(idlesounds[index], gameObject);
+    }
+
+    private void  Destroy()
+    {
+        Object.Destroy(gameObject);
     }
 }

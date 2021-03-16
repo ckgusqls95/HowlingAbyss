@@ -1885,6 +1885,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 0
     Name: SpritRush
+  - Type: 9
+    SynchronizeType: 0
+    Name: Death
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
@@ -1909,6 +1912,8 @@ MonoBehaviour:
   LevelperValues: []
   skillButton: {fileID: 0}
   CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
 --- !u!114 &705915359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1925,11 +1930,13 @@ MonoBehaviour:
   particleObj: {fileID: 1762241516880736062, guid: 8d7ae3bfd68fa9e4686a0616b1f1088f,
     type: 3}
   particleSystemPrefab: {fileID: 0}
-  skillType: 0
+  skillType: 1
   skillFactor: 0
   LevelperValues: []
   skillButton: {fileID: 0}
   CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
 --- !u!114 &705915361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1946,11 +1953,13 @@ MonoBehaviour:
   particleObj: {fileID: 6929691377159792921, guid: 6866114b48f5add4bb2224e2e3bb9b02,
     type: 3}
   particleSystemPrefab: {fileID: 0}
-  skillType: 0
+  skillType: 1
   skillFactor: 0
   LevelperValues: []
   skillButton: {fileID: 0}
   CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
 --- !u!114 &963354709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1972,6 +1981,8 @@ MonoBehaviour:
   LevelperValues: []
   skillButton: {fileID: 0}
   CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
 --- !u!114 &963354711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1993,6 +2004,8 @@ MonoBehaviour:
   LevelperValues: []
   skillButton: {fileID: 0}
   CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
 --- !u!65 &884081386
 BoxCollider:
   m_ObjectHideFlags: 0

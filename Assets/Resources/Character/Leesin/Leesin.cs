@@ -19,6 +19,7 @@ public class Leesin : Champion
 
     [SerializeField]
     private Collider[] hands;
+
     protected override void Awake()
     {
         base.Awake();
@@ -47,6 +48,20 @@ public class Leesin : Champion
         for (int i = 0; i < hands.Length; i++)
         {
             hands[i].GetComponent<Staff>().init(this);
+        }
+    }
+
+    private void Update()
+    {
+        
+    }
+
+    private void FixedUpdate()
+    {
+        if (!isDeath && UnitStatus.health <= 0.0f)
+        {
+            animator.SetTrigger("Death");
+            isDeath = true;
         }
     }
 
@@ -138,5 +153,10 @@ public class Leesin : Champion
 
         int index = Random.Range(0, idlesounds.Count);
         SoundManager.instance.PlaySE(idlesounds[index], gameObject);
+    }
+
+    private void Destroy()
+    {
+        Object.Destroy(gameObject);
     }
 }

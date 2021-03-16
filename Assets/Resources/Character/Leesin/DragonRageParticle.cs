@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Unit;
 public class DragonRageParticle : MonoBehaviour
 {
     GameObject createObj;
@@ -10,6 +10,7 @@ public class DragonRageParticle : MonoBehaviour
     PlayerController pc;
     const float range = 10.0f;
     const float speed = 5.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +51,22 @@ public class DragonRageParticle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
+        if(other.CompareTag(createObj.tag == "Red" ? "Blue" : "Red"))
+        {
+            if (other.TryGetComponent<Units>(out Units script))
+            {
+                DragonRage rage = createObj.GetComponent<DragonRage>();
+                Units unit = createObj.GetComponent<Units>();
+
+                float Damage = unit.Attack(AttackType.AD_SKILL, rage.skillFactor, rage.LevelperValues[rage.CurrentLevel].addDamage);
+                float Suffer = 0.0f;
+
+                {
+                    Suffer = script.hit(AttackType.AD_SKILL, Damage, unit.UnitStatus.armorPenetration);
+                }
+
+            }
+        }
+
     }
 }

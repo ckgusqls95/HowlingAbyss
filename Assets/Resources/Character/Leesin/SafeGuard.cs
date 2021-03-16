@@ -44,6 +44,8 @@ public class SafeGuard : Skill
 
     public override void Play(GameObject target = null)
     {
+        transform.GetComponent<Champion>().UnitStatus.cost -= LevelperValues[CurrentLevel].consumeCost;
+
         if (target)
         {
             animator.SetTrigger("SafeGuard");             
@@ -64,10 +66,11 @@ public class SafeGuard : Skill
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)
     {
-        if(currentCoolTime > 0.001f)
+        if(currentCoolTime > 0.001f || transform.GetComponent<Champion>().UnitStatus.cost < LevelperValues[CurrentLevel].consumeCost)
         {
             return false;
         }
+
 
         return true;
     }

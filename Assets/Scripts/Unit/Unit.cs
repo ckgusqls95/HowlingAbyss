@@ -104,6 +104,12 @@ namespace Unit
         AP_SKILL,
         TRUE_DAMAGE
     }
+
+    public enum UnitEventType
+    {
+        Death,
+        Hit
+    }
     #endregion
 
     public class Units : MonoBehaviourPun, IPunObservable
@@ -203,6 +209,61 @@ namespace Unit
             return Damege;
         }
            
+        public virtual void receiveEvent(UnitsTag otherTag,UnitEventType eventType,Status otherStatus,GameObject _target = null)
+        {
+            switch (eventType)
+            {
+                case UnitEventType.Death:
+                    if (otherTag == UnitsTag.Minion && 
+                        unitTag == UnitsTag.Champion)
+                    {
+                        float exp = otherStatus.killExperience;
+                        float gold = otherStatus.killGold;
+                    }
+                    break;
+                case UnitEventType.Hit:
+                    if(otherTag == UnitsTag.Champion &&
+                        unitTag == UnitsTag.Minion &&
+                        _target)
+                    {
+                        // 미니언 우선순위 변경
+                    }
+                    break;
+            }
+
+        }
+
+        public virtual void GiveEvent(UnitEventType eventType)
+        {
+            RaycastHit[] hits = Physics.SphereCastAll(transform.position, UnitSight.sightRange, Vector3.up, 0f);
+
+            foreach (RaycastHit hit in hits)
+            {
+                if (this == hit.transform.gameObject) continue;
+                if (hit.transform.CompareTag("particle")) continue;
+
+                if(hit.transform.CompareTag(transform.tag))
+                {
+                    Units script;
+
+                    if (hit.transform.TryGetComponent<Units>(out script))
+                    {
+                        switch (eventType)
+                        {
+                            case UnitEventType.Death:
+                                script.receiveEvent(unitTag, eventType, UnitStatus);
+                                break;
+                            case UnitEventType.Hit:
+                                script.receiveEvent(unitTag, eventType, UnitStatus, Target);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+            }
+
+        }
 
     }
 

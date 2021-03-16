@@ -31,6 +31,7 @@ public class DragonRage : Skill
 
     public override void Play(GameObject target = null)
     {
+        transform.GetComponent<Champion>().UnitStatus.cost -= LevelperValues[CurrentLevel].consumeCost;
         // target 
         currentCoolTime = coolTime;
         // particle target ->
@@ -63,6 +64,10 @@ public class DragonRage : Skill
             return false;
         }
 
+        if(transform.GetComponent<Champion>().UnitStatus.cost < LevelperValues[CurrentLevel].consumeCost)
+        {
+            return false;
+        }
 
         Vector3 direction = (target.transform.position - this.transform.position);
         direction  = direction.normalized;
@@ -109,5 +114,14 @@ public class DragonRage : Skill
         {
             script.init(this.transform.gameObject);
         }
+
+        //target damage
+        {
+            Units unit = transform.GetComponent<Units>();
+            float Damage = unit.Attack(AttackType.AD_SKILL,skillFactor, LevelperValues[CurrentLevel].addDamage);
+            float Suffer = Target.GetComponent<Units>().hit(AttackType.AD_SKILL, Damage, unit.UnitStatus.armorPenetration);
+        }
+
+
     }
 }

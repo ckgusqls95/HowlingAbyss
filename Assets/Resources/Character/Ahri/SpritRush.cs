@@ -52,11 +52,18 @@ public class SpritRush : Skill
             return false;
         }
 
+        if(transform.GetComponent<Champion>().UnitStatus.cost < LevelperValues[CurrentLevel].consumeCost)
+        {
+            return false;
+        }
+
         return true;
     }
 
     public override void Play(GameObject target = null)
     {
+        transform.GetComponent<Champion>().UnitStatus.cost -= LevelperValues[CurrentLevel].consumeCost;
+
         if (CurrentCount == 0)
         {
             currentCoolTime = coolTime;

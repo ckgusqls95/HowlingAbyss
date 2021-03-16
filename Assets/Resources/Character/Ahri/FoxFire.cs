@@ -41,7 +41,7 @@ public class FoxFire : Skill
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)
     {
-        if(currentCoolTime > 0.0f)
+        if(currentCoolTime > 0.0f && transform.GetComponent<Champion>().UnitStatus.cost < LevelperValues[CurrentLevel].consumeCost)
         {
             return false;
         }
@@ -51,6 +51,8 @@ public class FoxFire : Skill
 
     public override void Play(GameObject target = null)
     {
+        transform.GetComponent<Champion>().UnitStatus.cost -= LevelperValues[CurrentLevel].consumeCost;
+
         animator.SetTrigger("FoxFire");
         currentCoolTime = coolTime;
         StartCoroutine(CalculationCooltime());

@@ -806,9 +806,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3630474701179600692, guid: 0347347ceecca1241b5d86d7c340a8c8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3630474701179600693, guid: 0347347ceecca1241b5d86d7c340a8c8,
         type: 3}
       propertyPath: viewIdField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630474701179600699, guid: 0347347ceecca1241b5d86d7c340a8c8,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3884549277007007374, guid: 0347347ceecca1241b5d86d7c340a8c8,

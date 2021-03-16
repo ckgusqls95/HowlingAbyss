@@ -62,7 +62,9 @@ public class SonicWave : Skill
 
     public override void Play(GameObject target = null)
     {
-        if(!sonicWave && currentCoolTime <= 0.1f)
+        transform.GetComponent<Champion>().UnitStatus.cost -= LevelperValues[CurrentLevel].consumeCost;
+
+        if (!sonicWave && currentCoolTime <= 0.1f)
         {
             animator.SetTrigger("Sonicwave");
             currentCoolTime = coolTime;
@@ -83,6 +85,10 @@ public class SonicWave : Skill
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)
     {
+        if(transform.GetComponent<Champion>().UnitStatus.cost < LevelperValues[CurrentLevel].consumeCost)
+        {
+            return false;
+        }
         return true;
     }
 
