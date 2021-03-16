@@ -20,7 +20,7 @@ public class Nexus : MonoBehaviourPun, IPunObservable
 
     #endregion
 
-    private const float StartTime = 65.0f;  // 
+    private const float StartTime = 1.0f;  // 
     private const float CoolTime = 30.0f;   // 30 seconds;
     private const float SumonDelayTime = 0.5f;
 
@@ -59,11 +59,7 @@ public class Nexus : MonoBehaviourPun, IPunObservable
 
     private void FixedUpdate()
     {
-        if(pv.IsMine)
-        {
-            ElapsedTime += Time.deltaTime;
-        }
-
+        ElapsedTime += Time.deltaTime;
         if (ElapsedTime % FixedCoolTime <= Time.deltaTime && ElapsedTime >= StartTime)
         {
             FixedCoolTime = CoolTime;
@@ -77,6 +73,11 @@ public class Nexus : MonoBehaviourPun, IPunObservable
         const int eachWave = 2;
 
         int[] IndexMinion = {0,0,0,int.MaxValue,1,1,1};
+
+        if(wave == 0)
+        {
+            //GameObject.Find("Announcer").GetComponent<Announcer>().Request(Announcer.RequestMenu.MinionSummon);
+        }
 
         if (wave % eachWave  == 0 && wave != 0)
         {
@@ -125,12 +126,6 @@ public class Nexus : MonoBehaviourPun, IPunObservable
             yield return new WaitForSeconds(SumonDelayTime);
         }
 
-
-        if (wave == 0)
-        {
-            GameObject.Find("Announcer").GetComponent<Announcer>().Request(Announcer.RequestMenu.MinionSummon);
-        }
-
         wave++;
     }
 
@@ -139,6 +134,10 @@ public class Nexus : MonoBehaviourPun, IPunObservable
        if(stream.IsWriting)
         {
             stream.SendNext(FixedCoolTime);
+        }
+        else
+        {
+            FixedCoolTime = (float)stream.ReceiveNext();
         }
     }
 }

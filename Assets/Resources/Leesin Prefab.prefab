@@ -745,6 +745,8 @@ MonoBehaviour:
   coolTime: 0
   currentCoolTime: 0
   HitObject: {fileID: 0}
+  pc: {fileID: 0}
+  agent: {fileID: 0}
 --- !u!114 &3920106933757633755
 MonoBehaviour:
   m_ObjectHideFlags: 0

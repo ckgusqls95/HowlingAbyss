@@ -39,7 +39,7 @@ public class Siege_CannonBall : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {        
-        if (other.transform.gameObject == Target.gameObject)
+        if (other.transform.gameObject == Target)
         {
             float Damage = Parent.Attack(AttackType.MEELEE);
             float Suffer;
@@ -47,7 +47,6 @@ public class Siege_CannonBall : MonoBehaviour
             {
                 Suffer = script.hit(AttackType.MEELEE, Damage, Parent.UnitStatus.armorPenetration);
             }
-
             ParticleStop();
         }
     }

@@ -36,7 +36,7 @@ public class HealPackScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(ps.isPlaying)
+        if(other.transform.CompareTag("Player") && ps.isPlaying)
         {
             Boxcollider.enabled = false;
             ps.Stop();

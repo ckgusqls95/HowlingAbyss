@@ -116,8 +116,8 @@ public class Turret : Units
 
             foreach(RaycastHit hit in hits)
             {
-                if (gameObject == hit.transform.gameObject) continue;
-                if (hit.transform.CompareTag("particle")) continue;
+                if (this.gameObject == hit.transform.gameObject) break;
+                if (hit.transform.CompareTag("particle")) break;
                 if (hit.transform.CompareTag(this.transform.CompareTag("Red") ? "Blue" : "Red"))
                 {
                     Target = hit.transform.gameObject;
@@ -125,10 +125,8 @@ public class Turret : Units
                 }
 
             }
-            if(Target)
-                Debug.Log(Target.name);
-
-            if (Target == null)
+            
+            if(Target == null)
             {
                 linerender.enabled = false;
             }
@@ -140,7 +138,7 @@ public class Turret : Units
     {
         isRunningCoroutin = true;
 
-        while (cooltime > 1.0f && Target)
+        while (cooltime > 1.0f)
         {
             cooltime -= Time.deltaTime;
             yield return new WaitForFixedUpdate();
