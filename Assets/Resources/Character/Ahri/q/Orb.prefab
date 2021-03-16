@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4071727263716120}
   - component: {fileID: 65977177114986562}
   - component: {fileID: 54641338019457900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Orb
   m_TagString: particle
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 4606688363629604}
   - component: {fileID: 198705592384616788}
   - component: {fileID: 199147449789493902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4689,7 +4689,7 @@ GameObject:
   - component: {fileID: 4048709309798044}
   - component: {fileID: 198651169694263634}
   - component: {fileID: 199674462150667694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9465,7 +9465,7 @@ GameObject:
   - component: {fileID: 4276784981198106}
   - component: {fileID: 198817649008284406}
   - component: {fileID: 199893234658394152}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeamAB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14241,7 +14241,7 @@ GameObject:
   - component: {fileID: 4774336243184448}
   - component: {fileID: 198916000507076046}
   - component: {fileID: 199235180556013506}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18995,7 +18995,7 @@ GameObject:
   - component: {fileID: 4248357779305730}
   - component: {fileID: 198648233569696892}
   - component: {fileID: 199098167333203966}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SmokeWorld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23749,7 +23749,7 @@ GameObject:
   - component: {fileID: 4560350438247292}
   - component: {fileID: 198258188637803200}
   - component: {fileID: 199156224994348346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28525,7 +28525,7 @@ GameObject:
   - component: {fileID: 4778950684981648}
   - component: {fileID: 198271861423752088}
   - component: {fileID: 199055372731057756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ParticlesWorld
   m_TagString: Untagged
   m_Icon: {fileID: 0}

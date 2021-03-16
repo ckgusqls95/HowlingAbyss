@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        //if (PV.IsMine)
+        if (!isStopMove)
         {
             Targeting();
             if (Input.anyKeyDown)
@@ -243,4 +243,15 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void stop()
+    {
+        isStopMove = true;
+        naviAgent.isStopped = isStopMove;
+    }
+
+    public void Play()
+    {
+        isStopMove = false;
+        naviAgent.isStopped = isStopMove;
+    }
 }

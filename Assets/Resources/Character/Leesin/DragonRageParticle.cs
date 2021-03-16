@@ -7,6 +7,7 @@ public class DragonRageParticle : MonoBehaviour
     GameObject createObj;
     Vector3 dir;
     Vector3 startpos;
+    PlayerController pc;
     const float range = 10.0f;
     const float speed = 5.0f;
     // Start is called before the first frame update
@@ -24,6 +25,11 @@ public class DragonRageParticle : MonoBehaviour
         }
         else
         {
+            if(pc)
+            {
+                pc.Play();
+            }
+
             Object.Destroy(this.transform.gameObject);
         }
     }
@@ -34,6 +40,12 @@ public class DragonRageParticle : MonoBehaviour
         createObj = obj;
         dir = obj.transform.forward;
         startpos = this.transform.position;
+
+        if(transform.parent.TryGetComponent<PlayerController>(out pc))
+        {
+            pc.stop();
+        }
+             
     }
 
     private void OnTriggerEnter(Collider other)

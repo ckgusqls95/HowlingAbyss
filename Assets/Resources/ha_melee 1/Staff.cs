@@ -19,8 +19,6 @@ public class Staff : MonoBehaviour
         {
             if(other.transform.gameObject == parentMinion.Target)
             {
-                Debug.Log("Hit");
-
                 float Damage = parentMinion.Attack(AttackType.MEELEE);
                 float Suffer;
                 if(other.TryGetComponent<Units>(out var script))

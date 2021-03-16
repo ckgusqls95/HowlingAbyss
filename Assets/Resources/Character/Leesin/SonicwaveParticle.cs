@@ -57,6 +57,8 @@ public class SonicwaveParticle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag(parent.tag)) return;
+        if (other.tag == "Untagged") return;
         if (parent)
         {
             if (other.TryGetComponent<Units>(out Units script))
@@ -66,10 +68,22 @@ public class SonicwaveParticle : MonoBehaviour
                     !other.CompareTag(parent.tag))
                 {
                     parent.HitObject = other.transform.gameObject;
+                    Units unit = parent.transform.GetComponent<Units>();
+
+                    float Damage = unit.Attack(AttackType.AD_SKILL, parent.skillFactor, parent.LevelperValues[parent.CurrentLevel].addDamage);
+                    float Suffer = 0.0f;
+
+                    {
+                        Suffer = script.hit(AttackType.AD_SKILL, Damage, unit.UnitStatus.armorPenetration);
+                    }
+                    
                 }
             }
         }
-        Object.Destroy(gameObject);
+
+        {
+            Object.Destroy(gameObject);
+        }
     }
 
 }

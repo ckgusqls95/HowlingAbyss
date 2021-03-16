@@ -7,12 +7,13 @@ public class OrbofDeception : Skill
 {
     private Animator animator;
     private GameObject weapon;
-    
+    private PlayerController pc;
     protected override void Awake()
     {
         base.Awake();
         coolTime = 7.0f;
         animator = GetComponent<Animator>();
+        pc = GetComponent<PlayerController>();
 
         Transform[] childrens = GetComponentsInChildren<Transform>();
         foreach (Transform child in childrens)
@@ -60,8 +61,22 @@ public class OrbofDeception : Skill
         animator.SetTrigger("Orb");
         currentCoolTime = coolTime;
         StartCoroutine(CalculationCooltime());
+        //StartCoroutine(turn());
     }
-
+    IEnumerator turn()
+    {
+        Vector3 dir = Input.mousePosition - transform.position;
+        dir.y = 0.0f;
+        Quaternion Rotation = Quaternion.LookRotation(dir);
+        while (dir != Vector3.zero)
+        {
+            this.transform.rotation = Quaternion.RotateTowards(
+                transform.rotation,
+                Rotation,
+                360.0f * Time.deltaTime);
+            yield return null;
+        }
+    }
     IEnumerator CalculationCooltime()
     {
         while (currentCoolTime > 0.1f)

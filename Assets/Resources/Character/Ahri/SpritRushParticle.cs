@@ -4,7 +4,7 @@ using UnityEngine;
 using Unit;
 public class SpritRushParticle : MonoBehaviour
 {
-    const float flyspeed = 5.0f;
+    const float flyspeed = 10.0f;
     float duration = 0.3f;
     PlayerController player;
     [SerializeField]

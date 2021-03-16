@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 304661062414491330}
   - component: {fileID: 305503901634247348}
   - component: {fileID: 539243233425377196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5074,7 +5074,7 @@ GameObject:
   - component: {fileID: 498638925660993568}
   - component: {fileID: 304599629007290602}
   - component: {fileID: 304217176736411492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9886,7 +9886,7 @@ GameObject:
   - component: {fileID: 498711430689853598}
   - component: {fileID: 307392195635013830}
   - component: {fileID: 306176960943964850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14649,7 +14649,7 @@ GameObject:
   - component: {fileID: 498721758230346646}
   - component: {fileID: 304432637876207218}
   - component: {fileID: 305806653684249418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FireBurst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19470,7 +19470,7 @@ GameObject:
   - component: {fileID: 498398846116857412}
   - component: {fileID: 304785043044237902}
   - component: {fileID: 304005181044984210}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24352,9 +24352,9 @@ GameObject:
   - component: {fileID: 689990088940484185}
   - component: {fileID: 7017822898678479622}
   - component: {fileID: 6788118689873770020}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempest
-  m_TagString: Untagged
+  m_TagString: particle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24368,7 +24368,7 @@ Transform:
   m_GameObject: {fileID: 504125043495850620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.063, y: 0, z: -0.055}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 498638925660993568}
   - {fileID: 498570470480075590}
@@ -29211,7 +29211,7 @@ GameObject:
   - component: {fileID: 498570470480075590}
   - component: {fileID: 305089314126946038}
   - component: {fileID: 303997745674053724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

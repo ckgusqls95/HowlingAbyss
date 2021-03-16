@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1762241516880736049}
   - component: {fileID: 3432804109735675513}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FoxFire
   m_TagString: particle
   m_Icon: {fileID: 0}

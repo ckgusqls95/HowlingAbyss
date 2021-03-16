@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using SkillSystem;
 using UnityEngine.AI;
+using Unit;
 public class SonicWave : Skill
 {
     private bool sonicWave;
     private Animator animator;
     public GameObject HitObject;
     private GameObject hand;
-    const float flyspeed = 15.0f;
-    public PlayerController pc;
-    public NavMeshAgent agent;
+    const float flyspeed = 20.0f;
+    private PlayerController pc;
+    private NavMeshAgent agent;
+
     protected override void Awake()
     {
         base.Awake();
@@ -31,6 +33,20 @@ public class SonicWave : Skill
                 break;
             }
         }
+
+
+        // factor
+        {
+            CurrentLevel = 0;
+            skillFactor = 1.0f;
+            LevelperValues = new SkillLevel[5];
+            LevelperValues[0] = new SkillLevel(1, 55, 50);
+            LevelperValues[1] = new SkillLevel(2, 80, 50);
+            LevelperValues[2] = new SkillLevel(3, 105, 50);
+            LevelperValues[3] = new SkillLevel(4, 130, 50);
+            LevelperValues[4] = new SkillLevel(5, 155, 50);
+        }
+        //
 
     }
 
@@ -62,6 +78,7 @@ public class SonicWave : Skill
             // coroutin
             StartCoroutine(FlyingAnimation());
         }
+        //pc.stop();
     }
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)
@@ -76,45 +93,60 @@ public class SonicWave : Skill
             currentCoolTime -= Time.deltaTime;
                
             yield return new WaitForEndOfFrame();
-        }
-        
-        if(currentCoolTime < 0)
-        {
-            currentCoolTime = 0.0f;
-        }
+        }        
+        currentCoolTime = 0.0f;
 
         sonicWave = false;
+
+        if(HitObject)
+        {
+            HitObject = null;
+        }
     }
 
     IEnumerator FlyingAnimation()
     {
-        pc.isStopMove = true;
-        agent.isStopped = true;
+        pc.stop();
         Vector3 target = HitObject.transform.position;
         target.y = this.transform.position.y;
         float step = flyspeed * Time.deltaTime;
-        while (Vector3.Distance(target, this.transform.position) > 2f)
+        while (Vector3.Distance(target, this.transform.position) > 1f && HitObject)
         {            
             this.transform.position = Vector3.MoveTowards(this.transform.position, target, step);
             this.transform.LookAt(target);
             yield return null;
         }
-
         pc.targetpos = this.transform.position;
-        pc.isStopMove = false;
-        agent.isStopped = false;
-
+        pc.Play();
         animator.SetBool("ResonatingStrike", false);
-        HitObject = null;
+
+        if (HitObject)
+        {
+            if (HitObject.TryGetComponent<Units>(out var script))
+            {
+                Units unit = transform.GetComponent<Units>();
+
+                float Damage = unit.Attack(AttackType.AD_SKILL, skillFactor, LevelperValues[CurrentLevel].addDamage);
+
+                float Suffer = 0.0f;
+                {
+                    Suffer = script.hit(AttackType.AD_SKILL, Damage, unit.UnitStatus.armorPenetration);
+                }
+                
+            }
+
+            HitObject = null;
+        }
     }
     void CreateSonicWave()
     {
         GameObject instance = Instantiate(particleObj,hand.transform.position,Quaternion.identity, null);
 
-        SonicwaveParticle script;
-        if (instance.TryGetComponent<SonicwaveParticle>(out script))
+        SonicwaveParticle script = instance.GetComponent<SonicwaveParticle>();
         {
-            script.init(this.transform.gameObject);
+            script.init(gameObject);
         }
+
+        //pc.Play();
     }
 }

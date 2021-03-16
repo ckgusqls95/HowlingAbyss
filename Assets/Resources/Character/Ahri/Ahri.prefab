@@ -1713,7 +1713,6 @@ GameObject:
   - component: {fileID: 3630474701179600699}
   - component: {fileID: 919132149000206184}
   - component: {fileID: 705915359}
-  - component: {fileID: 705915360}
   - component: {fileID: 705915361}
   - component: {fileID: 963354709}
   - component: {fileID: 963354711}
@@ -1782,7 +1781,7 @@ MonoBehaviour:
     Maxhealth: 0
     cost: 0
     costRegen: 0
-    Maxcost: 0
+    maxCost: 0
     attackSpeed: 0
     movementSpeed: 0
     attackDamage: 0
@@ -1804,6 +1803,7 @@ MonoBehaviour:
     aggroRange: 0
   Target: {fileID: 0}
   isDeath: 0
+  championData: {fileID: 0}
   AhriData: {fileID: 11400000, guid: fbeb3d1e2b7cdaf4a9ef0eb926ba5662, type: 2}
   hand: {fileID: 4340330193381649297}
   AttackParticle: {fileID: 2853273787548984102, guid: da5a4e3e56f61104eb8e401b02b42dcf,
@@ -1923,27 +1923,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillImgae: {fileID: 0}
   particleObj: {fileID: 1762241516880736062, guid: 8d7ae3bfd68fa9e4686a0616b1f1088f,
-    type: 3}
-  particleSystemPrefab: {fileID: 0}
-  skillType: 0
-  skillFactor: 0
-  LevelperValues: []
-  skillButton: {fileID: 0}
-  CurrentLevel: 0
---- !u!114 &705915360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4513557152063853620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c017662e5448e39438d545ae5bbcb1ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skillImgae: {fileID: 0}
-  particleObj: {fileID: 662101548354500672, guid: f65519bf3485b054081e22cc4822e373,
     type: 3}
   particleSystemPrefab: {fileID: 0}
   skillType: 0

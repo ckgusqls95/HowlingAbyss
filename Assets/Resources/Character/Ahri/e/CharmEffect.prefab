@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5455757959115104000}
   - component: {fileID: 5461949243519776448}
   - component: {fileID: 3278705827646623375}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: CharmEffect
-  m_TagString: Untagged
+  m_TagString: particle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4776,7 +4776,7 @@ GameObject:
   - component: {fileID: 5267106220899775460}
   - component: {fileID: 5455752801913245328}
   - component: {fileID: 5462086860761234646}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FX_Pickup_Sparkles_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9588,7 +9588,7 @@ GameObject:
   - component: {fileID: 5267388220142916164}
   - component: {fileID: 5461607292098098422}
   - component: {fileID: 5462136763769053850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FX_Pickup_Glow_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14400,7 +14400,7 @@ GameObject:
   - component: {fileID: 5262194271693135590}
   - component: {fileID: 5455597690966579830}
   - component: {fileID: 5462140123560187172}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FX_Pickup_Beams_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

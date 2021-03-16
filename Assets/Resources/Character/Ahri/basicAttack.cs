@@ -42,10 +42,8 @@ public class basicAttack : MonoBehaviour
         {
             if (other.transform.gameObject ==target)
             {
-                Debug.Log("Hit");
-
                 float Damage = parentMinion.Attack(AttackType.MEELEE);
-                float Suffer;
+                float Suffer = 0.0f;
                 if (other.TryGetComponent<Units>(out var script))
                 {
                     Suffer = script.hit(AttackType.MEELEE, Damage, parentMinion.UnitStatus.armorPenetration);

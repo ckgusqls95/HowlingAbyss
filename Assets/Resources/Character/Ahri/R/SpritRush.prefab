@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 861914879355925060}
   - component: {fileID: 862385307586391392}
   - component: {fileID: 2743332762609946231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpritRush
-  m_TagString: Untagged
+  m_TagString: particle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4520,7 +4520,7 @@ GameObject:
   - component: {fileID: 658902278535809810}
   - component: {fileID: 861842772439792788}
   - component: {fileID: 860319429007689668}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FX_Fire_Embers_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

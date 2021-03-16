@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Unit;
 public class TempestParticle : MonoBehaviour
 {
     #region member
     ParticleSystem[] psArray;
-    private SonicWave parent;
+    private Tempest parent;
     float elapsedTime;
     #endregion
 
@@ -28,14 +28,30 @@ public class TempestParticle : MonoBehaviour
     }
     public void init(GameObject parentObject)
     {
-        parent = parentObject.GetComponent<SonicWave>();
+        parent = parentObject.GetComponent<Tempest>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!parent.transform.CompareTag(other.transform.tag))
+        if (parent)
         {
-            Debug.Log("Tempest Hit Enemy");
+            if (other.TryGetComponent<Units>(out Units script))
+            {
+                if ((script.UnitTag == UnitsTag.Minion ||
+                    script.UnitTag == UnitsTag.Champion) &&
+                    !other.CompareTag(parent.tag))
+                {
+                    Units unit = parent.transform.GetComponent<Units>();
+
+                    float Damage = unit.Attack(AttackType.AP_SKILL, parent.skillFactor, parent.LevelperValues[parent.CurrentLevel].addDamage);
+                    float Suffer = 0.0f;
+
+                    {
+                        Suffer = script.hit(AttackType.AP_SKILL, Damage, unit.UnitStatus.magicPenetration);
+                    }
+                    
+                }
+            }
         }
     }
     

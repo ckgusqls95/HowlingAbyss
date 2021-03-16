@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 543689364276282353}
   - component: {fileID: 385498485326524787}
   - component: {fileID: 386506512130968707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ParticlesAB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4765,7 +4765,7 @@ GameObject:
   - component: {fileID: 546175502787508991}
   - component: {fileID: 385998762055417981}
   - component: {fileID: 385194000023088431}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9519,7 +9519,7 @@ GameObject:
   - component: {fileID: 546082977619179723}
   - component: {fileID: 386771009327519851}
   - component: {fileID: 386007260040638873}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Beams
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14327,7 +14327,7 @@ GameObject:
   - component: {fileID: 543414262913496167}
   - component: {fileID: 385059753801722153}
   - component: {fileID: 385931161159679159}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19221,9 +19221,9 @@ GameObject:
   - component: {fileID: 539403931488423343}
   - component: {fileID: 530224878271521221}
   - component: {fileID: -4833135545947843742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SonicWave
-  m_TagString: Untagged
+  m_TagString: particle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19274,7 +19274,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -19301,7 +19301,7 @@ GameObject:
   - component: {fileID: 543273650500490961}
   - component: {fileID: 385141725396574829}
   - component: {fileID: 386091105529902909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeamAB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24194,7 +24194,7 @@ GameObject:
   - component: {fileID: 546595514584023223}
   - component: {fileID: 385873600606686759}
   - component: {fileID: 385157985474232505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Lines
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28970,7 +28970,7 @@ GameObject:
   - component: {fileID: 546310314895626925}
   - component: {fileID: 370690390329629799}
   - component: {fileID: 387221766270703355}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rays
   m_TagString: Untagged
   m_Icon: {fileID: 0}

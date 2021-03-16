@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5203841986985543855}
   - component: {fileID: 5397221078929588009}
   - component: {fileID: 5396246254349255801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FX_Fire_Embers_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4506,9 +4506,9 @@ GameObject:
   - component: {fileID: 5396693653431791325}
   - component: {fileID: 8277136187470238078}
   - component: {fileID: 5225028518283891351}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: firesessencebolts
-  m_TagString: Untagged
+  m_TagString: particle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

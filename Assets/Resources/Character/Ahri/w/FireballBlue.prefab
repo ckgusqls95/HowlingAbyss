@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7815029166576609741}
   - component: {fileID: 7973070138131317239}
   - component: {fileID: 7971674844286949557}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FireTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4832,7 +4832,7 @@ GameObject:
   - component: {fileID: 7815100522898204113}
   - component: {fileID: 7972750593588993769}
   - component: {fileID: 7971490943715976883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SmokeTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9653,7 +9653,7 @@ GameObject:
   - component: {fileID: 7815414302289264049}
   - component: {fileID: 7973097524219871223}
   - component: {fileID: 7972194528286983835}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SparkTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14467,7 +14467,7 @@ GameObject:
   - component: {fileID: 7973588527628708897}
   - component: {fileID: 8703358838962628544}
   - component: {fileID: 5718351600966082307}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FireballBlue
   m_TagString: particle
   m_Icon: {fileID: 0}

@@ -80,14 +80,14 @@ public class SpritRush : Skill
                 CurrentCount = RushCount;
             }
 
-            if(animator.GetCurrentAnimatorStateInfo(0).IsName("SkillLayer.R") &&
-                animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.8f)
-            {
-                if (this.transform.TryGetComponent<PlayerController>(out PlayerController script))
-                {
-                    script.isStopMove = false;
-                }
-            }
+            //if(animator.GetCurrentAnimatorStateInfo(0).IsName("SkillLayer.R") &&
+            //    animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.8f)
+            //{
+            //    if (this.transform.TryGetComponent<PlayerController>(out PlayerController script))
+            //    {
+            //        script.isStopMove = false;
+            //    }
+            //}
 
             yield return new WaitForEndOfFrame();
         }
@@ -99,10 +99,13 @@ public class SpritRush : Skill
 
     private void CreateSpritRush()
     {
-        if (this.transform.TryGetComponent<PlayerController>(out PlayerController script))
-        {
-            script.isStopMove = true;
-        }
+        //if (this.transform.TryGetComponent<PlayerController>(out PlayerController script))
+        //{
+        //    if(!script.isStopMove)
+        //    {
+        //        script.stop();
+        //    }
+        //}
 
         Instantiate(particleObj, ROOT.transform.position, Quaternion.identity,this.transform);
     }
