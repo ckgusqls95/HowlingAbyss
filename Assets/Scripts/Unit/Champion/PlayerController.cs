@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //champion.ChampionSkill[2].p;
+        
     }
 
     #region KeyBoardInput
@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        //if (PV.IsMine)
+        if (PV.IsMine)
         {
             Targeting();
             if (Input.anyKeyDown)

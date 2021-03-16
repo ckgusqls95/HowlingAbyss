@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SkillSystem;
-
+using Photon.Pun;
 public class OrbofDeception : Skill
 {
     private Animator animator;
@@ -83,7 +83,7 @@ public class OrbofDeception : Skill
         }
 
         ActiveWeapon();
-        GameObject particle = Instantiate(ParticleObj,weapon.transform.position, Quaternion.identity,null);
+        GameObject particle = PhotonNetwork.Instantiate("Character/Ahri/q/Orb", weapon.transform.position, Quaternion.identity);
         OrbParticle script = particle.AddComponent<OrbParticle>();
         script.init(this.gameObject);
     }

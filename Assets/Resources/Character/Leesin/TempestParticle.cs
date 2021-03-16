@@ -38,6 +38,4 @@ public class TempestParticle : MonoBehaviour
             Debug.Log("Tempest Hit Enemy");
         }
     }
-    
-
 }

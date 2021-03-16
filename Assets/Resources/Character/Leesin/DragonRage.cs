@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using SkillSystem;
 using Unit;
+using Photon.Pun;
 
 public class DragonRage : Skill
 {
@@ -98,10 +99,11 @@ public class DragonRage : Skill
 
     private void CreateDragonRage()
     {
-        Instantiate(particleObj, chest.transform.position, this.transform.rotation, this.transform);
+        GameObject particle1 = PhotonNetwork.Instantiate("Character/Leesin/DragonRage1", chest.transform.position, this.transform.rotation);
+        particle1.transform.SetParent(this.transform);
 
-        GameObject particle = Instantiate(Particle2, Target.transform.position,this.transform.rotation, Target.transform);
-        particle.transform.parent = Target.transform;
+        GameObject particle = PhotonNetwork.Instantiate("Character/Leesin/DragonRage2", Target.transform.position,this.transform.rotation);
+        particle.transform.SetParent(Target.transform);
 
         if(particle.TryGetComponent<DragonRageParticle>(out var script))
         {

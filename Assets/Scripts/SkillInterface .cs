@@ -63,8 +63,8 @@ namespace SkillSystem
         protected Button skillButton;
 
         public int CurrentLevel;
-        protected float coolTime;
-        protected float currentCoolTime;
+        public float coolTime;
+        public float currentCoolTime;
 
         public Sprite SkiilImage { get { return skillImgae; } }
         public skilltype SkillType { get { return skillType; } }

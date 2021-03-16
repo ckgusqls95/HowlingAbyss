@@ -4,7 +4,6 @@ using UnityEngine;
 using SkillSystem;
 using Photon.Pun;
 using Unit;
-
 public class Ahri : Champion
 {
     [SerializeField]
@@ -20,7 +19,6 @@ public class Ahri : Champion
     private GameObject hand;
     [SerializeField]
     private GameObject AttackParticle;
-
     protected override void Awake()
     {
         base.Awake();

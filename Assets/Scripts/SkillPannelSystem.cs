@@ -28,7 +28,7 @@ public class SkillPannelSystem : MonoBehaviour
     private float currentCost;
     private float maxCost;
 
-    private void Awake()
+    void Awake()
     {
        
     }

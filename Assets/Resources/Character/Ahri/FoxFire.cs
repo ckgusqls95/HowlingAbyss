@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SkillSystem;
+using Photon.Pun;
 
 public class FoxFire : Skill
 {
@@ -69,7 +70,8 @@ public class FoxFire : Skill
 
     private void CreateFoxFire()
     {
-        GameObject particle = Instantiate(ParticleObj, Root.transform.position, Quaternion.identity, this.transform);
+        GameObject particle = PhotonNetwork.Instantiate("Character/Ahri/w/FoxFire", Root.transform.position, Quaternion.identity);
+        particle.transform.SetParent(this.transform);
         particle.GetComponent<ControlFoxFire>().init(this.transform.gameObject);
     }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SkillSystem;
+using Photon.Pun;
 public class SpritRush : Skill
 {
     private Animator animator;
@@ -67,7 +68,6 @@ public class SpritRush : Skill
         StartCoroutine(CalculationCooltime());
     }
 
-
     IEnumerator CalculationCooltime()
     {
         while (currentCoolTime > 0.001f)
@@ -104,6 +104,7 @@ public class SpritRush : Skill
             script.isStopMove = true;
         }
 
-        Instantiate(particleObj, ROOT.transform.position, Quaternion.identity,this.transform);
+        GameObject particle = PhotonNetwork.Instantiate("Character/Ahri/R/SpritRush", ROOT.transform.position, Quaternion.identity);
+        particle.transform.SetParent(this.transform);
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using SkillSystem;
 using UnityEngine.AI;
+using Photon.Pun;
 public class SonicWave : Skill
 {
     private bool sonicWave;
@@ -109,8 +110,7 @@ public class SonicWave : Skill
     }
     void CreateSonicWave()
     {
-        GameObject instance = Instantiate(particleObj,hand.transform.position,Quaternion.identity, null);
-
+        GameObject instance = PhotonNetwork.Instantiate("Character/Leesin/SonicWave", hand.transform.position, Quaternion.identity);
         SonicwaveParticle script;
         if (instance.TryGetComponent<SonicwaveParticle>(out script))
         {
