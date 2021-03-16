@@ -545,6 +545,7 @@ GameObject:
   - component: {fileID: 8710032037521315536}
   - component: {fileID: 8710032037521315537}
   - component: {fileID: -164070215587438185}
+  - component: {fileID: 9147171254945077350}
   m_Layer: 0
   m_Name: Leesin Prefab
   m_TagString: Red
@@ -594,7 +595,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374611952236735304}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
   m_Name: 
@@ -664,7 +665,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374611952236735304}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
   m_Name: 
@@ -693,7 +694,7 @@ MonoBehaviour:
     Maxhealth: 0
     cost: 0
     costRegen: 0
-    Maxcost: 0
+    maxCost: 0
     attackSpeed: 0
     movementSpeed: 0
     attackDamage: 0
@@ -738,7 +739,11 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 1
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
   HitObject: {fileID: 0}
   pc: {fileID: 0}
   agent: {fileID: 0}
@@ -760,7 +765,11 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 1
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
 --- !u!114 &8905975072039338388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,7 +788,11 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 1
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
 --- !u!114 &2098379886655401315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -798,7 +811,11 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 1
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
   Particle2: {fileID: 7601504660124330962, guid: ab51e6cbc4597534a80e2d3093e65272,
     type: 3}
 --- !u!54 &8710032037521315536
@@ -813,7 +830,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -852,6 +869,23 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &9147171254945077350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374611952236735304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d48aaa97529f304f93d4e074b200baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  naviAgent: {fileID: 0}
+  gold: 0
+  speed: 10
+  targetpos: {x: 0, y: 0, z: 0}
+  isStopMove: 0
 --- !u!1 &1538577531692314025
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SkillSystem;
+using Photon.Pun;
+using System.IO;
 public class Tempest : Skill
 {
     private bool tempest;
@@ -77,7 +79,7 @@ public class Tempest : Skill
 
     void CreateTempest()
     {
-        GameObject instance = Instantiate(particleObj,transform.position, Quaternion.identity, null);
+        GameObject instance = PhotonNetwork.Instantiate("Character/Leesin/Tempest", transform.position, Quaternion.identity);
         TempestParticle script;
         if (instance.TryGetComponent<TempestParticle>(out script))
         {

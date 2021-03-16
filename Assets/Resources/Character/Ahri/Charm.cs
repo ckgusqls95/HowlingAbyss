@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SkillSystem;
+using Photon.Pun;
 public class Charm : Skill
 {
     private Animator animator;
@@ -69,7 +70,7 @@ public class Charm : Skill
 
     void CreateCharm()
     {
-        GameObject particle = Instantiate(ParticleObj, weapon.transform.position, Quaternion.identity, null);
+        GameObject particle = PhotonNetwork.Instantiate("Character/Ahri/e/Charm", weapon.transform.position, Quaternion.identity);
         CharmParticle script = particle.GetComponent<CharmParticle>();
         script.init(this.transform.gameObject);
     }

@@ -2922,7 +2922,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7778743175734271658}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
   m_Name: 
@@ -2992,7 +2992,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7778743175734271658}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
   m_Name: 
@@ -3014,20 +3014,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitTag: 1
+  UnitStatus:
+    level: 0
+    health: 0
+    healthRegen: 0
+    Maxhealth: 0
+    cost: 0
+    costRegen: 0
+    maxCost: 0
+    attackSpeed: 0
+    movementSpeed: 0
+    attackDamage: 0
+    abilityPower: 0
+    armor: 0
+    magicResist: 0
+    armorPenetration: 0
+    magicPenetration: 0
+    lifeSteal: 0
+    spellVamp: 0
+    abilityHaste: 0
+    tenacity: 0
+    experience: 0
+    killGold: 0
+    killExperience: 0
   UnitSight:
     sightRange: 0
     attackRange: 0
     aggroRange: 0
   Target: {fileID: 0}
   isDeath: 0
-  championSkill:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  championData: {fileID: 11400000, guid: 5e6845b4f85f6494bbaedc86142b7725, type: 2}
   LeesinData: {fileID: 11400000, guid: 38ae7eee84bd5a645805a799cf6189e4, type: 2}
+  hands: []
 --- !u!114 &1386729717380893057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3046,8 +3064,14 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 0
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
   HitObject: {fileID: 0}
+  pc: {fileID: 0}
+  agent: {fileID: 0}
 --- !u!114 &5658556883755749689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3066,7 +3090,11 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 1
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
 --- !u!114 &250054067883258998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3085,7 +3113,11 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 1
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
 --- !u!114 &7349538821297035393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3104,7 +3136,11 @@ MonoBehaviour:
   particleSystemPrefab: {fileID: 0}
   skillType: 1
   skillFactor: 0
+  LevelperValues: []
   skillButton: {fileID: 0}
+  CurrentLevel: 0
+  coolTime: 0
+  currentCoolTime: 0
   Particle2: {fileID: 7601504660124330962, guid: ab51e6cbc4597534a80e2d3093e65272,
     type: 3}
 --- !u!54 &1089207813

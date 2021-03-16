@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SkillSystem;
-
+using Photon.Pun;
 public class SafeGuard : Skill
 {
     //private bool safeguard;
@@ -55,7 +55,8 @@ public class SafeGuard : Skill
         }
 
         StartCoroutine(CalculationCooltime());
-        instanceParticle = Instantiate(particleObj, chest.transform.position, Quaternion.identity, this.transform);
+        instanceParticle = PhotonNetwork.Instantiate("Character/Leesin/SafeGuard", chest.transform.position, Quaternion.identity);
+        instanceParticle.transform.SetParent(this.transform);
         currentCoolTime = coolTime;
         Leesin player = gameObject.GetComponent<Leesin>();
         player.playsound("SFX_Safeguard");

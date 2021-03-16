@@ -8,21 +8,36 @@ public class SkillButton : MonoBehaviour
     public Image skillFilter;
     public Text coolTimeCounter; // 남은 쿨타임을 표시할 테스트
 
-    [HideInInspector]
     public float coolTime;
 
     private float currentCoolTime; // 남은 쿨타임을 추적 할 변수
 
     private bool canUseSkill = true; // 스킬을 사용할 수 있는지 확인하는 변수
 
-    private void Start()
+    void Start()
     {
         skillFilter.fillAmount = 0; // 처음에 스킬을 가리지 않음
         coolTimeCounter.text = "";
     }
 
-    public void UseSkill()
+    public void UseSkill(int skillIndex)
     {
+        switch(skillIndex)
+        {
+            case 1:
+                GetComponentInParent<SkillPannelSystem>().playerChampion.UseSkillQ();
+                break;
+            case 2:
+                GetComponentInParent<SkillPannelSystem>().playerChampion.UseSkillW();
+                break;
+            case 3:
+                GetComponentInParent<SkillPannelSystem>().playerChampion.UseSkillE();
+                break;
+            case 4:
+                GetComponentInParent<SkillPannelSystem>().playerChampion.UseSkillR();
+                break;
+        }
+        
         if (canUseSkill)
         {
             Debug.Log("Use Skill");

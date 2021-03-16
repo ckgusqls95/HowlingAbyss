@@ -802,11 +802,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 79955412}
         m_MethodName: UseSkill
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3497,7 +3497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillFilter: {fileID: 1935908059}
   coolTimeCounter: {fileID: 70816316}
-  coolTime: 0
+  coolTime: 10
 --- !u!114 &471957998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3543,11 +3543,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 471957997}
         m_MethodName: UseSkill
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17755,11 +17755,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1722149977}
         m_MethodName: UseSkill
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -19897,11 +19897,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2013666437}
         m_MethodName: UseSkill
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
