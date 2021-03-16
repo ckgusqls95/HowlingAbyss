@@ -60,7 +60,6 @@ public class Minion_melee : Units
         {
             const int DeathAnimaton = 4;
             animator.SetInteger("death", Random.Range(0, DeathAnimaton));
-            //animator.SetTrigger("deathTrigger");
             isDeath = true;
         }
 
