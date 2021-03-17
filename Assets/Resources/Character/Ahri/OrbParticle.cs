@@ -59,7 +59,7 @@ public class OrbParticle : MonoBehaviour
             float Suffer = 0.0f;
             if (other.TryGetComponent<Units>(out var script))
             {
-                Suffer = script.hit(AttackType.AP_SKILL, Damage, unit.UnitStatus.magicResist);
+                Suffer = script.hit(AttackType.AP_SKILL, Damage, parent.GetComponent<Units>(),unit.UnitStatus.magicResist);
             }
 
             Debug.Log("Damage = " + Damage +" / " + "Suffer = " + Suffer);

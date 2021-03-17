@@ -21,8 +21,6 @@ public class SkillPannelSystem : MonoBehaviour
     [SerializeField]
     private Image championPortrait;
 
-    public Champion playerChampion;
-
     private float currentHP;
     private float maxHP;
     private float currentCost;
@@ -36,10 +34,10 @@ public class SkillPannelSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHP = playerChampion.UnitStatus.health;
-        maxHP = playerChampion.UnitStatus.Maxhealth;
-        currentCost = playerChampion.UnitStatus.cost;
-        maxCost = playerChampion.UnitStatus.maxCost;
+        currentHP = GameManager.Instance.player.UnitStatus.health;
+        maxHP = GameManager.Instance.player.UnitStatus.Maxhealth;
+        currentCost = GameManager.Instance.player.UnitStatus.cost;
+        maxCost = GameManager.Instance.player.UnitStatus.maxCost;
         hpBarText.text = currentHP.ToString() + " / " + maxHP.ToString();
         costBarText.text = currentCost.ToString() + " / " + maxCost.ToString();
         hpBarImage.fillAmount = currentHP / maxHP;
@@ -49,18 +47,19 @@ public class SkillPannelSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentHP != playerChampion.UnitStatus.health || maxHP != playerChampion.UnitStatus.Maxhealth)
+        if (currentHP != GameManager.Instance.player.UnitStatus.health || maxHP != GameManager.Instance.player.UnitStatus.Maxhealth)
         {
-            currentHP = playerChampion.UnitStatus.health;
-            maxHP = playerChampion.UnitStatus.Maxhealth;
+            currentHP = GameManager.Instance.player.UnitStatus.health;
+
+            maxHP = GameManager.Instance.player.UnitStatus.Maxhealth;
             hpBarText.text = currentHP.ToString() + " / " + maxHP.ToString();
             hpBarImage.fillAmount = currentHP / maxHP;
         }
 
-        if (currentCost != playerChampion.UnitStatus.cost || maxCost != playerChampion.UnitStatus.maxCost)
+        if (currentCost != GameManager.Instance.player.UnitStatus.cost || maxCost != GameManager.Instance.player.UnitStatus.maxCost)
         {
-            currentCost = playerChampion.UnitStatus.cost;
-            maxCost = playerChampion.UnitStatus.maxCost;
+            currentCost = GameManager.Instance.player.UnitStatus.cost;
+            maxCost = GameManager.Instance.player.UnitStatus.maxCost;
             costBarText.text = currentCost.ToString() + " / " + maxCost.ToString();
             costBarImage.fillAmount = currentCost / maxCost;
         }

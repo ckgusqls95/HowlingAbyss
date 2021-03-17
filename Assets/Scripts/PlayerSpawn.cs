@@ -8,7 +8,6 @@ public class PlayerSpawn : MonoBehaviour
     [SerializeField]
     private ChampionPrefabData ChampionPrefab;
     GameObject championObj;
-
     private void Awake()
     {
         MatchChampion();

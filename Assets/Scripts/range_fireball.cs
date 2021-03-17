@@ -5,8 +5,7 @@ using Unit;
 public class range_fireball : MonoBehaviour
 {
     ParticleSystem fireball;
-    
-    
+
     [SerializeField]
     private GameObject Target;
     private Units TargetUnit;
@@ -41,7 +40,7 @@ public class range_fireball : MonoBehaviour
 
         if (Target == null || TargetUnit.isDeath)
         {
-            ParticleStop();            
+            ParticleStop();
         }
 
     }
@@ -50,11 +49,11 @@ public class range_fireball : MonoBehaviour
     {
         if (other.transform.gameObject == Target)
         {
-            float Damage = Parent.Attack(AttackType.MEELEE);
+            float Damage = Parent.Attack(AttackType.MELEE);
             float Suffer;
             if (other.TryGetComponent<Units>(out var script))
             {
-                Suffer = script.hit(AttackType.MEELEE, Damage, Parent.UnitStatus.armorPenetration);
+                Suffer = script.hit(AttackType.MELEE, Damage, Parent, Parent.UnitStatus.armorPenetration);
             }
             ParticleStop();
         }

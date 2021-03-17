@@ -4,7 +4,7 @@ using UnityEngine;
 using Unit;
 public class DragonRageParticle : MonoBehaviour
 {
-    GameObject createObj;
+    GameObject parent;
     Vector3 dir;
     Vector3 startpos;
     PlayerController pc;
@@ -38,7 +38,7 @@ public class DragonRageParticle : MonoBehaviour
 
     public void init(GameObject obj)
     {
-        createObj = obj;
+        parent = obj;
         dir = obj.transform.forward;
         startpos = this.transform.position;
 
@@ -51,18 +51,18 @@ public class DragonRageParticle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag(createObj.tag == "Red" ? "Blue" : "Red"))
+        if(other.CompareTag(parent.tag == "Red" ? "Blue" : "Red"))
         {
             if (other.TryGetComponent<Units>(out Units script))
             {
-                DragonRage rage = createObj.GetComponent<DragonRage>();
-                Units unit = createObj.GetComponent<Units>();
+                DragonRage rage = parent.GetComponent<DragonRage>();
+                Units unit = parent.GetComponent<Units>();
 
                 float Damage = unit.Attack(AttackType.AD_SKILL, rage.skillFactor, rage.LevelperValues[rage.CurrentLevel].addDamage);
                 float Suffer = 0.0f;
 
                 {
-                    Suffer = script.hit(AttackType.AD_SKILL, Damage, unit.UnitStatus.armorPenetration);
+                    Suffer = script.hit(AttackType.AD_SKILL, Damage, parent.GetComponent<Units>(), unit.UnitStatus.armorPenetration);
                 }
 
             }

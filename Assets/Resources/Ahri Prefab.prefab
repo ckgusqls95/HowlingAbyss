@@ -1483,6 +1483,8 @@ MonoBehaviour:
   Target: {fileID: 0}
   isDeath: 0
   championData: {fileID: 11400000, guid: 0d7586dabd0bb714b9fd6993430e957e, type: 2}
+  victory: {fileID: 11400000, guid: 80f23573ffcec6b4a89ade7fe81fb544, type: 2}
+  defaet: {fileID: 11400000, guid: 00be50b20fcca5842bb6fe10ef6b0362, type: 2}
   AhriData: {fileID: 11400000, guid: fbeb3d1e2b7cdaf4a9ef0eb926ba5662, type: 2}
   hand: {fileID: 4821116177958041216}
   AttackParticle: {fileID: 2853273787548984102, guid: da5a4e3e56f61104eb8e401b02b42dcf,
@@ -1564,6 +1566,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 0
     Name: SpritRush
+  - Type: 9
+    SynchronizeType: 0
+    Name: Death
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0

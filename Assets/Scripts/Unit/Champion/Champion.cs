@@ -15,6 +15,10 @@ public abstract class Champion : Units
     public ChampionData championData;
     #endregion
     private GameObject championUI;
+    [SerializeField]
+    private GameEvent victory;
+    [SerializeField]
+    private GameEvent defaet;
 
     protected virtual void Awake()
     {
@@ -43,9 +47,9 @@ public abstract class Champion : Units
         #region MatchingUI
         if (photonView.IsMine)
         {
+            GameManager.Instance.player = this;
             championUI = FindObjectOfType<Canvas>().transform.Find("SkillPannel").gameObject;
             championUI.SetActive(true);
-            championUI.GetComponent<SkillPannelSystem>().playerChampion = this;
             championUI.GetComponent<SkillPannelSystem>().MatchingChampionSkillPannel(championData);
         }
         #endregion
@@ -57,7 +61,20 @@ public abstract class Champion : Units
         
     }
 
-    public virtual void MeeleeAttack()
+    protected override void Die()
+    {
+        if(gameObject.GetComponent<PhotonView>().IsMine == true)
+        {
+            defaet.Raise();
+        }
+        else 
+        {
+            victory.Raise();
+        }
+        
+    }
+
+    public virtual void MeleeAttack()
     {
         // 공격 범위 그리기
         //champion.UnitSight.attackRange;

@@ -163,5 +163,8 @@ public class Turret : Units
         }
     }
 
-    
+    protected override void Die()
+    {
+       
+    }
 }

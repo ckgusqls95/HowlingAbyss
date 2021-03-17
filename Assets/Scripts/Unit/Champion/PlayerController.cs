@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
     #region KeyBoardInput
     private void KeyDown_A()
     {
-        champion.MeeleeAttack();
+        champion.MeleeAttack();
     }
     private void KeyDown_Q()
     {

@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1762241516880736049}
   - component: {fileID: 3432804109735675513}
+  - component: {fileID: 8863908923990365809}
+  - component: {fileID: 8932584640202234616}
   m_Layer: 8
   m_Name: FoxFire
   m_TagString: particle
@@ -46,6 +48,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d4f484646bb684895613a0cb6a75dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8863908923990365809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762241516880736062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &8932584640202234616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762241516880736062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1001 &1762241516862272803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53,6 +93,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1762241516880736049}
     m_Modifications:
+    - target: {fileID: 286437973406901698, guid: 1d0f4473ec4c4d84b9c85f1cde7710fa,
+        type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7809868993194389719, guid: 1d0f4473ec4c4d84b9c85f1cde7710fa,
         type: 3}
       propertyPath: m_Name
@@ -143,6 +188,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1762241516880736049}
     m_Modifications:
+    - target: {fileID: 286437973406901698, guid: 1d0f4473ec4c4d84b9c85f1cde7710fa,
+        type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7809868993194389719, guid: 1d0f4473ec4c4d84b9c85f1cde7710fa,
         type: 3}
       propertyPath: m_Name
@@ -233,6 +283,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1762241516880736049}
     m_Modifications:
+    - target: {fileID: 286437973406901698, guid: 1d0f4473ec4c4d84b9c85f1cde7710fa,
+        type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7809868993194389719, guid: 1d0f4473ec4c4d84b9c85f1cde7710fa,
         type: 3}
       propertyPath: m_Name

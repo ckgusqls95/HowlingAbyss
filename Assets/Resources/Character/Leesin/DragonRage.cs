@@ -119,7 +119,7 @@ public class DragonRage : Skill
         {
             Units unit = transform.GetComponent<Units>();
             float Damage = unit.Attack(AttackType.AD_SKILL,skillFactor, LevelperValues[CurrentLevel].addDamage);
-            float Suffer = Target.GetComponent<Units>().hit(AttackType.AD_SKILL, Damage, unit.UnitStatus.armorPenetration);
+            float Suffer = Target.GetComponent<Units>().hit(AttackType.AD_SKILL, Damage, this.transform.GetComponent<Units>(),unit.UnitStatus.armorPenetration);
         }
 
 

@@ -230,8 +230,7 @@ public class Minion_Siege : Units
         return newPriority;
     }
 
-
-    private void DeathMinion()
+    protected override void Die()
     {
         GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(gameObject);
         Object.Destroy(this.gameObject);

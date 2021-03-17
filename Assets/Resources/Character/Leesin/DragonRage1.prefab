@@ -4786,6 +4786,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4352237316614374}
   - component: {fileID: 1828064459039375043}
+  - component: {fileID: -548160386630485501}
+  - component: {fileID: -7754506152143511139}
   m_Layer: 8
   m_Name: DragonRage1
   m_TagString: particle
@@ -4826,6 +4828,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901780f61974c2f43a2ebf5d24a58d1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-548160386630485501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168789365331922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &-7754506152143511139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168789365331922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1358152778530310
 GameObject:
   m_ObjectHideFlags: 0

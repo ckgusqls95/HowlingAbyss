@@ -59,14 +59,11 @@ public class Nexus : MonoBehaviourPun, IPunObservable
 
     private void FixedUpdate()
     {
-        if(pv.IsMine)
-        {
-            ElapsedTime += Time.deltaTime;
-        }
+        FixedCoolTime = CoolTime;
 
         if (ElapsedTime % FixedCoolTime <= Time.deltaTime && ElapsedTime >= StartTime)
         {
-            FixedCoolTime = CoolTime;
+            ElapsedTime += Time.deltaTime;
             StartCoroutine(SumonMinion());
         }
     }

@@ -52,11 +52,6 @@ public class Ahri : Champion
 
     private void FixedUpdate()
     {
-        if (!isDeath && UnitStatus.health <= 0.0f)
-        {
-            animator.SetTrigger("Death");
-            isDeath = true;
-        }
     }
 
     public override void UseSkillE()
@@ -142,8 +137,16 @@ public class Ahri : Champion
         SoundManager.instance.PlaySE(idlesounds[index], gameObject);
     }
 
-    private void  Destroy()
+    protected override void Die()
     {
-        Object.Destroy(gameObject);
+        base.Die();
+        if (!isDeath)
+        {
+            animator.SetTrigger("Death");
+            isDeath = true;
+            this.gameObject.GetComponent<PlayerController>().isStopMove = true;
+            //Object.Destroy(gameObject);
+        }
     }
+    
 }

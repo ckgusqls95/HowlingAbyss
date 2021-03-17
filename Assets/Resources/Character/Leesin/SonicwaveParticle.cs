@@ -74,7 +74,7 @@ public class SonicwaveParticle : MonoBehaviour
                     float Suffer = 0.0f;
 
                     {
-                        Suffer = script.hit(AttackType.AD_SKILL, Damage, unit.UnitStatus.armorPenetration);
+                        Suffer = script.hit(AttackType.AD_SKILL, Damage, parent.gameObject.GetComponent<Units>(), unit.UnitStatus.armorPenetration);
                     }
                     
                 }

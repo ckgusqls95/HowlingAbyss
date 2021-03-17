@@ -41,11 +41,11 @@ public class Siege_CannonBall : MonoBehaviour
     {        
         if (other.transform.gameObject == Target.gameObject)
         {
-            float Damage = Parent.Attack(AttackType.MEELEE);
+            float Damage = Parent.Attack(AttackType.MELEE);
             float Suffer;
             if (other.TryGetComponent<Units>(out var script))
             {
-                Suffer = script.hit(AttackType.MEELEE, Damage, Parent.UnitStatus.armorPenetration);
+                Suffer = script.hit(AttackType.MELEE, Damage, null,Parent.UnitStatus.armorPenetration);
             }
 
             ParticleStop();

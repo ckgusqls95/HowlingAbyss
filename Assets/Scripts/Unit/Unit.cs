@@ -99,7 +99,7 @@ namespace Unit
 
     public enum AttackType
     {
-        MEELEE,
+        MELEE,
         AD_SKILL,
         AP_SKILL,
         TRUE_DAMAGE
@@ -112,7 +112,7 @@ namespace Unit
     }
     #endregion
 
-    public class Units : MonoBehaviourPun, IPunObservable
+    public abstract class Units : MonoBehaviourPun, IPunObservable
     {
 
         #region Members
@@ -136,7 +136,6 @@ namespace Unit
 
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
-
             //if (stream.IsWriting)
             //{
             //    stream.SendNext(unitStatus);
@@ -145,18 +144,17 @@ namespace Unit
             //{
             //    this.unitStatus = (Status)stream.ReceiveNext();
             //}
-
         }
-
-        public float hit(AttackType type, float damage, float Penetration = 0.0f)
+    
+        public float hit(AttackType type, float damage,Units unit = null, float Penetration = 0.0f)
         {
             const float percent = 100.0f;
-            float SufferDamege = 0.0f;
+            float SufferDamage = 0.0f;
             float Resist = 0.0f;
 
             switch (type)
             {
-                case AttackType.MEELEE:
+                case AttackType.MELEE:
                 case AttackType.AD_SKILL:
                     Resist = UnitStatus.armor;
                     break;
@@ -171,66 +169,56 @@ namespace Unit
                     break;
             }
 
-            SufferDamege = (percent / (percent + Resist - Penetration)) * damage;
+            SufferDamage = (percent / (percent + Resist - Penetration)) * damage;
 
-            UnitStatus.health -= SufferDamege;
-
-            return SufferDamege;
+            UnitStatus.health -= SufferDamage;
+            if (UnitStatus.health < 0.0f) Die();
+            return SufferDamage;
         }
 
-
+        protected abstract void Die();
         /// <summary>
         /// damageFactor = Base Damage + (damageTypeStatus* damage Ratio)
         /// The attack type is owned by the Units Class.
         /// </summary>
-        public float Attack(AttackType type,float factor = 1.0f,float addDamege = 0.0f)
+        public float Attack(AttackType type,float factor = 1.0f,float addDamage = 0.0f)
         {
-            float Damege = 0.0f;
-            Damege += addDamege;
+            float Damage = 0.0f;
+            Damage += addDamage;
 
            switch(type)
             {
-                case AttackType.MEELEE:
+                case AttackType.MELEE:
                 case AttackType.AD_SKILL:
                     {
-                        Damege += (UnitStatus.attackDamage * factor); 
+                        Damage += (UnitStatus.attackDamage * factor); 
                     }
                     break;
                 case AttackType.AP_SKILL:
                     {
-                       Damege += (UnitStatus.abilityPower * factor);
+                       Damage += (UnitStatus.abilityPower * factor);
                     }
                     break;
                 default:
-                    Debug.LogError("Default Damege Calculation Error");
+                    Debug.LogError("Default Damage Calculation Error");
                     break;
             }
 
-            return Damege;
+            return Damage;
         }
-           
+
         public virtual void receiveEvent(UnitsTag otherTag,UnitEventType eventType,Status otherStatus,GameObject _target = null)
         {
             switch (eventType)
-            {
-                case UnitEventType.Death:
-                    if (otherTag == UnitsTag.Minion && 
-                        unitTag == UnitsTag.Champion)
-                    {
-                        float exp = otherStatus.killExperience;
-                        float gold = otherStatus.killGold;
-                    }
-                    break;
+            { 
                 case UnitEventType.Hit:
                     if(otherTag == UnitsTag.Champion &&
                         unitTag == UnitsTag.Minion &&
                         _target)
                     {
-                        // 미니언 우선순위 변경
                     }
                     break;
             }
-
         }
 
         public virtual void GiveEvent(UnitEventType eventType)

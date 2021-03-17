@@ -25,16 +25,16 @@ public class SkillButton : MonoBehaviour
         switch(skillIndex)
         {
             case 1:
-                GetComponentInParent<SkillPannelSystem>().playerChampion.UseSkillQ();
+                GameManager.Instance.player.UseSkillQ();
                 break;
             case 2:
-                GetComponentInParent<SkillPannelSystem>().playerChampion.UseSkillW();
+                GameManager.Instance.player.UseSkillW();
                 break;
             case 3:
-                GetComponentInParent<SkillPannelSystem>().playerChampion.UseSkillE();
+                GameManager.Instance.player.UseSkillE();
                 break;
             case 4:
-                GetComponentInParent<SkillPannelSystem>().playerChampion.UseSkillR();
+                GameManager.Instance.player.UseSkillR();
                 break;
         }
         

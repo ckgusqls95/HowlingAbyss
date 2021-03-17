@@ -630,6 +630,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 0
     Name: ResonatingStrike
+  - Type: 9
+    SynchronizeType: 0
+    Name: Death
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -717,6 +720,8 @@ MonoBehaviour:
   Target: {fileID: 0}
   isDeath: 0
   championData: {fileID: 11400000, guid: 5e6845b4f85f6494bbaedc86142b7725, type: 2}
+  victory: {fileID: 11400000, guid: 80f23573ffcec6b4a89ade7fe81fb544, type: 2}
+  defaet: {fileID: 11400000, guid: 00be50b20fcca5842bb6fe10ef6b0362, type: 2}
   LeesinData: {fileID: 11400000, guid: 38ae7eee84bd5a645805a799cf6189e4, type: 2}
   hands:
   - {fileID: 1199182292}

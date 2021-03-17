@@ -231,7 +231,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 200, y: 0}
-  m_SizeDelta: {x: 880, y: 950}
+  m_SizeDelta: {x: 880, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &185824822
 VideoPlayer:
@@ -2492,6 +2492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   summonerSpell: {fileID: 11400000, guid: 4d4ece9135781fb4a8bafc9202fd9544, type: 2}
+  player: {fileID: 0}
 --- !u!4 &1643264945
 Transform:
   m_ObjectHideFlags: 0

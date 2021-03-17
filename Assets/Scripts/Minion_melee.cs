@@ -6,6 +6,7 @@ using Photon.Realtime;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using Unit;
+
 public class Minion_melee : Units
 {
     #region member
@@ -51,7 +52,6 @@ public class Minion_melee : Units
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     private void FixedUpdate()
@@ -275,7 +275,8 @@ public class Minion_melee : Units
             StaffCol.enabled = true;
         }
     }
-    private void DeathMinion()
+
+    protected override void Die()
     {
         GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(gameObject);
         Object.Destroy(this.gameObject);

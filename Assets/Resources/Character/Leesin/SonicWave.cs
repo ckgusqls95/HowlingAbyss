@@ -136,7 +136,7 @@ public class SonicWave : Skill
 
                 float Suffer = 0.0f;
                 {
-                    Suffer = script.hit(AttackType.AD_SKILL, Damage, unit.UnitStatus.armorPenetration);
+                    Suffer = script.hit(AttackType.AD_SKILL, Damage, unit,unit.UnitStatus.armorPenetration);
                 }
                 
             }

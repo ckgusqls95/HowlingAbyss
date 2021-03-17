@@ -13,7 +13,9 @@ public class Announcer : MonoBehaviour
         RedTeamVictory,
         enemyKill,
         Excute,
-        Death
+        Death,
+        Victory,
+        Defeat
     }
     
     private Dictionary<RequestMenu, string> soundMenu = new Dictionary<RequestMenu, string>();
@@ -51,8 +53,15 @@ public class Announcer : MonoBehaviour
             {
                 soundMenu.Add(RequestMenu.enemyKill, AnnouncerSE[i]);
             }
+            else if(AnnouncerSE[i].CompareTo("Victory") == 0)
+            {
+                soundMenu.Add(RequestMenu.Victory, AnnouncerSE[i]);
+            }
+            else if(AnnouncerSE[i].CompareTo("Defeat") == 0)
+            {
+                soundMenu.Add(RequestMenu.Defeat, AnnouncerSE[i]);
+            }
         }
-
     }
 
     private void Start()

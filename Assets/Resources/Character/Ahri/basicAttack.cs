@@ -8,6 +8,7 @@ public class basicAttack : MonoBehaviour
     private Units parentMinion = null;
     private GameObject target = null;
     const float speed = 5.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,15 +43,14 @@ public class basicAttack : MonoBehaviour
         {
             if (other.transform.gameObject ==target)
             {
-                float Damage = parentMinion.Attack(AttackType.MEELEE);
+                float Damage = parentMinion.Attack(AttackType.MELEE);
                 float Suffer = 0.0f;
                 if (other.TryGetComponent<Units>(out var script))
                 {
-                    Suffer = script.hit(AttackType.MEELEE, Damage, parentMinion.UnitStatus.armorPenetration);
+                    Suffer = script.hit(AttackType.MELEE, Damage, null,parentMinion.UnitStatus.armorPenetration);
                 }
             }
         }
-
         Object.Destroy(this.gameObject);
     }
 }

@@ -47,7 +47,7 @@ public class TempestParticle : MonoBehaviour
                     float Suffer = 0.0f;
 
                     {
-                        Suffer = script.hit(AttackType.AP_SKILL, Damage, unit.UnitStatus.magicPenetration);
+                        Suffer = script.hit(AttackType.AP_SKILL, Damage, parent.GetComponent<Units>() , unit.UnitStatus.magicPenetration);
                     }
                     
                 }

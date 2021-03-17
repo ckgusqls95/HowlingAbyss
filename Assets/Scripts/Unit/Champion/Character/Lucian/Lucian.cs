@@ -76,4 +76,9 @@ public class Lucian : Champion
 
         return;
     }
+
+    protected override void Die()
+    {
+      
+    }
 }

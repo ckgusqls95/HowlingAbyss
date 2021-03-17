@@ -112,6 +112,12 @@ public class Minion_range : Units
         }
     }
 
+    protected override void Die()
+    {
+        GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(gameObject);
+        Object.Destroy(this.gameObject);
+    }
+
     void TargetTracking()
     {
         if (Target == null || elapsedSearchTime <= 0.0f )
@@ -231,9 +237,4 @@ public class Minion_range : Units
         return newPriority;
     }
 
-    private void DeathMinion()
-    {
-        GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(gameObject);
-        Object.Destroy(this.gameObject);
-    }
 }
