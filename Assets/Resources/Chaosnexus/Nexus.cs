@@ -20,7 +20,7 @@ public class Nexus : MonoBehaviourPun, IPunObservable
 
     #endregion
 
-    private const float StartTime = 65.0f;  // 
+    private const float StartTime = 15.0f;  // 
     private const float CoolTime = 30.0f;   // 30 seconds;
     private const float SumonDelayTime = 0.5f;
 
