@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby.unity
     guid: 409e4dc3048c55e44ae27796e30a822a
   - enabled: 1
-    path: Assets/Scenes/LoadingScene.unity
-    guid: 7bc581b4c0395344588ac558035a2c11
-  - enabled: 1
     path: Assets/Scenes/Howling Abyss.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

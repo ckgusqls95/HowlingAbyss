@@ -8,7 +8,7 @@ public class IngameUIController : MonoBehaviour
     public GameObject GameOverUI;
     private void Start()
     {
-        Screen.SetResolution(1920, 1080, false);
+        Screen.SetResolution(1920, 1080, true);
     }
     private void Update()
     {

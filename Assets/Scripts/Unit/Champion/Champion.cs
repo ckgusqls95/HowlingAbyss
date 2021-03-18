@@ -23,6 +23,14 @@ public abstract class Champion : Units
     protected virtual void Awake()
     {
         unitTag = UnitsTag.Champion;
+
+        if (photonView.IsMine)
+        {
+            GameManager.Instance.player = this;
+            championUI = FindObjectOfType<Canvas>().transform.Find("SkillPannel").gameObject;
+            championUI.SetActive(true);
+            championUI.GetComponent<SkillPannelSystem>().MatchingChampionSkillPannel(championData);
+        }
     }
 
     // Start is called before the first frame update
@@ -44,15 +52,6 @@ public abstract class Champion : Units
         unitTag = UnitsTag.Champion;
         #endregion
 
-        #region MatchingUI
-        if (photonView.IsMine)
-        {
-            GameManager.Instance.player = this;
-            championUI = FindObjectOfType<Canvas>().transform.Find("SkillPannel").gameObject;
-            championUI.SetActive(true);
-            championUI.GetComponent<SkillPannelSystem>().MatchingChampionSkillPannel(championData);
-        }
-        #endregion
     }
 
     // Update is called once per frame
