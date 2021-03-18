@@ -11,13 +11,13 @@ namespace Unit
     public struct Status
     {
         public int level;
-        public int health;
+        public float health;
         public float healthRegen;
-        public int Maxhealth;
+        public float Maxhealth;
 
-        public int cost;
+        public float cost;
         public float costRegen;
-        public int maxCost;
+        public float maxCost;
 
         public float attackSpeed;
         public float movementSpeed;
@@ -163,12 +163,12 @@ namespace Unit
             else
             {
                 this.UnitStatus.level = (int)stream.ReceiveNext();
-                this.UnitStatus.health = (int)stream.ReceiveNext();
+                this.UnitStatus.health = (float)stream.ReceiveNext();
                 this.UnitStatus.healthRegen = (float)stream.ReceiveNext();
-                this.UnitStatus.Maxhealth = (int)stream.ReceiveNext();
-                this.UnitStatus.cost = (int)stream.ReceiveNext();
+                this.UnitStatus.Maxhealth = (float)stream.ReceiveNext();
+                this.UnitStatus.cost = (float)stream.ReceiveNext();
                 this.UnitStatus.costRegen = (float)stream.ReceiveNext();
-                this.UnitStatus.maxCost = (int)stream.ReceiveNext();
+                this.UnitStatus.maxCost = (float)stream.ReceiveNext();
                 this.UnitStatus.attackSpeed = (float)stream.ReceiveNext();
                 this.UnitStatus.movementSpeed = (float)stream.ReceiveNext();
                 this.UnitStatus.attackDamage = (float)stream.ReceiveNext();
@@ -211,7 +211,7 @@ namespace Unit
 
             SufferDamage = (percent / (percent + Resist - Penetration)) * damage;
 
-            UnitStatus.health -= (int)SufferDamage;
+            UnitStatus.health -= SufferDamage;
             if (UnitStatus.health < 0.0f) Die();
             return SufferDamage;
         }
