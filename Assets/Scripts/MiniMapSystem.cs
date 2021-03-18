@@ -26,34 +26,11 @@ public class MiniMapSystem : MonoBehaviour
         GR = GetComponentInChildren<GraphicRaycaster>();
         observers = new Dictionary<GameObject, GameObject>();
 
-        Transform MapOutSide = GameObject.FindWithTag("CullingBlock").transform;
+        ActualMapsize.width = 175;
+        ActualMapsize.height = 175;
+        ActualMapsize.x = -25;
+        ActualMapsize.y = -25;
 
-        int ChildCount = MapOutSide.transform.childCount;
-
-        Transform[] child = MapOutSide.GetComponentsInChildren<Transform>();
-
-        ActualMapsize.xMax = float.MinValue;
-        ActualMapsize.xMin = float.MaxValue;
-
-        ActualMapsize.yMax = float.MinValue;
-        ActualMapsize.yMin = float.MaxValue;
-
-        for (int i = 1; i < ChildCount; i++)
-        {
-            Vector2 pos = new Vector2(child[i].transform.position.x, child[i].transform.position.z);
-
-            if (ActualMapsize.xMax < pos.x)
-                ActualMapsize.xMax = pos.x;
-
-            if (ActualMapsize.xMin > pos.x)
-                ActualMapsize.xMin = pos.x;
-
-            if (ActualMapsize.yMax < pos.y)
-                ActualMapsize.yMax = pos.y;
-
-            if (ActualMapsize.yMin > pos.y)
-                ActualMapsize.yMin = pos.y;
-        }
     }
 
     private void FixedUpdate()
