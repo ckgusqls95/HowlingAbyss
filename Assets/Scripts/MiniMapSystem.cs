@@ -26,34 +26,11 @@ public class MiniMapSystem : MonoBehaviour
         GR = GetComponentInChildren<GraphicRaycaster>();
         observers = new Dictionary<GameObject, GameObject>();
 
-        Transform MapOutSide = GameObject.FindWithTag("CullingBlock").transform;
+        ActualMapsize.width = 175;
+        ActualMapsize.height = 175;
+        ActualMapsize.x = -25;
+        ActualMapsize.y = -25;
 
-        int ChildCount = MapOutSide.transform.childCount;
-
-        Transform[] child = MapOutSide.GetComponentsInChildren<Transform>();
-
-        ActualMapsize.xMax = float.MinValue;
-        ActualMapsize.xMin = float.MaxValue;
-
-        ActualMapsize.yMax = float.MinValue;
-        ActualMapsize.yMin = float.MaxValue;
-
-        for (int i = 1; i < ChildCount; i++)
-        {
-            Vector2 pos = new Vector2(child[i].transform.position.x, child[i].transform.position.z);
-
-            if (ActualMapsize.xMax < pos.x)
-                ActualMapsize.xMax = pos.x;
-
-            if (ActualMapsize.xMin > pos.x)
-                ActualMapsize.xMin = pos.x;
-
-            if (ActualMapsize.yMax < pos.y)
-                ActualMapsize.yMax = pos.y;
-
-            if (ActualMapsize.yMin > pos.y)
-                ActualMapsize.yMin = pos.y;
-        }
     }
 
     private void FixedUpdate()
@@ -83,7 +60,7 @@ public class MiniMapSystem : MonoBehaviour
     }
 
     GameObject IndicateObject(Vector3 position, Color color, GameObject SelectIcon = null)
-    {   
+    {
         // -51.1 198.9   0 250
         // w - xMax = 51.1 이만큼 더해줌
         // h - yMax = ? 만큼 더해줌  0 ~ 250
@@ -159,7 +136,7 @@ public class MiniMapSystem : MonoBehaviour
         pos.x -= Mathf.Abs(ActualMapsize.xMin);
         pos.y -= Mathf.Abs(ActualMapsize.yMin);
 
-        Camera.main.transform.position = new Vector3(pos.x + offset.x,offset.y, pos.y + offset.z);
+        Camera.main.transform.position = new Vector3(pos.x + offset.x, offset.y, pos.y + offset.z);
         return;
     }
 }
