@@ -26,15 +26,17 @@ public class SkillPannelSystem : MonoBehaviour
     void Awake()
     {
         player = GameManager.Instance.player;
-        for (int index = 1; index > skillButton.Length; ++index)
-        {
-            skillButtonScript[index] = skillButton[index].GetComponent<SkillButton>();
-        }
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        skillButtonScript = new SkillButton[5];
+        for (int index = 1; index > skillButton.Length; ++index)
+        {
+            skillButtonScript[index] = skillButton[index].gameObject.GetComponent<SkillButton>();
+        }
     }
 
     // Update is called once per frame
