@@ -30,6 +30,7 @@ public class Bush : MonoBehaviour
         insideBush.Add(other.transform);
     }
 
+
     private void OnTriggerExit(Collider other)
     {     
         if(insideBush.Contains(other.transform))
@@ -42,5 +43,7 @@ public class Bush : MonoBehaviour
             mtl.color = color;
             other.transform.GetComponent<Renderer>().material = new Material(mtl);
         }
+
+        
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.UI;
-using System.Text;
+
 public class SkillPannelSystem : MonoBehaviour
 {
     [SerializeField]
@@ -20,34 +20,49 @@ public class SkillPannelSystem : MonoBehaviour
     private Text costBarText;
     [SerializeField]
     private Image championPortrait;
-    private Champion player;
+
+    private float currentHP;
+    private float maxHP;
+    private float currentCost;
+    private float maxCost;
 
     void Awake()
     {
-        player = GameManager.Instance.player;
+       
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        currentHP = GameManager.Instance.player.UnitStatus.health;
+        maxHP = GameManager.Instance.player.UnitStatus.Maxhealth;
+        currentCost = GameManager.Instance.player.UnitStatus.cost;
+        maxCost = GameManager.Instance.player.UnitStatus.maxCost;
+        hpBarText.text = currentHP.ToString() + " / " + maxHP.ToString();
+        costBarText.text = currentCost.ToString() + " / " + maxCost.ToString();
+        hpBarImage.fillAmount = currentHP / maxHP;
+        costBarImage.fillAmount = currentCost / maxCost;
     }
 
     // Update is called once per frame
     void Update()
     {
-        StringBuilder hp = new StringBuilder();
-        hp.Append((int)player.UnitStatus.health);
-        hp.Append(" / ");
-        hp.Append((int)player.UnitStatus.health);
-        hpBarText.text = hp.ToString();
-        hpBarImage.fillAmount = (int)(player.UnitStatus.health / player.UnitStatus.Maxhealth);
+        if (currentHP != GameManager.Instance.player.UnitStatus.health || maxHP != GameManager.Instance.player.UnitStatus.Maxhealth)
+        {
+            currentHP = GameManager.Instance.player.UnitStatus.health;
 
-        StringBuilder cost = new StringBuilder();
-        cost.Append((int)player.UnitStatus.cost);
-        cost.Append(" / ");
-        cost.Append((int)player.UnitStatus.maxCost);
-        costBarText.text = cost.ToString();
-        costBarImage.fillAmount = (int)(player.UnitStatus.cost / player.UnitStatus.maxCost);
+            maxHP = GameManager.Instance.player.UnitStatus.Maxhealth;
+            hpBarText.text = currentHP.ToString() + " / " + maxHP.ToString();
+            hpBarImage.fillAmount = currentHP / maxHP;
+        }
+
+        if (currentCost != GameManager.Instance.player.UnitStatus.cost || maxCost != GameManager.Instance.player.UnitStatus.maxCost)
+        {
+            currentCost = GameManager.Instance.player.UnitStatus.cost;
+            maxCost = GameManager.Instance.player.UnitStatus.maxCost;
+            costBarText.text = currentCost.ToString() + " / " + maxCost.ToString();
+            costBarImage.fillAmount = currentCost / maxCost;
+        }
     }
 
     public void MatchingChampionSkillPannel(ChampionData _championData)

@@ -26,10 +26,6 @@ public class MiniMapSystem : MonoBehaviour
         GR = GetComponentInChildren<GraphicRaycaster>();
         observers = new Dictionary<GameObject, GameObject>();
 
-
-    }
-    private void Start()
-    {
         Transform MapOutSide = GameObject.FindWithTag("CullingBlock").transform;
 
         int ChildCount = MapOutSide.transform.childCount;
@@ -59,6 +55,7 @@ public class MiniMapSystem : MonoBehaviour
                 ActualMapsize.yMin = pos.y;
         }
     }
+
     private void FixedUpdate()
     {
         foreach (var obj in observers)
@@ -71,6 +68,7 @@ public class MiniMapSystem : MonoBehaviour
 
     private void Update()
     {
+
         if (Input.GetMouseButtonDown(0))
         {
             EventData.position = Input.mousePosition;
@@ -100,16 +98,13 @@ public class MiniMapSystem : MonoBehaviour
         x -= Mathf.Abs(MiniMapSize.xMin);
         y -= Mathf.Abs(MiniMapSize.yMin);
 
-        GameObject icon = Instantiate(Icon, Vector3.zero, Quaternion.identity, this.transform);
-        
+        GameObject icon =
+         SelectIcon == null ? Instantiate(Icon, Vector3.zero, Quaternion.identity, this.transform) :
+                              Instantiate(SelectIcon, Vector3.zero, Quaternion.identity, this.transform);
+
         Image iconImage = icon.GetComponent<Image>();
         iconImage.color = color;
-        icon.gameObject.GetComponent<RectTransform>().position = new Vector3(x, y, 0);
-      
-        if (SelectIcon)
-        {
-            iconImage.sprite = SelectIcon.GetComponent<Image>().sprite;
-        }
+        icon.transform.localPosition = new Vector3(x, y, 0);
         return icon;
     }
 
