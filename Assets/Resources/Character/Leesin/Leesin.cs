@@ -9,8 +9,8 @@ public class Leesin : Champion
 {
     [SerializeField]
     private UnitData LeesinData;
-
     private Animator animator;
+    public GameObject icon;
     const int Skillcount = 5;
     string SFXResource = "LeesinSFX/SFX/";
     string voResource = "LeesinSFX/vo/";
@@ -24,6 +24,7 @@ public class Leesin : Champion
     {
         base.Awake();
         animator = GetComponent<Animator>();
+        GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Attach(this.transform.gameObject, icon);
 
         championSkill = new Skill[Skillcount];
         championSkill[0] = GetComponent<SonicWave>();
@@ -160,6 +161,6 @@ public class Leesin : Champion
             this.gameObject.GetComponent<PlayerController>().isStopMove = true;
             //Object.Destroy(gameObject);
         }
+        GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(this.transform.gameObject);
     }
-
 }

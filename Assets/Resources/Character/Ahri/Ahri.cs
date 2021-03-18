@@ -8,8 +8,8 @@ public class Ahri : Champion
 {
     [SerializeField]
     private UnitData AhriData;
-
     private Animator animator;
+    public GameObject icon;
     const int Skillcount = 4;
     string SFXResource = "AhriSFX/SFX/";
     string voResource = "AhriSFX/vo/";
@@ -24,6 +24,7 @@ public class Ahri : Champion
     {
         base.Awake();
         animator = GetComponent<Animator>();
+        GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Attach(this.transform.gameObject, icon);
         championSkill = new Skill[Skillcount];
         championSkill[0] = GetComponent<OrbofDeception>();
         championSkill[1] = GetComponent<FoxFire>();
@@ -147,6 +148,7 @@ public class Ahri : Champion
             this.gameObject.GetComponent<PlayerController>().isStopMove = true;
             //Object.Destroy(gameObject);
         }
+        GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(this.transform.gameObject);
     }
-    
+   
 }

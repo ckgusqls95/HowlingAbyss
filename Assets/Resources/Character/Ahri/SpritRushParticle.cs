@@ -9,8 +9,9 @@ public class SpritRushParticle : MonoBehaviour
     PlayerController player;
     [SerializeField]
     private GameObject essensefire;
+
     // Start is called before the first frame update
-    private void Awake()
+    private void Start()
     {
         player = this.transform.parent.GetComponent<PlayerController>();
     }
@@ -47,6 +48,6 @@ public class SpritRushParticle : MonoBehaviour
             Object.Destroy(this.gameObject);
         }
 
-        transform.position = Vector3.MoveTowards(transform.position,player.targetpos, flyspeed * Time.deltaTime);
+        transform.parent.position = Vector3.MoveTowards(transform.position,player.targetpos, flyspeed * Time.deltaTime);
     }
 }

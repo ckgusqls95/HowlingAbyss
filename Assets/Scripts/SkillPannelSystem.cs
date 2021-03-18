@@ -7,7 +7,8 @@ using System.Text;
 public class SkillPannelSystem : MonoBehaviour
 {
     [SerializeField]
-    private Button[] SkillButton;
+    private Button[] skillButton;
+    private SkillButton[] skillButtonScript;
     [SerializeField]
     private Button[] summonerSpell;
     [SerializeField]
@@ -25,6 +26,10 @@ public class SkillPannelSystem : MonoBehaviour
     void Awake()
     {
         player = GameManager.Instance.player;
+        for (int index = 1; index > skillButton.Length; ++index)
+        {
+            skillButtonScript[index] = skillButton[index].GetComponent<SkillButton>();
+        }
     }
 
     // Start is called before the first frame update
@@ -38,7 +43,7 @@ public class SkillPannelSystem : MonoBehaviour
         StringBuilder hp = new StringBuilder();
         hp.Append((int)player.UnitStatus.health);
         hp.Append(" / ");
-        hp.Append((int)player.UnitStatus.health);
+        hp.Append((int)player.UnitStatus.Maxhealth);
         hpBarText.text = hp.ToString();
         hpBarImage.fillAmount = player.UnitStatus.health / player.UnitStatus.Maxhealth;
 
@@ -48,13 +53,19 @@ public class SkillPannelSystem : MonoBehaviour
         cost.Append((int)player.UnitStatus.maxCost);
         costBarText.text = cost.ToString();
         costBarImage.fillAmount = player.UnitStatus.cost / player.UnitStatus.maxCost;
+
+        //for (int index = 1; index < skillButton.Length; ++index)
+        //{
+        //    skillButtonScript[index].skillFilter.fillAmount = 1 * Time.smoothDeltaTime / player.ChampionSkill[index].coolTime;
+        //    skillButtonScript[index].coolTimeCounter.text = player.ChampionSkill[index].currentCoolTime.ToString();
+        //}
     }
 
     public void MatchingChampionSkillPannel(ChampionData _championData)
     {
-        for (int index = 0; index < SkillButton.Length; index++)
+        for (int index = 0; index < skillButton.Length; index++)
         {
-            SkillButton[index].image.sprite = _championData.ChampionSkill[index];
+            skillButton[index].image.sprite = _championData.ChampionSkill[index];
         }
         for (int index = 0; index < summonerSpell.Length; index++)
         {
