@@ -14,7 +14,11 @@ public class HealPackScript : MonoBehaviour
     {
         ps = GetComponent<ParticleSystem>();
         Boxcollider = GetComponent<BoxCollider>();
-        CoolTime = 5.0f;
+        CoolTime = 60.0f;
+
+        Boxcollider.enabled = false;
+        ps.Stop();
+        ElapsedTime = CoolTime;
     }
 
     // Update is called once per frame
@@ -36,17 +40,24 @@ public class HealPackScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(ps.isPlaying)
+        if(other.TryGetComponent<Champion>(out Champion script))
         {
-            Boxcollider.enabled = false;
-            ps.Stop();
-            GameObject healObj =  Instantiate(healOnce,Vector3.zero,Quaternion.identity,other.transform);
-            ElapsedTime = CoolTime;
-            healObj.transform.localPosition = Vector3.zero;
-            healObj.transform.localRotation = Quaternion.Euler(new Vector3(-90, 0, 0));
-            // 힐팩 이펙트 
-            //
-
+            if(ps.isPlaying)
+            {
+                Boxcollider.enabled = false;
+                ps.Stop();
+                GameObject healObj =  Instantiate(healOnce,Vector3.zero,Quaternion.identity,other.transform);
+                ElapsedTime = CoolTime;
+                healObj.transform.localPosition = Vector3.zero;
+                healObj.transform.localRotation = Quaternion.Euler(new Vector3(-90, 0, 0));
+                // 힐팩 이펙트 
+                //
+                script.UnitStatus.health += script.UnitStatus.Maxhealth * 0.1f;
+                if(script.UnitStatus.health > script.UnitStatus.Maxhealth)
+                {
+                    script.UnitStatus.health = script.UnitStatus.Maxhealth;
+                }
+            }
         }
     }
 
