@@ -14,7 +14,7 @@ public class HealPackScript : MonoBehaviour
     {
         ps = GetComponent<ParticleSystem>();
         Boxcollider = GetComponent<BoxCollider>();
-        CoolTime = 60.0f;
+        CoolTime = 30.0f;
 
         Boxcollider.enabled = false;
         ps.Stop();
