@@ -66,7 +66,6 @@ public class Nexus : MonoBehaviourPun, IPunObservable
 
         if (ElapsedTime % FixedCoolTime <= Time.deltaTime && ElapsedTime >= StartTime)
         {
-            FixedCoolTime += Time.deltaTime;
             StartCoroutine(SumonMinion());
         }
     }
@@ -125,10 +124,10 @@ public class Nexus : MonoBehaviourPun, IPunObservable
             yield return new WaitForSeconds(SumonDelayTime);
         }
 
-
         if (wave == 0)
         {
             GameObject.Find("Announcer").GetComponent<Announcer>().Request(Announcer.RequestMenu.MinionSummon);
+            ElapsedTime = CoolTime;
         }
 
         wave++;
