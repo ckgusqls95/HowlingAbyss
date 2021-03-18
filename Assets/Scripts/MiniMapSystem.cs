@@ -60,7 +60,7 @@ public class MiniMapSystem : MonoBehaviour
     }
 
     GameObject IndicateObject(Vector3 position, Color color, GameObject SelectIcon = null)
-    {   
+    {
         // -51.1 198.9   0 250
         // w - xMax = 51.1 이만큼 더해줌
         // h - yMax = ? 만큼 더해줌  0 ~ 250
@@ -136,7 +136,7 @@ public class MiniMapSystem : MonoBehaviour
         pos.x -= Mathf.Abs(ActualMapsize.xMin);
         pos.y -= Mathf.Abs(ActualMapsize.yMin);
 
-        Camera.main.transform.position = new Vector3(pos.x + offset.x,offset.y, pos.y + offset.z);
+        Camera.main.transform.position = new Vector3(pos.x + offset.x, offset.y, pos.y + offset.z);
         return;
     }
 }
