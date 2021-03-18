@@ -59,7 +59,7 @@ public class Nexus : MonoBehaviourPun, IPunObservable
 
     private void FixedUpdate()
     {
-        if(pv.IsMine)
+        //if(pv.IsMine)
         {
             ElapsedTime += Time.deltaTime;
         }

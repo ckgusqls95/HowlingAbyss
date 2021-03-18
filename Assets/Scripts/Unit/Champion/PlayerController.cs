@@ -227,7 +227,6 @@ public class PlayerController : MonoBehaviour
         Target = newTarget;
     }
 
-
     IEnumerator attack(Vector3 pos)
     {
         while((animator.GetCurrentAnimatorStateInfo(0).normalizedTime) <= 0.8f && isAttack == true)
