@@ -5,9 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public struct InitStatus
 {
-    public float health;
+    public int health;
     public float healthRegen;
-    public float cost;
+    public int cost;
     public float costRegen;
     public float attackSpeed;
     public float movementSpeed;

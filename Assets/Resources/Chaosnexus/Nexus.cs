@@ -59,15 +59,18 @@ public class Nexus : MonoBehaviourPun, IPunObservable
 
     private void FixedUpdate()
     {
-        FixedCoolTime = CoolTime;
+        if(pv.IsMine)
+        {
+            ElapsedTime += Time.deltaTime;
+        }
 
         if (ElapsedTime % FixedCoolTime <= Time.deltaTime && ElapsedTime >= StartTime)
         {
-            ElapsedTime += Time.deltaTime;
+            FixedCoolTime += Time.deltaTime;
             StartCoroutine(SumonMinion());
         }
     }
-
+    // TODO: 미니언 생성 버그
     [PunRPC]
     IEnumerator SumonMinion()
     {

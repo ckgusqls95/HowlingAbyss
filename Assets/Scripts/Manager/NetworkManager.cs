@@ -67,7 +67,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             Instantiate(lobbyUI.UserNameTextPrefab, playerListContent).GetComponent<PlayerListItem>().Setup(players[i]);
         }
 
-        startGameButton.SetActive(PhotonNetwork.IsMasterClient);
+        startGameButton.GetComponent<Button>().interactable = PhotonNetwork.IsMasterClient;
     }
 
     public override void OnConnectedToMaster()

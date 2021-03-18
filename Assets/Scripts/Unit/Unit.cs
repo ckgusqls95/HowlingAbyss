@@ -11,13 +11,13 @@ namespace Unit
     public struct Status
     {
         public int level;
-        public float health;
+        public int health;
         public float healthRegen;
-        public float Maxhealth;
+        public int Maxhealth;
 
-        public float cost;
+        public int cost;
         public float costRegen;
-        public float maxCost;
+        public int maxCost;
 
         public float attackSpeed;
         public float movementSpeed;
@@ -136,14 +136,54 @@ namespace Unit
 
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
-            //if (stream.IsWriting)
-            //{
-            //    stream.SendNext(unitStatus);
-            //}
-            //else
-            //{
-            //    this.unitStatus = (Status)stream.ReceiveNext();
-            //}
+            if (stream.IsWriting)
+            {
+                stream.SendNext(UnitStatus.level);
+                stream.SendNext(UnitStatus.health);
+                stream.SendNext(UnitStatus.healthRegen);
+                stream.SendNext(UnitStatus.Maxhealth);
+                stream.SendNext(UnitStatus.cost);
+                stream.SendNext(UnitStatus.costRegen);
+                stream.SendNext(UnitStatus.maxCost);
+                stream.SendNext(UnitStatus.attackSpeed);
+                stream.SendNext(UnitStatus.movementSpeed);
+                stream.SendNext(UnitStatus.attackDamage);
+                stream.SendNext(UnitStatus.abilityPower);
+                stream.SendNext(UnitStatus.armor);
+                stream.SendNext(UnitStatus.magicResist);
+                stream.SendNext(UnitStatus.armorPenetration);
+                stream.SendNext(UnitStatus.magicPenetration);
+                stream.SendNext(UnitStatus.lifeSteal);
+                stream.SendNext(UnitStatus.abilityHaste);
+                stream.SendNext(UnitStatus.tenacity);
+                stream.SendNext(UnitStatus.experience);
+                stream.SendNext(UnitStatus.killGold);
+                stream.SendNext(UnitStatus.killExperience);
+            }
+            else
+            {
+                this.UnitStatus.level = (int)stream.ReceiveNext();
+                this.UnitStatus.health = (int)stream.ReceiveNext();
+                this.UnitStatus.healthRegen = (float)stream.ReceiveNext();
+                this.UnitStatus.Maxhealth = (int)stream.ReceiveNext();
+                this.UnitStatus.cost = (int)stream.ReceiveNext();
+                this.UnitStatus.costRegen = (float)stream.ReceiveNext();
+                this.UnitStatus.maxCost = (int)stream.ReceiveNext();
+                this.UnitStatus.attackSpeed = (float)stream.ReceiveNext();
+                this.UnitStatus.movementSpeed = (float)stream.ReceiveNext();
+                this.UnitStatus.attackDamage = (float)stream.ReceiveNext();
+                this.UnitStatus.abilityPower = (float)stream.ReceiveNext();
+                this.UnitStatus.armor = (float)stream.ReceiveNext();
+                this.UnitStatus.magicResist = (float)stream.ReceiveNext();
+                this.UnitStatus.armorPenetration = (float)stream.ReceiveNext();
+                this.UnitStatus.magicPenetration = (float)stream.ReceiveNext();
+                this.UnitStatus.lifeSteal = (float)stream.ReceiveNext();
+                this.UnitStatus.abilityHaste = (float)stream.ReceiveNext();
+                this.UnitStatus.tenacity = (float)stream.ReceiveNext();
+                this.UnitStatus.experience = (float)stream.ReceiveNext();
+                this.UnitStatus.killGold = (float)stream.ReceiveNext();
+                this.UnitStatus.killExperience = (float)stream.ReceiveNext();
+            }
         }
     
         public float hit(AttackType type, float damage,Units unit = null, float Penetration = 0.0f)
@@ -171,7 +211,7 @@ namespace Unit
 
             SufferDamage = (percent / (percent + Resist - Penetration)) * damage;
 
-            UnitStatus.health -= SufferDamage;
+            UnitStatus.health -= (int)SufferDamage;
             if (UnitStatus.health < 0.0f) Die();
             return SufferDamage;
         }

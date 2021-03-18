@@ -199,7 +199,7 @@ public class PlayerController : MonoBehaviour
         this.transform.rotation = Quaternion.RotateTowards(
             transform.rotation,
             Rotation,
-            360.0f * Time.deltaTime);
+            360.0f);
     }
     private void TargetOutline(Transform newTarget)
     {

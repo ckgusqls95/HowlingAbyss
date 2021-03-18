@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Photon.Pun;
+using UnityEngine.SceneManagement;
 public class IngameUIController : MonoBehaviour
 {
     public GameObject GameOverUI;
@@ -40,5 +41,11 @@ public class IngameUIController : MonoBehaviour
         GameOverUI.SetActive(true);
         GameOverUI.transform.Find("Defeat").gameObject.SetActive(true);
         GameObject.Find("Announcer").GetComponent<Announcer>().Request(Announcer.RequestMenu.Defeat);
+    }
+
+    public void OnContinueButton()
+    {
+        Screen.SetResolution(1280, 720, false);
+        SceneManager.LoadScene("Lobby");
     }
 }

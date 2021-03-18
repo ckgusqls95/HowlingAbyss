@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class Announcer : MonoBehaviour
 {
     public enum RequestMenu
@@ -25,7 +24,6 @@ public class Announcer : MonoBehaviour
     {
         string[] AnnouncerSE;
         AnnouncerSE = SoundManager.instance.LoadClip(Path);
-
 
         for (int i = 0; i < AnnouncerSE.Length; i++)
         {

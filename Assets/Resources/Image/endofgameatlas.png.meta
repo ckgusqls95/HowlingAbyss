@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 3a903b18e57d6c347ad6b28f21acf95e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 204379850452277901
+    second: endofgameatlas_0
+  - first:
+      213: -4281659643444701870
+    second: endofgameatlas_1
+  - first:
+      213: -7232113629445285565
+    second: endofgameatlas_2
+  - first:
+      213: -8457479255101450060
+    second: endofgameatlas_3
+  - first:
+      213: -6661366710581045132
+    second: endofgameatlas_4
+  - first:
+      213: -8404000318414330437
+    second: endofgameatlas_5
+  - first:
+      213: -5654448552663361235
+    second: endofgameatlas_6
+  - first:
+      213: -78112043567700883
+    second: endofgameatlas_7
+  - first:
+      213: 831869893350119425
+    second: endofgameatlas_8
+  - first:
+      213: -8277222282276002022
+    second: endofgameatlas_9
+  - first:
+      213: 4918784606785049670
+    second: endofgameatlas_10
+  - first:
+      213: -524329637892051465
+    second: endofgameatlas_11
+  - first:
+      213: -4934583446612563587
+    second: endofgameatlas_12
+  - first:
+      213: 605649160774156825
+    second: endofgameatlas_13
+  - first:
+      213: 8210243763129928588
+    second: endofgameatlas_14
+  - first:
+      213: 7428256865105225619
+    second: endofgameatlas_15
+  - first:
+      213: 2959646335989019288
+    second: endofgameatlas_16
+  - first:
+      213: -9180947170124569203
+    second: endofgameatlas_17
+  - first:
+      213: 4704680932347487026
+    second: endofgameatlas_18
+  - first:
+      213: 20009784450999830
+    second: endofgameatlas_19
+  - first:
+      213: 879859208828537434
+    second: endofgameatlas_20
+  - first:
+      213: -6539328986809968713
+    second: endofgameatlas_21
+  - first:
+      213: -6980774262932333052
+    second: endofgameatlas_22
+  - first:
+      213: -517354497854595151
+    second: endofgameatlas_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: endofgameatlas_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 214
+        width: 148
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2555a5f4d3d7494c0800000000000000
+      internalID: -4281659643444701870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: endofgameatlas_8
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 160
+        width: 148
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108d974b2456b8b00800000000000000
+      internalID: 831869893350119425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: endofgameatlas_11
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 93
+        width: 166
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd2c3ce8f439b8f0800000000000000
+      internalID: -524329637892051465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: endofgameatlas_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 39
+        width: 163
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ac49ae943e53c00800000000000000
+      internalID: 879859208828537434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

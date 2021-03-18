@@ -29,9 +29,9 @@ namespace SkillSystem
         [Range(1,5)]
         public int level;
         public float addDamage;
-        public float consumeCost;
+        public int consumeCost;
 
-        public SkillLevel(int _Level,float _AddDamage,float _ConsumeCost)
+        public SkillLevel(int _Level,float _AddDamage,int _ConsumeCost)
         {
             level = _Level;
             addDamage = _AddDamage;
