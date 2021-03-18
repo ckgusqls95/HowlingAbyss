@@ -4,18 +4,19 @@ using UnityEngine;
 using Unit;
 public class SpritRushParticle : MonoBehaviour
 {
-    const float flyspeed = 10.0f;
+    const float flyspeed = 5.0f;
     float duration = 0.3f;
     PlayerController player;
     [SerializeField]
     private GameObject essensefire;
-
     // Start is called before the first frame update
+    private void Awake()
+    {
+    }
     private void Start()
     {
-        player = this.transform.parent.GetComponent<PlayerController>();
+        player = this.transform.parent.GetComponent<PlayerController>();        
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -47,7 +48,9 @@ public class SpritRushParticle : MonoBehaviour
 
             Object.Destroy(this.gameObject);
         }
-
-        transform.parent.position = Vector3.MoveTowards(transform.position,player.targetpos, flyspeed * Time.deltaTime);
+        Vector3 targetposition = player.targetpos;
+        targetposition.y = transform.parent.position.y;
+        
+        transform.parent.position = Vector3.MoveTowards(transform.position,targetposition, flyspeed * Time.deltaTime);
     }
 }
