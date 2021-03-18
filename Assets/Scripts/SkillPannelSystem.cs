@@ -40,14 +40,14 @@ public class SkillPannelSystem : MonoBehaviour
         hp.Append(" / ");
         hp.Append((int)player.UnitStatus.health);
         hpBarText.text = hp.ToString();
-        hpBarImage.fillAmount = (int)(player.UnitStatus.health / player.UnitStatus.Maxhealth);
+        hpBarImage.fillAmount = player.UnitStatus.health / player.UnitStatus.Maxhealth;
 
         StringBuilder cost = new StringBuilder();
         cost.Append((int)player.UnitStatus.cost);
         cost.Append(" / ");
         cost.Append((int)player.UnitStatus.maxCost);
         costBarText.text = cost.ToString();
-        costBarImage.fillAmount = (int)(player.UnitStatus.cost / player.UnitStatus.maxCost);
+        costBarImage.fillAmount = player.UnitStatus.cost / player.UnitStatus.maxCost;
     }
 
     public void MatchingChampionSkillPannel(ChampionData _championData)
