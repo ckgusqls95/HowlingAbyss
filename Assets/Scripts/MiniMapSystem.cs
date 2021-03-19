@@ -59,7 +59,7 @@ public class MiniMapSystem : MonoBehaviour
         }
     }
 
-    GameObject IndicateObject(Vector3 position, Color color, GameObject SelectIcon = null)
+    GameObject IndicateObject(GameObject obj, Color color, GameObject SelectIcon = null)
     {
         // -51.1 198.9   0 250
         // w - xMax = 51.1 이만큼 더해줌
@@ -67,7 +67,7 @@ public class MiniMapSystem : MonoBehaviour
         //  78% ->  0 390 ->  296 - 190 106.4
         Rect MiniMapSize = GetComponent<RectTransform>().rect;
 
-        Vector2 IconPosition = new Vector2(position.x, position.z);
+        Vector2 IconPosition = new Vector2(obj.transform.position.x, obj.transform.position.z);
         IconPosition.x += Mathf.Abs(ActualMapsize.xMin);
         IconPosition.y += Mathf.Abs(ActualMapsize.yMin);
         float x = (IconPosition.x / ActualMapsize.width) * MiniMapSize.width;
@@ -80,8 +80,17 @@ public class MiniMapSystem : MonoBehaviour
                               Instantiate(SelectIcon, Vector3.zero, Quaternion.identity, this.transform);
 
         Image iconImage = icon.GetComponent<Image>();
-        iconImage.color = color;
+        if(obj.TryGetComponent<Champion>(out var script))
+        {
+
+        }
+        else
+        {
+            iconImage.color = color;
+        }
+        
         icon.transform.localPosition = new Vector3(x, y, 0);
+
         return icon;
     }
 
@@ -105,7 +114,7 @@ public class MiniMapSystem : MonoBehaviour
     {
         observers.Add(observer,
             IndicateObject(
-                observer.transform.position,
+                observer,
                 observer.transform.tag == "Red" ? new Color(255, 0, 0) : new Color(0, 0, 255),
                 Icon != null ? Icon : null));
     }

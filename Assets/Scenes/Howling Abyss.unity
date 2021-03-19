@@ -756,7 +756,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillFilter: {fileID: 1667909800}
   coolTimeCounter: {fileID: 342409805}
-  coolTime: 13
 --- !u!114 &79955413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3763,7 +3762,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillFilter: {fileID: 1935908059}
   coolTimeCounter: {fileID: 70816316}
-  coolTime: 10
 --- !u!114 &471957998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16874,7 +16872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473f4e13941c34e46b0e49fb30412a02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkillButton:
+  skillButton:
   - {fileID: 284057507}
   - {fileID: 471957998}
   - {fileID: 79955413}
@@ -18368,7 +18366,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillFilter: {fileID: 2064573753}
   coolTimeCounter: {fileID: 123475729}
-  coolTime: 17
 --- !u!114 &1722149978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20108,7 +20105,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillFilter: {fileID: 2102743543}
   coolTimeCounter: {fileID: 275124537}
-  coolTime: 180
 --- !u!114 &1949662652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20510,7 +20506,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillFilter: {fileID: 261942246}
   coolTimeCounter: {fileID: 1793275085}
-  coolTime: 60
 --- !u!114 &2013666438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20659,7 +20654,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillFilter: {fileID: 790999168}
   coolTimeCounter: {fileID: 2126823065}
-  coolTime: 300
 --- !u!114 &2025871332
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1486,6 +1486,7 @@ MonoBehaviour:
   victory: {fileID: 11400000, guid: 80f23573ffcec6b4a89ade7fe81fb544, type: 2}
   defaet: {fileID: 11400000, guid: 00be50b20fcca5842bb6fe10ef6b0362, type: 2}
   AhriData: {fileID: 11400000, guid: fbeb3d1e2b7cdaf4a9ef0eb926ba5662, type: 2}
+  icon: {fileID: 1377918495180485945, guid: 11e5647d792381d4893acd4ba0ca8cb0, type: 3}
   hand: {fileID: 4821116177958041216}
   AttackParticle: {fileID: 2853273787548984102, guid: da5a4e3e56f61104eb8e401b02b42dcf,
     type: 3}
