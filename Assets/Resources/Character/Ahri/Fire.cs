@@ -85,7 +85,7 @@ public class Fire : MonoBehaviour
             {
                 Suffer = script.hit(AttackType.AP_SKILL, Damage, parent.GetComponent<Units>(),unit.UnitStatus.magicResist);
             }
-            
+            Debug.Log("Damage = " + Damage + " / " + "Suffer = " + Suffer);
         }
 
         Object.Destroy(gameObject);

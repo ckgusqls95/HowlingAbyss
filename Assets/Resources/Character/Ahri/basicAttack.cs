@@ -41,7 +41,7 @@ public class basicAttack : MonoBehaviour
     {
         if (parentMinion.Target)
         {
-            if (other.transform.gameObject ==target)
+            if (other.transform.gameObject == target)
             {
                 float Damage = parentMinion.Attack(AttackType.MELEE);
                 float Suffer = 0.0f;
@@ -49,8 +49,9 @@ public class basicAttack : MonoBehaviour
                 {
                     Suffer = script.hit(AttackType.MELEE, Damage, null,parentMinion.UnitStatus.armorPenetration);
                 }
+                Debug.Log("Damage = " + Damage + " / " + "Suffer = " + Suffer);
+                Object.Destroy(this.gameObject);
             }
         }
-        Object.Destroy(this.gameObject);
     }
 }
