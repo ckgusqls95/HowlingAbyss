@@ -88,6 +88,7 @@ public class CharmParticle : MonoBehaviour
             {
                 Suffer = script.hit(AttackType.AP_SKILL, Damage,parent.GetComponent<Ahri>(),unit.UnitStatus.magicResist);
             }
+            Debug.Log("Damage = " + Damage + " / " + "Suffer = " + Suffer);
         }
         Object.Destroy(this.gameObject);            
     }

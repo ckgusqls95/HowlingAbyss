@@ -101,7 +101,7 @@ public class OrbofDeception : Skill
 
         ActiveWeapon();
         GameObject particle = PhotonNetwork.Instantiate("Character/Ahri/q/Orb", weapon.transform.position, Quaternion.identity);
-        OrbParticle script = particle.AddComponent<OrbParticle>();
+        OrbParticle script = particle.GetComponent<OrbParticle>();
         script.init(this.gameObject);
     }
 

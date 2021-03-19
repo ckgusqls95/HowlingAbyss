@@ -20,7 +20,6 @@ public class FireEsseneBolt : MonoBehaviour
         if (target)
         {
             this.transform.position = Vector3.MoveTowards(this.transform.position, target.transform.position, speed * Time.deltaTime);
-
         }
         else
         {
@@ -41,8 +40,8 @@ public class FireEsseneBolt : MonoBehaviour
             {
                 Suffer = script.hit(AttackType.AP_SKILL, Damage, parent.GetComponent<Ahri>(), unit.UnitStatus.magicResist);
             }
+            Object.Destroy(gameObject);
         }
-        Object.Destroy(gameObject);
     }
 
 
