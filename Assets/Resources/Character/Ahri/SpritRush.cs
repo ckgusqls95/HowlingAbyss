@@ -62,11 +62,11 @@ public class SpritRush : Skill
 
     public override void Play(GameObject target = null)
     {
-        transform.GetComponent<Champion>().UnitStatus.cost -= LevelperValues[CurrentLevel].consumeCost;
 
         if (CurrentCount == 0)
         {
             currentCoolTime = coolTime;
+            transform.GetComponent<Champion>().UnitStatus.cost -= LevelperValues[CurrentLevel].consumeCost;
         }
 
         ElapsedRecycleTime = RecycleTime;
