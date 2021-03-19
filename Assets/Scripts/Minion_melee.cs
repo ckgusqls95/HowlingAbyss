@@ -278,6 +278,26 @@ public class Minion_melee : Units
 
     protected override void Die()
     {
+        RaycastHit[] hits = Physics.SphereCastAll(transform.position, UnitSight.sightRange, Vector3.up, 0f);
+
+        foreach (RaycastHit hit in hits)
+        {
+            if (this == hit.transform.gameObject) continue;
+            if (hit.transform.CompareTag("particle")) continue;
+
+            if (hit.transform.CompareTag(this.transform.CompareTag("Red") ? "Blue" : "Red"))
+            {
+                Champion script;
+
+                if (hit.transform.TryGetComponent<Champion>(out script))
+                {
+                    script.UnitStatus.experience += this.UnitStatus.killExperience;
+                }
+            }
+        }
+    }
+    private void DeathMinion()
+    {
         GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(gameObject);
         Object.Destroy(this.gameObject);
     }

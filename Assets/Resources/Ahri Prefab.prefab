@@ -1398,6 +1398,7 @@ GameObject:
   - component: {fileID: 5489976976406596291}
   - component: {fileID: 8972086179759175646}
   - component: {fileID: 8606166787054293238}
+  - component: {fileID: -3085220590275476518}
   m_Layer: 0
   m_Name: Ahri Prefab
   m_TagString: Blue
@@ -1485,6 +1486,7 @@ MonoBehaviour:
   championData: {fileID: 11400000, guid: 0d7586dabd0bb714b9fd6993430e957e, type: 2}
   victory: {fileID: 11400000, guid: 80f23573ffcec6b4a89ade7fe81fb544, type: 2}
   defaet: {fileID: 11400000, guid: 00be50b20fcca5842bb6fe10ef6b0362, type: 2}
+  championCostType: 0
   AhriData: {fileID: 11400000, guid: fbeb3d1e2b7cdaf4a9ef0eb926ba5662, type: 2}
   icon: {fileID: 1377918495180485945, guid: 11e5647d792381d4893acd4ba0ca8cb0, type: 3}
   hand: {fileID: 4821116177958041216}
@@ -1733,6 +1735,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-3085220590275476518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4643379022913931557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69491a9366452534ba252d71459f293b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HpMana: {fileID: 3528382443595345358, guid: c8b548df5aa271c45bbcf58d3e4887b3, type: 3}
+  HpEnergy: {fileID: 6210294979976329024, guid: ca138bf82cb46464c80c8b7cb7feedb0,
+    type: 3}
 --- !u!1 &4653040425158843136
 GameObject:
   m_ObjectHideFlags: 0

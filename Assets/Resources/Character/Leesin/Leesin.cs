@@ -54,7 +54,12 @@ public class Leesin : Champion
 
     private void Update()
     {
-        
+        float LevelUpExperience = 180 + UnitStatus.level * 100;
+
+        if (UnitStatus.experience >= LevelUpExperience)
+        {
+            LevelUp();
+        }
     }
 
     private void FixedUpdate()
@@ -162,5 +167,11 @@ public class Leesin : Champion
             //Object.Destroy(gameObject);
         }
         GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(this.transform.gameObject);
+    }
+    public override void LevelUp()
+    {
+        UnitStatus = UnitStatus + LeesinData.growthStatus;
+        UnitStatus.experience = 0;
+        UnitStatus.level++;
     }
 }

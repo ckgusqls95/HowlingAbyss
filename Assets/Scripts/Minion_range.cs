@@ -42,7 +42,6 @@ public class Minion_range : Units
             }
         }
 
-
         goal = GameObject.Find(this.transform.tag == "Red" ? "Nexus_blue" : "Nexus_red");
 
         agent.SetDestination(goal.transform.position);
@@ -114,8 +113,23 @@ public class Minion_range : Units
 
     protected override void Die()
     {
-        GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(gameObject);
-        Object.Destroy(this.gameObject);
+        RaycastHit[] hits = Physics.SphereCastAll(transform.position, UnitSight.sightRange, Vector3.up, 0f);
+
+        foreach (RaycastHit hit in hits)
+        {
+            if (this == hit.transform.gameObject) continue;
+            if (hit.transform.CompareTag("particle")) continue;
+
+            if (hit.transform.CompareTag(this.transform.CompareTag("Red") ? "Blue" : "Red"))
+            {
+                Champion script;
+
+                if (hit.transform.TryGetComponent<Champion>(out script))
+                {
+                    script.UnitStatus.experience += this.UnitStatus.killExperience;
+                }
+            }
+        }
     }
 
     void TargetTracking()
@@ -173,12 +187,11 @@ public class Minion_range : Units
         //fireball.Targeting(Target);
     }
 
-    [PunRPC]
     void CreateParticle()
     {
         if(Target)
         {
-            GameObject obj = Instantiate(fireball, staff.transform.position, Quaternion.identity);
+            GameObject obj = PhotonNetwork.Instantiate("ha_range/FireboltParticle", staff.transform.position, Quaternion.identity);
             obj.GetComponent<range_fireball>().init(gameObject, Target);
         }
     }
@@ -236,5 +249,9 @@ public class Minion_range : Units
 
         return newPriority;
     }
-
+    private void DeathMinion()
+    {
+        GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(gameObject);
+        Object.Destroy(this.gameObject);
+    }
 }

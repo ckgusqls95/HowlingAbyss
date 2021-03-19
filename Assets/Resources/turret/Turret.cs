@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Unit;
-
+using Photon.Pun;
 public class Turret : Units
 {
     #region
@@ -158,7 +158,15 @@ public class Turret : Units
     {
         if(Target)
         {
-            GameObject obj = Instantiate(particle, joint.transform.position, Quaternion.identity);
+            GameObject obj;
+            if (this.transform.CompareTag("Red"))
+            {
+                obj = PhotonNetwork.Instantiate("turret/RedTurret", joint.transform.position, Quaternion.identity);
+            }
+            else
+            {
+                obj = PhotonNetwork.Instantiate("turret/BlueTurretBeam", joint.transform.position, Quaternion.identity);
+            }
             obj.GetComponent<Siege_CannonBall>().init(gameObject, Target);
         }
     }

@@ -48,7 +48,12 @@ public class Ahri : Champion
 
     private void Update()
     {
-        
+        float LevelUpExperience = 180 + UnitStatus.level * 100;
+
+        if (UnitStatus.experience >= LevelUpExperience)
+        {
+            LevelUp();
+        }
     }
 
     private void FixedUpdate()
@@ -115,8 +120,8 @@ public class Ahri : Champion
         }
 
         SoundManager.instance.PlaySE(soundname, gameObject);
-
-        GameObject obj = Instantiate(AttackParticle, hand.transform.position, hand.transform.rotation);
+        
+        GameObject obj = PhotonNetwork.Instantiate("Character/Ahri/attack/FireballBlue", hand.transform.position, hand.transform.rotation);
         obj.GetComponent<basicAttack>().init(this);
     }
 
@@ -150,5 +155,11 @@ public class Ahri : Champion
         }
         GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(this.transform.gameObject);
     }
-   
+
+    public override void LevelUp()
+    {
+        UnitStatus = UnitStatus + AhriData.growthStatus;
+        UnitStatus.experience = 0;
+        UnitStatus.level++;
+    }
 }

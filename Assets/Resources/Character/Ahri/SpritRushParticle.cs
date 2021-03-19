@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Unit;
+using Photon.Pun;
 public class SpritRushParticle : MonoBehaviour
 {
     const float flyspeed = 5.0f;
@@ -38,7 +39,7 @@ public class SpritRushParticle : MonoBehaviour
                         if(script.UnitTag != UnitsTag.Nexus &&
                             script.UnitTag != UnitsTag.Turret)
                         {
-                            GameObject obj = Instantiate(essensefire,transform.position,Quaternion.identity);
+                            GameObject obj = PhotonNetwork.Instantiate("Character/Ahri/R/firesessencebolts", transform.position,Quaternion.identity);
                             obj.GetComponent<FireEsseneBolt>().Init(transform.parent.gameObject, hit.transform.gameObject);
                             break;
                         }

@@ -16,7 +16,8 @@ public class PlayerController : MonoBehaviour
     private Champion champion;
     private InventorySystem inventory;
     private PhotonView PV;
-    public int gold = 0;
+    [HideInInspector]
+    public float gold = 0;
     [HideInInspector]
     public float speed = 10.0f;
 
@@ -36,6 +37,7 @@ public class PlayerController : MonoBehaviour
         PV = GetComponent<PhotonView>();
         naviAgent = GetComponent<NavMeshAgent>();
         mainCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+        GameObject.FindWithTag("Canvas").GetComponentInChildren<Gold>().player = this;
         targetpos = this.transform.position;
         champion = GetComponentInChildren<Champion>();
         animator = GetComponentInChildren<Animator>();
@@ -55,7 +57,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gold = 500.0f;
+        InvokeRepeating("AutomaticAcquisitionGold", 0.5f, 0.5f);
     }
 
     #region KeyBoardInput
@@ -253,4 +256,10 @@ public class PlayerController : MonoBehaviour
         isStopMove = false;
         naviAgent.isStopped = isStopMove;
     }
+    void AutomaticAcquisitionGold()
+    {
+        if (gold >= 99998.9f) return;
+        gold += 0.95f;
+    }
+
 }
