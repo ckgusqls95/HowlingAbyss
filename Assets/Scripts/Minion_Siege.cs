@@ -166,12 +166,12 @@ public class Minion_Siege : Units
         
     }
 
-    [PunRPC]
     void CreateParticle()
     {
         if(Target)
         {
-            GameObject obj = Instantiate(cannonball, gunbarrel.transform.position, Quaternion.identity);
+
+            GameObject obj = PhotonNetwork.Instantiate("orderminion/vfx_Projectile_Trail01_Purple", gunbarrel.transform.position, Quaternion.identity);
             obj.GetComponent<Siege_CannonBall>().init(gameObject, Target);
         }
     }
@@ -231,6 +231,27 @@ public class Minion_Siege : Units
     }
 
     protected override void Die()
+    {
+        RaycastHit[] hits = Physics.SphereCastAll(transform.position, UnitSight.sightRange, Vector3.up, 0f);
+
+        foreach (RaycastHit hit in hits)
+        {
+            if (this == hit.transform.gameObject) continue;
+            if (hit.transform.CompareTag("particle")) continue;
+
+            if (hit.transform.CompareTag(this.transform.CompareTag("Red") ? "Blue" : "Red"))
+            {
+                Champion script;
+
+                if (hit.transform.TryGetComponent<Champion>(out script))
+                {
+                    script.UnitStatus.experience += this.UnitStatus.killExperience;
+                }
+            }
+        }
+    }
+
+    private void DeathMinion()
     {
         GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(gameObject);
         Object.Destroy(this.gameObject);

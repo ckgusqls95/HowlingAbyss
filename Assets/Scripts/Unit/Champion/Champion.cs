@@ -8,7 +8,8 @@ using Photon.Pun;
 public abstract class Champion : Units
 {
     #region ChampionCommonData
-    
+ 
+
     protected Skill[] championSkill;
     public Skill[] ChampionSkill { get { return championSkill; } }
     
@@ -19,6 +20,11 @@ public abstract class Champion : Units
     private GameEvent victory;
     [SerializeField]
     private GameEvent defaet;
+
+    [SerializeField]
+    public enum ChampionCostType { MANA, ENERGY }
+ 
+    public ChampionCostType championCostType;
 
     protected virtual void Awake()
     {

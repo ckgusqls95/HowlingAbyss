@@ -15,6 +15,7 @@ public struct InitStatus
     public float attackDamage;
     public float armor;
     public float magicResist;
+    public float abilityPower;
 
     public int killGold;
     public static InitStatus operator +(InitStatus s1, InitStatus s2)

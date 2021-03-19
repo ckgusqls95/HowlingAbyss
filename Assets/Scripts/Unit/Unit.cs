@@ -42,19 +42,19 @@ namespace Unit
         public float killGold;
         public float killExperience;
 
-        //public static Status operator +(Status s1, Status s2)
-        //{
-        //    Status status = new Status();
-        //    status.abilityPower = s1.abilityPower + s2.abilityPower;
-        //    status.armor = s1.armor + s2.armor;
-        //    status.attackDamage = s1.attackDamage + s2.attackDamage;
-        //    status.attackSpeed = s1.attackSpeed * s2.attackSpeed;
-        //    status.cost = s1.cost + s2.cost;
-        //    status.health = s1.health + s2.health;
-        //    status.magicResist = s1.magicResist + s2.magicResist;
-        //    status.movementSpeed = s1.movementSpeed + s2.movementSpeed;
-        //    return status;
-        //}
+        public static Status operator +(Status s1, InitStatus s2)
+        {
+            s1.abilityPower = s1.abilityPower + s2.abilityPower;
+            s1.armor = s1.armor + s2.armor;
+            s1.attackDamage = s1.attackDamage + s2.attackDamage;
+            s1.attackSpeed = s1.attackSpeed * s2.attackSpeed;
+            s1.cost = s1.cost + s2.cost;
+            s1.health = s1.health + s2.health;
+            s1.magicResist = s1.magicResist + s2.magicResist;
+            s1.movementSpeed = s1.movementSpeed + s2.movementSpeed;
+            return s1;
+        }
+
         public static Status Initialize(InitStatus init)
         {
             Status temp = new Status();
@@ -75,6 +75,7 @@ namespace Unit
             temp.movementSpeed = init.movementSpeed;
 
             temp.killGold = init.killGold;
+            temp.killExperience = 10;
             return temp;
         }
     }
@@ -131,7 +132,7 @@ namespace Unit
         //public virtual void Move() { }
         public virtual void LevelUp()
         {
-
+            
         }
 
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -211,8 +212,16 @@ namespace Unit
 
             SufferDamage = (percent / (percent + Resist - Penetration)) * damage;
 
+
             UnitStatus.health -= SufferDamage;
-            if (UnitStatus.health < 0.0f) Die();
+            if (UnitStatus.health < 0.0f && unit != null)
+            {
+                if (unit.UnitTag == UnitsTag.Champion && unitTag == UnitsTag.Minion)
+                {
+                    unit.GetComponent<PlayerController>().gold += UnitStatus.killGold;
+                }
+                Die();
+            }
             return SufferDamage;
         }
 

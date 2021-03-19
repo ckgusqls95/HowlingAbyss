@@ -943,7 +943,7 @@ GameObject:
   - component: {fileID: 124762599}
   - component: {fileID: 124762598}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Experience
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4956,7 +4956,7 @@ GameObject:
   - component: {fileID: 668779805}
   - component: {fileID: 668779804}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16937,6 +16937,8 @@ MonoBehaviour:
   costBarImage: {fileID: 902702966}
   costBarText: {fileID: 1239095489}
   championPortrait: {fileID: 282140181}
+  experienceBar: {fileID: 124762598}
+  level: {fileID: 668779804}
 --- !u!1001 &1508997729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21832,7 +21834,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59a1223efa32db24ebe551a78562671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gold: 37877
+  gold: 0
+  player: {fileID: 0}
 --- !u!114 &2109863327
 MonoBehaviour:
   m_ObjectHideFlags: 0

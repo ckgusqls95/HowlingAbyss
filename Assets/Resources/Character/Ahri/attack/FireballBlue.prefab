@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7437761570810560599}
   - component: {fileID: 3765847246333147767}
   - component: {fileID: 538453877546862868}
+  - component: {fileID: -4480330359007650416}
   m_Layer: 8
   m_Name: FireballBlue
   m_TagString: particle
@@ -4878,6 +4879,22 @@ MonoBehaviour:
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &-4480330359007650416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2853273787548984102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &2853288239708955424
 GameObject:
   m_ObjectHideFlags: 0

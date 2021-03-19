@@ -21,20 +21,27 @@ public class SkillPannelSystem : MonoBehaviour
     private Text costBarText;
     [SerializeField]
     private Image championPortrait;
+    [SerializeField]
+    private Image experienceBar;
+    [SerializeField]
+    private Text level;
+
     private Champion player;
 
     void Awake()
     {
         player = GameManager.Instance.player;
-        for (int index = 1; index > skillButton.Length; ++index)
+        skillButtonScript = new SkillButton[5];
+        for (int index = 0; index < skillButton.Length; ++index)
         {
-            skillButtonScript[index] = skillButton[index].GetComponent<SkillButton>();
+            skillButtonScript[index] = skillButton[index].gameObject.GetComponent<SkillButton>();
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
+       
     }
 
     // Update is called once per frame
@@ -54,11 +61,21 @@ public class SkillPannelSystem : MonoBehaviour
         costBarText.text = cost.ToString();
         costBarImage.fillAmount = player.UnitStatus.cost / player.UnitStatus.maxCost;
 
-        //for (int index = 1; index < skillButton.Length; ++index)
-        //{
-        //    skillButtonScript[index].skillFilter.fillAmount = 1 * Time.smoothDeltaTime / player.ChampionSkill[index].coolTime;
-        //    skillButtonScript[index].coolTimeCounter.text = player.ChampionSkill[index].currentCoolTime.ToString();
-        //}
+        experienceBar.fillAmount = player.UnitStatus.experience / 180 + (player.UnitStatus.level) * 100;
+        level.text = player.UnitStatus.level.ToString();
+
+        for(int index = 1; index < 5; index++)
+        {
+            skillButtonScript[index].skillFilter.fillAmount = player.ChampionSkill[index - 1].currentCoolTime / player.ChampionSkill[index - 1].coolTime;
+            if(System.Math.Truncate(player.ChampionSkill[index - 1].currentCoolTime) > 0)
+            {
+                skillButtonScript[index].coolTimeCounter.text = System.Math.Truncate(player.ChampionSkill[index - 1].currentCoolTime).ToString();
+            }
+            else
+            {
+                skillButtonScript[index].coolTimeCounter.text = "";
+            }
+        }
     }
 
     public void MatchingChampionSkillPannel(ChampionData _championData)

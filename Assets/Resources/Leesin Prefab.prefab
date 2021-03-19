@@ -546,6 +546,7 @@ GameObject:
   - component: {fileID: 8710032037521315537}
   - component: {fileID: -164070215587438185}
   - component: {fileID: 9147171254945077350}
+  - component: {fileID: -7179327022697419144}
   m_Layer: 0
   m_Name: Leesin Prefab
   m_TagString: Red
@@ -562,7 +563,7 @@ Transform:
   m_GameObject: {fileID: 1374611952236735304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 7271237210761339244}
   - {fileID: 3847663881639163176}
@@ -722,6 +723,7 @@ MonoBehaviour:
   championData: {fileID: 11400000, guid: 5e6845b4f85f6494bbaedc86142b7725, type: 2}
   victory: {fileID: 11400000, guid: 80f23573ffcec6b4a89ade7fe81fb544, type: 2}
   defaet: {fileID: 11400000, guid: 00be50b20fcca5842bb6fe10ef6b0362, type: 2}
+  championCostType: 1
   LeesinData: {fileID: 11400000, guid: 38ae7eee84bd5a645805a799cf6189e4, type: 2}
   icon: {fileID: 564478806050140556, guid: b3de6e93ed1eadc4ba99701f396bac6b, type: 3}
   hands:
@@ -890,6 +892,21 @@ MonoBehaviour:
   speed: 10
   targetpos: {x: 0, y: 0, z: 0}
   isStopMove: 0
+--- !u!114 &-7179327022697419144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374611952236735304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69491a9366452534ba252d71459f293b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HpMana: {fileID: 3528382443595345358, guid: c8b548df5aa271c45bbcf58d3e4887b3, type: 3}
+  HpEnergy: {fileID: 6210294979976329024, guid: ca138bf82cb46464c80c8b7cb7feedb0,
+    type: 3}
 --- !u!1 &1538577531692314025
 GameObject:
   m_ObjectHideFlags: 0
