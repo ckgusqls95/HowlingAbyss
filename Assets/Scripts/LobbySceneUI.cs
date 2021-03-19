@@ -123,11 +123,6 @@ public class LobbySceneUI : MonoBehaviourPun
         photonView.RPC("OnLeaveRoom", RpcTarget.All);
     }
 
-    public void QuitApplication()
-    {
-        Application.Quit();
-    }
-
     [PunRPC]
     public void UserCustumGamePick()
     {

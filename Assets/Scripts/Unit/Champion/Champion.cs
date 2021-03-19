@@ -39,6 +39,25 @@ public abstract class Champion : Units
             championUI.GetComponent<SkillPannelSystem>().MatchingChampionSkillPannel(championData);
         }
         #endregion
+        StartCoroutine("ResenCost");
+    }
+
+    IEnumerator ResenCost()
+    {
+        while(!isDeath)
+        {
+            //if(UnitStatus.health < UnitStatus.Maxhealth)
+            //{
+            //    UnitStatus.health += UnitStatus.healthRegen;
+            //}
+
+            if(UnitStatus.cost < UnitStatus.maxCost)
+            {
+                UnitStatus.cost += UnitStatus.costRegen;
+            }
+
+            yield return new WaitForSeconds(5.0f);
+        }
     }
 
     // Start is called before the first frame update

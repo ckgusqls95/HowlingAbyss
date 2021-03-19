@@ -61,7 +61,8 @@ public class SkillPannelSystem : MonoBehaviour
         costBarText.text = cost.ToString();
         costBarImage.fillAmount = player.UnitStatus.cost / player.UnitStatus.maxCost;
 
-        experienceBar.fillAmount = player.UnitStatus.experience / 180 + (player.UnitStatus.level) * 100;
+        float requiredExperience = 180 + (player.UnitStatus.level * 100);
+        experienceBar.fillAmount = player.UnitStatus.experience / requiredExperience;
         level.text = player.UnitStatus.level.ToString();
 
         for(int index = 1; index < 5; index++)
@@ -84,10 +85,9 @@ public class SkillPannelSystem : MonoBehaviour
         {
             skillButton[index].image.sprite = _championData.ChampionSkill[index];
         }
-        for (int index = 0; index < summonerSpell.Length; index++)
-        {
-            summonerSpell[index].image.sprite = GameManager.Instance.summonerSpell.SummonerSpellIcon[index];
-        }
+        
+        summonerSpell[0].image.sprite = GameManager.Instance.summonerSpell.SummonerSpellIcon[GameManager.Instance.SpellIndex[0]];
+        summonerSpell[1].image.sprite = GameManager.Instance.summonerSpell.SummonerSpellIcon[GameManager.Instance.SpellIndex[1]];
         championPortrait.sprite = _championData.ChampionIconCircle;
     }
 }

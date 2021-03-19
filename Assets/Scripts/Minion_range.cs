@@ -113,23 +113,7 @@ public class Minion_range : Units
 
     protected override void Die()
     {
-        RaycastHit[] hits = Physics.SphereCastAll(transform.position, UnitSight.sightRange, Vector3.up, 0f);
-
-        foreach (RaycastHit hit in hits)
-        {
-            if (this == hit.transform.gameObject) continue;
-            if (hit.transform.CompareTag("particle")) continue;
-
-            if (hit.transform.CompareTag(this.transform.CompareTag("Red") ? "Blue" : "Red"))
-            {
-                Champion script;
-
-                if (hit.transform.TryGetComponent<Champion>(out script))
-                {
-                    script.UnitStatus.experience += this.UnitStatus.killExperience;
-                }
-            }
-        }
+       
     }
 
     void TargetTracking()
@@ -150,6 +134,10 @@ public class Minion_range : Units
                         continue;
                     }
                     else if(script.isDeath)
+                    {
+                        continue;
+                    }
+                    else if(hit.transform.gameObject == null)
                     {
                         continue;
                     }
@@ -212,22 +200,26 @@ public class Minion_range : Units
             if(enemyTarget)
             {
                 Units targetscript = enemyTarget.GetComponentInChildren<Units>();
-                enemyTargetTag = targetscript.UnitTag;
-                if (enemyTag == UnitsTag.Minion &&
-                    enemyTargetTag == UnitsTag.Champion)
+                if(targetscript)
                 {
-                    newPriority = 2;
+                    enemyTargetTag = targetscript.UnitTag;
+                    if (enemyTag == UnitsTag.Minion &&
+                        enemyTargetTag == UnitsTag.Champion)
+                    {
+                        newPriority = 2;
+                    }
+                    else if (enemyTag == UnitsTag.Minion &&
+                        enemyTargetTag == UnitsTag.Minion)
+                    {
+                        newPriority = 3;
+                    }
+                    else if (enemyTag == UnitsTag.Champion &&
+                       enemyTargetTag == UnitsTag.Minion)
+                    {
+                        newPriority = 5;
+                    }
                 }
-                else if (enemyTag == UnitsTag.Minion &&
-                    enemyTargetTag == UnitsTag.Minion)
-                {
-                    newPriority = 3;
-                }
-                else if (enemyTag == UnitsTag.Champion &&
-                   enemyTargetTag == UnitsTag.Minion)
-                {
-                    newPriority = 5;
-                }
+                
             }
             else
             {
@@ -251,6 +243,21 @@ public class Minion_range : Units
     }
     private void DeathMinion()
     {
+        GameObject[] obj = GameObject.FindGameObjectsWithTag(this.transform.CompareTag("Red") ? "Blue" : "Red");
+
+        foreach (GameObject unit in obj)
+        {
+            Units script;
+            if (unit.TryGetComponent<Units>(out script))
+            {
+                //if (script.unitTag == UnitsTag.Champion && (Vector3.Distance(this.transform.position, script.transform.position) < UnitSight.sightRange))
+                if (script.unitTag == UnitsTag.Champion)
+                {
+                    script.UnitStatus.experience += this.UnitStatus.killExperience;
+                }
+            }
+        }
+
         GameObject.FindWithTag("MiniMap").GetComponent<MiniMapSystem>().Dettach(gameObject);
         Object.Destroy(this.gameObject);
     }

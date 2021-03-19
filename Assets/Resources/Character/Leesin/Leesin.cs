@@ -54,9 +54,9 @@ public class Leesin : Champion
 
     private void Update()
     {
-        float LevelUpExperience = 180 + UnitStatus.level * 100;
+        float requiredExperience = 180 + (UnitStatus.level * 100);
 
-        if (UnitStatus.experience >= LevelUpExperience)
+        if (UnitStatus.experience >= requiredExperience)
         {
             LevelUp();
         }

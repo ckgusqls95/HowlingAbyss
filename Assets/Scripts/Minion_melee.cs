@@ -163,6 +163,10 @@ public class Minion_melee : Units
                     {
                         continue;
                     }
+                    else if (hit.transform.gameObject == null)
+                    {
+                        continue;
+                    }
 
                     int tempPriority = Prioritization(hit.transform.gameObject);
                     if (priority == int.MaxValue)
@@ -226,21 +230,24 @@ public class Minion_melee : Units
             if (enemyTarget)
             {
                 Units targetscript = enemyTarget.GetComponentInChildren<Units>();
-                enemyTargetTag = targetscript.UnitTag;
-                if (enemyTag == UnitsTag.Minion &&
-                    enemyTargetTag == UnitsTag.Champion)
+                if(targetscript)
                 {
-                    newPriority = 2;
-                }
-                else if (enemyTag == UnitsTag.Minion &&
-                    enemyTargetTag == UnitsTag.Minion)
-                {
-                    newPriority = 3;
-                }
-                else if (enemyTag == UnitsTag.Champion &&
-                   enemyTargetTag == UnitsTag.Minion)
-                {
-                    newPriority = 5;
+                    enemyTargetTag = targetscript.UnitTag;
+                    if (enemyTag == UnitsTag.Minion &&
+                        enemyTargetTag == UnitsTag.Champion)
+                    {
+                        newPriority = 2;
+                    }
+                    else if (enemyTag == UnitsTag.Minion &&
+                        enemyTargetTag == UnitsTag.Minion)
+                    {
+                        newPriority = 3;
+                    }
+                    else if (enemyTag == UnitsTag.Champion &&
+                       enemyTargetTag == UnitsTag.Minion)
+                    {
+                        newPriority = 5;
+                    }
                 }
             }
             else
@@ -278,18 +285,15 @@ public class Minion_melee : Units
 
     protected override void Die()
     {
-        RaycastHit[] hits = Physics.SphereCastAll(transform.position, UnitSight.sightRange, Vector3.up, 0f);
+        GameObject[] obj = GameObject.FindGameObjectsWithTag(this.transform.CompareTag("Red") ? "Blue" : "Red");
 
-        foreach (RaycastHit hit in hits)
+        foreach (GameObject unit in obj)
         {
-            if (this == hit.transform.gameObject) continue;
-            if (hit.transform.CompareTag("particle")) continue;
-
-            if (hit.transform.CompareTag(this.transform.CompareTag("Red") ? "Blue" : "Red"))
+            Units script;
+            if (unit.TryGetComponent<Units>(out script))
             {
-                Champion script;
-
-                if (hit.transform.TryGetComponent<Champion>(out script))
+                //if (script.unitTag == UnitsTag.Champion && (Vector3.Distance(this.transform.position, script.transform.position) < UnitSight.sightRange))
+                if (script.unitTag == UnitsTag.Champion)
                 {
                     script.UnitStatus.experience += this.UnitStatus.killExperience;
                 }

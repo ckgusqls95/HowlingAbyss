@@ -75,7 +75,7 @@ namespace Unit
             temp.movementSpeed = init.movementSpeed;
 
             temp.killGold = init.killGold;
-            temp.killExperience = 10;
+            temp.killExperience = 40;
             return temp;
         }
     }
@@ -212,13 +212,15 @@ namespace Unit
 
             SufferDamage = (percent / (percent + Resist - Penetration)) * damage;
 
-
             UnitStatus.health -= SufferDamage;
-            if (UnitStatus.health < 0.0f && unit != null)
+            if (UnitStatus.health < 0.0f )
             {
-                if (unit.UnitTag == UnitsTag.Champion && unitTag == UnitsTag.Minion)
+                if(unit != null)
                 {
-                    unit.GetComponent<PlayerController>().gold += UnitStatus.killGold;
+                    if (unit.UnitTag == UnitsTag.Champion && unitTag == UnitsTag.Minion)
+                    {
+                        unit.GetComponent<PlayerController>().gold += UnitStatus.killGold;
+                    }
                 }
                 Die();
             }

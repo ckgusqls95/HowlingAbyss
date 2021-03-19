@@ -4269,6 +4269,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChampionPrefab: {fileID: 11400000, guid: 5f010912aeeaf3e42bcbc74cdcb28198, type: 2}
+  blueTeamSpawnTransform: {fileID: 1712956492}
+  redTeamSpawnTransform: {fileID: 1099649650}
 --- !u!1 &549184022
 GameObject:
   m_ObjectHideFlags: 0
@@ -13893,6 +13895,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a23a06107e96134598493163a37174f, type: 3}
+--- !u!4 &1099649650 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3632898935222678342, guid: 0f2ccded3fa7f5d4fb121f0830406c99,
+    type: 3}
+  m_PrefabInstance: {fileID: 3030080840526432986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1109075902
 GameObject:
   m_ObjectHideFlags: 0
@@ -18361,6 +18369,12 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4219899975748027730, guid: 5672fdbafea58dc4597fe2b94161183a, type: 3}
+--- !u!4 &1712956492 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 440553346, guid: df59d90cf4a2b0d4d95155431b194dbd,
+    type: 3}
+  m_PrefabInstance: {fileID: 505723809057626250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1722149975
 GameObject:
   m_ObjectHideFlags: 0

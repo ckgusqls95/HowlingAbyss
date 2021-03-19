@@ -46,12 +46,14 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        spellIndex = new int[2];
+        spellIndex[0] = 0;
+        spellIndex[1] = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
 
     public void LoadLobbyScene()

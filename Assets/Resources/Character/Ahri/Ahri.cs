@@ -48,9 +48,9 @@ public class Ahri : Champion
 
     private void Update()
     {
-        float LevelUpExperience = 180 + UnitStatus.level * 100;
+        float requiredExperience = 180 + (UnitStatus.level * 100);
 
-        if (UnitStatus.experience >= LevelUpExperience)
+        if (UnitStatus.experience >= requiredExperience)
         {
             LevelUp();
         }
@@ -159,7 +159,7 @@ public class Ahri : Champion
     public override void LevelUp()
     {
         UnitStatus = UnitStatus + AhriData.growthStatus;
-        UnitStatus.experience = 0;
-        UnitStatus.level++;
+        UnitStatus.experience = 0.0f;
+        UnitStatus.level += 1; 
     }
 }

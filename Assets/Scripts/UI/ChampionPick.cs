@@ -13,7 +13,7 @@ public class ChampionPick : MonoBehaviourPunCallbacks, IPunObservable
     [SerializeField]
     private ChampionData[] championData;
 
-    [SerializeField]  
+    [SerializeField]
     private SummonerSpellData summonerSpell;
 
     [SerializeField]
@@ -79,13 +79,26 @@ public class ChampionPick : MonoBehaviourPunCallbacks, IPunObservable
         LastSellectedButton.transform.parent.GetComponent<Image>().color = new Color(255, 255, 255, 0);
         LastSpellChoiceImage.color = new Color(255, 255, 255, 0);
 
-        if (LastSellectedButton.name == "Spell Left Button")
+        if(index != GameManager.Instance.SpellIndex[0] && index != GameManager.Instance.SpellIndex[1])
         {
-            GameManager.Instance.SpellIndex[0] = index;
+            
+            if (LastSellectedButton.name == "Spell Left Button")
+            {
+                GameManager.Instance.SpellIndex[0] = index;
+            }
+            else
+            {
+                GameManager.Instance.SpellIndex[1] = index;
+            }
         }
         else
         {
-            GameManager.Instance.SpellIndex[1] = index;
+            int temp;
+            temp = GameManager.Instance.SpellIndex[0];
+            GameManager.Instance.SpellIndex[0] = GameManager.Instance.SpellIndex[1];
+            GameManager.Instance.SpellIndex[1] = temp;
+            ChampionUseSpellButton[0].image.sprite = summonerSpell.SummonerSpellIcon[GameManager.Instance.SpellIndex[0]];
+            ChampionUseSpellButton[1].image.sprite = summonerSpell.SummonerSpellIcon[GameManager.Instance.SpellIndex[1]];
         }
     }
 

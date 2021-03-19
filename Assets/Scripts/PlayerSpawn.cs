@@ -8,6 +8,8 @@ public class PlayerSpawn : MonoBehaviour
     [SerializeField]
     private ChampionPrefabData ChampionPrefab;
     GameObject championObj;
+    public Transform blueTeamSpawnTransform;
+    public Transform redTeamSpawnTransform;
     private void Awake()
     {
         MatchChampion();
@@ -34,12 +36,12 @@ public class PlayerSpawn : MonoBehaviour
         }
         if (PhotonNetwork.IsMasterClient)
         {
-            championObj.transform.position = new Vector3(114, 0, 113);
+            championObj.transform.position = redTeamSpawnTransform.position;
             championObj.GetComponent<PlayerController>().tag = "Red";
         }
         else
         {
-            championObj.transform.position = new Vector3(12, 0, 14);
+            championObj.transform.position = blueTeamSpawnTransform.position;
             championObj.GetComponent<PlayerController>().tag = "Blue";
         }
         
