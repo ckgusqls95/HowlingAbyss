@@ -20,7 +20,7 @@ public class Nexus : MonoBehaviourPun, IPunObservable
 
     #endregion
 
-    private const float StartTime = 15.0f;  // 
+    private const float StartTime = 30.0f;  // 
     private const float CoolTime = 30.0f;   // 30 seconds;
     private const float SumonDelayTime = 0.5f;
 
@@ -50,6 +50,7 @@ public class Nexus : MonoBehaviourPun, IPunObservable
 
         ElapsedTime = 0.0f;
         FixedCoolTime = StartTime;
+        pv = GetComponent<PhotonView>();
     }
 
     void Update()
@@ -59,12 +60,12 @@ public class Nexus : MonoBehaviourPun, IPunObservable
 
     private void FixedUpdate()
     {
-        //if(pv.IsMine)
+        if(pv.IsMine)
         {
             ElapsedTime += Time.deltaTime;
         }
 
-        if (ElapsedTime % FixedCoolTime <= Time.deltaTime && ElapsedTime >= StartTime)
+        if (ElapsedTime % FixedCoolTime <= Time.deltaTime && ElapsedTime > StartTime)
         {
             StartCoroutine(SumonMinion());
         }

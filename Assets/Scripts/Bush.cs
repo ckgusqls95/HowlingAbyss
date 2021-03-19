@@ -6,53 +6,53 @@ public class Bush : MonoBehaviour
 {
     List<Champion> insideBush = new List<Champion>();
     Dictionary<Champion, ParticleSystem[]> Partices = new Dictionary<Champion, ParticleSystem[]>();
-    const int RED = 1;
-    const int BLUE = 2;
+    //const int RED = 1;
+    //const int BLUE = 2;
 
     private void FixedUpdate()
     {
-        int count = 0;
-        for (int i = 0; i < insideBush.Count; i++)
-        {
-            if(insideBush[i].transform.CompareTag("Red"))
-            {
-                if(count == BLUE)
-                {
-                    count += RED;
-                    break;
-                }
-                else if(count != RED)
-                {
-                    count = RED;
-                }
+        //int count = 0;
+        //for (int i = 0; i < insideBush.Count; i++)
+        //{
+        //    if(insideBush[i].transform.CompareTag("Red"))
+        //    {
+        //        if(count == BLUE)
+        //        {
+        //            count += RED;
+        //            break;
+        //        }
+        //        else if(count != RED)
+        //        {
+        //            count = RED;
+        //        }
                 
-            }
-            else if(insideBush[i].transform.CompareTag("Blue") && count != BLUE)
-            {
-                if(count == RED)
-                {
-                    count += BLUE;
-                    break;
-                }
-                else if(count != BLUE)
-                {
-                    count = BLUE;
-                }
-            }
-        }
+        //    }
+        //    else if(insideBush[i].transform.CompareTag("Blue") && count != BLUE)
+        //    {
+        //        if(count == RED)
+        //        {
+        //            count += BLUE;
+        //            break;
+        //        }
+        //        else if(count != BLUE)
+        //        {
+        //            count = BLUE;
+        //        }
+        //    }
+        //}
 
-        if(count >= RED + BLUE)
-        {
-            foreach (Champion obj in insideBush)
-            {
-                SkinnedMeshRenderer renderer = obj.transform.GetComponentInChildren<SkinnedMeshRenderer>();
-                Material mtl = renderer.material;
-                Color color = mtl.color;
-                color.a = 0.3f;
-                mtl.color = color;
-                renderer.material = new Material(mtl);
-            }
-        }
+        //if(count >= RED + BLUE)
+        //{
+        //    foreach (Champion obj in insideBush)
+        //    {
+        //        SkinnedMeshRenderer renderer = obj.transform.GetComponentInChildren<SkinnedMeshRenderer>();
+        //        Material mtl = renderer.material;
+        //        Color color = mtl.color;
+        //        color.a = 0.3f;
+        //        mtl.color = color;
+        //        renderer.material = new Material(mtl);
+        //    }
+        //}
     }
 
     private void OnTriggerEnter(Collider other)
@@ -79,11 +79,15 @@ public class Bush : MonoBehaviour
             ParticleSystem[] ps = script.GetComponentsInChildren<ParticleSystem>();
             if(ps.Length > 0)
             {
-                Partices.Add(script, ps);
-                foreach(var particle in ps)
+                if(!Partices.ContainsKey(script))
                 {
-                    particle.gameObject.SetActive(false);
+                    Partices.Add(script, ps);
+                    foreach (var particle in ps)
+                    {
+                        particle.gameObject.SetActive(false);
+                    }
                 }
+
             }
 
             insideBush.Add(script);

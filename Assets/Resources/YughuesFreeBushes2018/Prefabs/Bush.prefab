@@ -109,8 +109,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7992715529498157145}
   - component: {fileID: 7992715529511154937}
-  - component: {fileID: 8623016415628682575}
-  - component: {fileID: 1015390522275256562}
   m_Layer: 2
   m_Name: Bush
   m_TagString: Untagged
@@ -167,31 +165,6 @@ LODGroup:
     renderers:
     - renderer: {fileID: 7992715529495863999}
   m_Enabled: 1
---- !u!114 &8623016415628682575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7992715529498131577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6492e78ea8b38ed4eacd8a0779eb349b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &1015390522275256562
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7992715529498131577}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.85, z: 1}
-  m_Center: {x: 0, y: 0.55, z: 0}
 --- !u!1 &7992715529498131579
 GameObject:
   m_ObjectHideFlags: 0

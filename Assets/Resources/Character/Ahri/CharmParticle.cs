@@ -72,6 +72,7 @@ public class CharmParticle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject == parent) return;
         if (other.CompareTag(parent.transform.tag == "Red" ? "Blue" : "Red"))
         {
             Vector3 pos = new Vector3(0, 0, 0);
