@@ -96,7 +96,7 @@ public class SpritRush : Skill
             //    }
             //}
 
-            yield return new WaitForEndOfFrame();
+            yield return null;
         }
 
         currentCoolTime = 0.0f;

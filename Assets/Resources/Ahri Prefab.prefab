@@ -1702,8 +1702,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   naviAgent: {fileID: 0}
-  gold: 0
   speed: 10
+  wallet: {fileID: 0}
   targetpos: {x: 0, y: 0, z: 0}
   isStopMove: 0
 --- !u!65 &8972086179759175646
@@ -3881,6 +3881,7 @@ PrefabInstance:
     - {fileID: 54641338019457900, guid: 0bcacf20f1c4bb64a9a14ae2d630c398, type: 3}
     - {fileID: 65977177114986562, guid: 0bcacf20f1c4bb64a9a14ae2d630c398, type: 3}
     - {fileID: 57730874689246327, guid: 0bcacf20f1c4bb64a9a14ae2d630c398, type: 3}
+    - {fileID: 2744512782969593067, guid: 0bcacf20f1c4bb64a9a14ae2d630c398, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0bcacf20f1c4bb64a9a14ae2d630c398, type: 3}
 --- !u!4 &5530286725704241276 stripped
 Transform:

@@ -218,8 +218,8 @@ namespace Unit
                 if(unit != null)
                 {
                     if (unit.UnitTag == UnitsTag.Champion && unitTag == UnitsTag.Minion)
-                    {
-                        unit.GetComponent<PlayerController>().gold += UnitStatus.killGold;
+                    {                        
+                        unit.GetComponent<PlayerController>().wallet.EarnGold(UnitStatus.killGold);
                     }
                 }
                 Die();

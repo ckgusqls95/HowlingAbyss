@@ -5,8 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 public class Gold : MonoBehaviour
 {
-    [Range(0,99999)]
-    public float gold = 0.0f;
+    const float MaxGold = 99999;
+    private float gold = 0.0f; 
 
     private TMP_Text text;
     [HideInInspector]
@@ -17,12 +17,38 @@ public class Gold : MonoBehaviour
     private void Awake()
     {
         text = GetComponentInChildren<TMP_Text>();
+        StartCoroutine(AutoMining());
     }
 
     private void FixedUpdate()
     {
-        gold = player.gold;
         text.text = System.Math.Truncate(gold).ToString();
     }
     
+    IEnumerator AutoMining()
+    {
+        while(true)
+        {
+            EarnGold(0.95f);
+            yield return new WaitForSeconds(0.5f);
+        }
+    }
+
+    public void EarnGold(float money)
+    {
+        if(gold <= MaxGold)
+        {
+            gold += money;
+        }
+    }
+
+    public void UseGold(float money)
+    {
+        gold -= money;
+        if(gold < 0.0f)
+        {
+            gold = 0.0f;
+        }
+    }
+    public float getGold() { return gold; }
 }

@@ -41,7 +41,7 @@ public class Charm : Skill
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)
     {
-        if (currentCoolTime > 0.0f && transform.GetComponent<Champion>().UnitStatus.cost < LevelperValues[CurrentLevel].consumeCost)
+        if (currentCoolTime > 0.0f || transform.GetComponent<Champion>().UnitStatus.cost < LevelperValues[CurrentLevel].consumeCost)
         {
             return false;
         }

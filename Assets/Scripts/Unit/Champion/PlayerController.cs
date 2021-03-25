@@ -17,10 +17,9 @@ public class PlayerController : MonoBehaviour
     private InventorySystem inventory;
     private PhotonView PV;
     [HideInInspector]
-    public float gold = 0;
-    [HideInInspector]
     public float speed = 10.0f;
-
+    [HideInInspector]
+    public Gold wallet;
     Camera mainCamera;
     public Vector3 targetpos;
     public bool isStopMove;
@@ -57,8 +56,9 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gold = 500.0f;
-        InvokeRepeating("AutomaticAcquisitionGold", 0.5f, 0.5f);
+        inventory = GameObject.Find("Canvas").GetComponentInChildren<InventorySystem>();
+        wallet = inventory.transform.FindChild("Gold").GetComponent<Gold>();
+        wallet.EarnGold(500);
     }
 
     #region KeyBoardInput
@@ -255,11 +255,6 @@ public class PlayerController : MonoBehaviour
     {
         isStopMove = false;
         naviAgent.isStopped = isStopMove;
-    }
-    void AutomaticAcquisitionGold()
-    {
-        if (gold >= 99998.9f) return;
-        gold += 0.95f;
     }
 
 }

@@ -7,7 +7,7 @@ public class basicAttack : MonoBehaviour
 {
     private Units parentMinion = null;
     private GameObject target = null;
-    const float speed = 5.0f;
+    const float speed = 10.0f;
 
     // Start is called before the first frame update
     void Start()

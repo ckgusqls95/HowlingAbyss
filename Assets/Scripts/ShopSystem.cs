@@ -172,7 +172,7 @@ public class ShopSystem : MonoBehaviour , IDropHandler
 
         int[] Inven_ItemID = Inventory.InventoryItemSearch();
         float requireGold = ItemList[SelectItem].Gold;
-        float Gold = Inventory.getGold();
+        float Gold = Inventory.GetGold();
 
         bool IsEmptySlot = false;
         for (int i = 0; i < Inven_ItemID.Length; i++)

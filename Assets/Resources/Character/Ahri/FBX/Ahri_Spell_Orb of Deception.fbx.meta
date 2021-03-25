@@ -68,7 +68,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.47357413
+      - time: 0.25766504
         functionName: CreateOrb
         data: 
         objectReferenceParameter: {instanceID: 0}

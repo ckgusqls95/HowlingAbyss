@@ -46,8 +46,7 @@ public class InventorySystem : MonoBehaviour
         return SlotItemID;
     }
 
-    public float getGold()    {   return transform.Find("Gold").GetComponent<Gold>().gold ;    }
-    public void SaleItem(float salePrice) { transform.Find("Gold").GetComponent<Gold>().gold += salePrice; }
+    public void SaleItem(float salePrice) { transform.Find("Gold").GetComponent<Gold>().EarnGold(salePrice); }
     public float ExpendableItemCount(int index)
     {
         return slots[index].GetComponent<ItemSlot>().count;
@@ -95,16 +94,16 @@ public class InventorySystem : MonoBehaviour
                 break;
             }
         }
-        transform.Find("Gold").GetComponent<Gold>().gold -= price;
+        transform.Find("Gold").GetComponent<Gold>().UseGold(price);
     }
 
     public void Expendableitem(int index, float price)
     {
         slots[index].GetComponent<ItemSlot>().count++;
-        transform.Find("Gold").GetComponent<Gold>().gold -= price;
+        transform.Find("Gold").GetComponent<Gold>().UseGold(price);
     }
 
-
+    public float GetGold() { return transform.Find("Gold").GetComponent<Gold>().getGold(); }
    
 
 }

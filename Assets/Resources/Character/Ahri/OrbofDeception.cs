@@ -42,7 +42,7 @@ public class OrbofDeception : Skill
 
     public override bool Try(PlayerState State = PlayerState.IDLE, GameObject target = null)
     {
-        if(currentCoolTime > 0.0f && transform.GetComponent<Champion>().UnitStatus.cost < LevelperValues[CurrentLevel].consumeCost)
+        if(currentCoolTime > 0.0f || transform.GetComponent<Champion>().UnitStatus.cost < LevelperValues[CurrentLevel].consumeCost)
         {
             return false;
         }
@@ -102,6 +102,7 @@ public class OrbofDeception : Skill
         ActiveWeapon();
         GameObject particle = PhotonNetwork.Instantiate("Character/Ahri/q/Orb", weapon.transform.position, Quaternion.identity);
         OrbParticle script = particle.GetComponent<OrbParticle>();
+        particle.transform.localScale = new Vector3(2, 2, 2);
         script.init(this.gameObject);
     }
 
