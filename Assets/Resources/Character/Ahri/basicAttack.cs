@@ -22,7 +22,7 @@ public class basicAttack : MonoBehaviour
         {
             Vector3 current = transform.position;
             Vector3 targetposition = target.transform.position;
-            targetposition.y = current.y;
+            //targetposition.y = current.y;
             transform.position = Vector3.MoveTowards(current, targetposition, speed * Time.deltaTime);
         }
         else
