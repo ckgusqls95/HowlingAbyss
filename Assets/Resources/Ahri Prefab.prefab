@@ -1704,6 +1704,7 @@ MonoBehaviour:
   naviAgent: {fileID: 0}
   speed: 10
   wallet: {fileID: 0}
+  Rallypoint: {fileID: 0}
   targetpos: {x: 0, y: 0, z: 0}
   isStopMove: 0
 --- !u!65 &8972086179759175646

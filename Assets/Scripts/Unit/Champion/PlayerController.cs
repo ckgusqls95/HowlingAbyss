@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     [HideInInspector]
     public Gold wallet;
+    [HideInInspector]
+    public GameObject Rallypoint;
     Camera mainCamera;
     public Vector3 targetpos;
     public bool isStopMove;
@@ -42,6 +44,12 @@ public class PlayerController : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         isStopMove = false;
         isAttack = false;
+        if(PV.IsMine)
+        {
+            GameObject RallyParticle = Resources.Load("click/select 1") as GameObject;
+            Rallypoint = Instantiate(RallyParticle);
+            Rallypoint.SetActive(false);
+        }
         keyDictionary = new Dictionary<KeyCode, Action>
         {
             { KeyCode.A, KeyDown_A },
@@ -114,13 +122,24 @@ public class PlayerController : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Map"))
                 {
-                    targetpos = hit.point;                    
+                    targetpos = hit.point;
+                    if(PV.IsMine)
+                    {
+                        Vector3 newRallyPosition = targetpos;
+                        newRallyPosition.y = -1.2f;
+                        Rallypoint.transform.position = newRallyPosition;
+                        Rallypoint.SetActive(true);
+                    }
                 }
                 else
                 {
                     if (hit.collider.transform == champion.transform) return;
                     if (hit.collider.CompareTag("particle")) return;
-
+                    
+                    if (PV.IsMine)
+                    {
+                        Rallypoint.SetActive(false);
+                    }
                     TargetOutline(hit.transform);
 
                     if (hit.collider.CompareTag("Shop") && hit.transform.parent.CompareTag(this.transform.tag))
