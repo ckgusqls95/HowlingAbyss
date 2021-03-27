@@ -123,6 +123,7 @@ public class PlayerController : MonoBehaviour
                 if (hit.collider.CompareTag("Map"))
                 {
                     targetpos = hit.point;
+                    champion.Target = null;
                     if(PV.IsMine)
                     {
                         Vector3 newRallyPosition = targetpos;
@@ -154,18 +155,6 @@ public class PlayerController : MonoBehaviour
                         }
                     }
 
-                    #region attack
-
-                    float distance = Vector3.Distance(gameObject.transform.position, hit.transform.position);
-                    if (distance <= champion.UnitSight.attackRange && !hit.transform.CompareTag(gameObject.tag))
-                    {                        
-                        animator.SetBool("run", false);
-                        animator.SetBool("attack", isAttack = true);
-                        StartCoroutine(attack(hit.transform.position));
-                    }
-
-                    #endregion
-
                     champion.Targeting(hit.transform.gameObject);
                 }
             }
@@ -183,11 +172,21 @@ public class PlayerController : MonoBehaviour
     {
         if (isStopMove) return false; // animator or force move transform 
 
-        //if(!naviAgent.CalculatePath(target,naviAgent.path))
-        //{
-        //    animator.SetBool("run", false);
-        //    return false;
-        //}
+        #region attack
+        if(champion.Target)
+        {
+            float distance = Vector3.Distance(gameObject.transform.position, champion.Target.transform.position);
+            if (distance <= champion.UnitSight.attackRange && !champion.Target.transform.CompareTag(gameObject.tag))
+            {
+                animator.SetBool("run", false);
+                animator.SetBool("attack", isAttack = true);
+                naviAgent.isStopped = true;
+                StartCoroutine(attack(champion.Target.transform.position));
+
+                return false;
+            }
+        }
+        #endregion
 
         Vector3 pos = transform.position;
         pos.y = 0.0f;
@@ -197,6 +196,7 @@ public class PlayerController : MonoBehaviour
 
         if (dis >= 0.5f)
         {
+            naviAgent.isStopped = false;
             naviAgent.SetDestination(target);
             animator.SetBool("run", true);
             animator.SetBool("attack", isAttack = false);

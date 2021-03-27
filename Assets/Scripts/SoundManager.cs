@@ -106,20 +106,9 @@ public class SoundManager : MonoBehaviour
                     }
                 }
 
-                AnimationCurve curve = source.GetCustomCurve(AudioSourceCurveType.SpatialBlend);
-                Keyframe[] keys = new Keyframe[1];
-
-                for (int k = 0; k < keys.Length; ++k)
-                {
-                    keys[i].value = 1f;
-                }
-
-                curve.keys = keys;
-                source.SetCustomCurve(AudioSourceCurveType.SpatialBlend, curve);
                 source.rolloffMode = AudioRolloffMode.Linear;
                 source.spatialBlend = 1.0f;
-                source.minDistance = 0.1f;
-                source.maxDistance = 100.0f;
+
             }            
         }
         

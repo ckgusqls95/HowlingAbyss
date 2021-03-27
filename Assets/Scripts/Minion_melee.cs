@@ -169,17 +169,12 @@ public class Minion_melee : Units
                     }
 
                     int tempPriority = Prioritization(hit.transform.gameObject);
-                    if (priority == int.MaxValue)
+                    if (priority == int.MaxValue || tempPriority < priority)
                     {
                         Target = hit.transform.gameObject;
                         priority = tempPriority;
                     }
-                    else if (tempPriority < priority)
-                    {
-                        //Target = null;
-                        Target = hit.transform.gameObject;
-                        priority = tempPriority;
-                    }
+
 
                 }
             }
